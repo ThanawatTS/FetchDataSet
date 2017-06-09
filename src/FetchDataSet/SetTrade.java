@@ -57,7 +57,6 @@ public class SetTrade {
 						if(nextrow == 11){
 							allnameCo2 += "\n";
 							nextrow = 0;
-							System.out.println("gammmmmmmmmmmmm");
 						}
 					}
 					
@@ -65,11 +64,21 @@ public class SetTrade {
 				case 3:
 					for(int j = 15 ; j < names.size(); j++){
 						allnameCo3 += names.get(j)+ " ";
+						nextrow++;
+						if(nextrow == 11){
+							allnameCo3 += "\n";
+							nextrow = 0;
+						}
 					}
 					break;
 				case 4:
 					for(int j = 15 ; j < names.size(); j++){
 						allnameCo4 += names.get(j)+ " ";
+						nextrow++;
+						if(nextrow == 11){
+							allnameCo4 += "\n";
+							nextrow = 0;
+						}
 					}
 					break;
 				case 5:
