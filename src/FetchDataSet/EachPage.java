@@ -227,10 +227,148 @@ public class EachPage {
 			website = "https://www.set.or.th/set/companyhighlight.do?symbol=TVO&ssoPageId=5&language=th&country=TH";
 
 		}
+		else if (pageNum == 51){
+			website = "https://www.set.or.th/set/companyhighlight.do?symbol=ABC&ssoPageId=5&language=th&country=TH";
+
+		}
+		else if (pageNum == 52){
+			website = "https://www.set.or.th/set/companyhighlight.do?symbol=AFC&ssoPageId=5&language=th&country=TH";
+
+		}
+		else if (pageNum == 53){
+			website = "https://www.set.or.th/set/companyhighlight.do?symbol=BTNC&ssoPageId=5&language=th&country=TH";
+
+		}
+		else if (pageNum == 54){
+			website = "https://www.set.or.th/set/companyhighlight.do?symbol=CPH&ssoPageId=5&language=th&country=TH";
+
+		}
+		else if (pageNum == 55){
+			website = "https://www.set.or.th/set/companyhighlight.do?symbol=CPL&ssoPageId=5&language=th&country=TH";
+
+		}
+		else if (pageNum == 56){
+			website = "https://www.set.or.th/set/companyhighlight.do?symbol=ICC&ssoPageId=5&language=th&country=TH";
+
+		}
+		else if (pageNum == 57){
+			website = "https://www.set.or.th/set/companyhighlight.do?symbol=LTX&ssoPageId=5&language=th&country=TH";
+
+		}
+		else if (pageNum == 58){
+			website = "https://www.set.or.th/set/companyhighlight.do?symbol=NC&ssoPageId=5&language=th&country=TH";
+
+		}
+		else if (pageNum == 59){
+			website = "https://www.set.or.th/set/companyhighlight.do?symbol=PAF&ssoPageId=5&language=th&country=TH";
+
+		}
+		else if (pageNum == 60){
+			website = "https://www.set.or.th/set/companyhighlight.do?symbol=PG&ssoPageId=5&language=th&country=TH";
+
+		}
+		else if (pageNum == 61){
+			website = "https://www.set.or.th/set/companyhighlight.do?symbol=PRANDA&ssoPageId=5&language=th&country=TH";
+
+		}
+		else if (pageNum == 62){
+			website = "https://www.set.or.th/set/companyhighlight.do?symbol=SABINA&ssoPageId=5&language=th&country=TH";
+
+		}
+		else if (pageNum == 63){
+			website = "https://www.set.or.th/set/companyhighlight.do?symbol=SAWANG&ssoPageId=5&language=th&country=TH";
+
+		}
+		else if (pageNum == 64){
+			website = "https://www.set.or.th/set/companyhighlight.do?symbol=SUC&ssoPageId=5&language=th&country=TH";
+
+		}
+		else if (pageNum == 65){
+			website = "https://www.set.or.th/set/companyhighlight.do?symbol=TNL&ssoPageId=5&language=th&country=TH";
+
+		}
+		else if (pageNum == 66){
+			website = "https://www.set.or.th/set/companyhighlight.do?symbol=TPCORP&ssoPageId=5&language=th&country=TH";
+
+		}
+		else if (pageNum == 67){
+			website = "https://www.set.or.th/set/companyhighlight.do?symbol=TR&ssoPageId=5&language=th&country=TH";
+
+		}
+		else if (pageNum == 68){
+			website = "https://www.set.or.th/set/companyhighlight.do?symbol=TTI&ssoPageId=5&language=th&country=TH";
+
+		}
+		else if (pageNum == 69){
+			website = "https://www.set.or.th/set/companyhighlight.do?symbol=TTL&ssoPageId=5&language=th&country=TH";
+
+		}
+		else if (pageNum == 70){
+			website = "https://www.set.or.th/set/companyhighlight.do?symbol=TTTM&ssoPageId=5&language=th&country=TH";
+
+		}
+		else if (pageNum == 71){
+			website = "https://www.set.or.th/set/companyhighlight.do?symbol=UPF&ssoPageId=5&language=th&country=TH";
+
+		}
+		else if (pageNum == 72){
+			website = "https://www.set.or.th/set/companyhighlight.do?symbol=UT&ssoPageId=5&language=th&country=TH";
+
+		}
+		else if (pageNum == 73){
+			website = "https://www.set.or.th/set/companyhighlight.do?symbol=WACOAL&ssoPageId=5&language=th&country=TH";
+
+		}
+		else if (pageNum == 74){
+			website = "https://www.set.or.th/set/companyhighlight.do?symbol=ACC&ssoPageId=5&language=th&country=TH";
+
+		}
+		else if (pageNum == 75){
+			website = "https://www.set.or.th/set/companyhighlight.do?symbol=AJA&ssoPageId=5&language=th&country=TH";
+
+		}
+		else if (pageNum == 76){
+			website = "https://www.set.or.th/set/companyhighlight.do?symbol=DTCI&ssoPageId=5&language=th&country=TH";
+
+		}
+		else if (pageNum == 77){
+			website = "https://www.set.or.th/set/companyhighlight.do?symbol=FANCY&ssoPageId=5&language=th&country=TH";
+
+		}
+		else if (pageNum == 78){
+			website = "https://www.set.or.th/set/companyhighlight.do?symbol=KYE&ssoPageId=5&language=th&country=TH";
+
+		}
+		else if (pageNum == 79){
+			website = "https://www.set.or.th/set/companyhighlight.do?symbol=L%26E&ssoPageId=5&language=th&country=TH";
+
+		}
+		else if (pageNum == 80){
+			website = "https://www.set.or.th/set/companyhighlight.do?symbol=MODERN&ssoPageId=5&language=th&country=TH";
+
+		}
+		else if (pageNum == 81){
+			website = "https://www.set.or.th/set/companyhighlight.do?symbol=OGC&ssoPageId=5&language=th&country=TH";
+
+		}
+		else if (pageNum == 82){
+			website = "https://www.set.or.th/set/companyhighlight.do?symbol=ROCK&ssoPageId=5&language=th&country=TH";
+
+		}
+		else if (pageNum == 83){
+			website = "https://www.set.or.th/set/companyhighlight.do?symbol=SIAM&ssoPageId=5&language=th&country=TH";
+
+		}
+		else if (pageNum == 84){
+			website = "https://www.set.or.th/set/companyhighlight.do?symbol=TSR&ssoPageId=5&language=th&country=TH";
+
+		}
+		
 		
 		
 		if(pageNum == 0){
 			try {
+				
 				Document doc = Jsoup.connect(website).userAgent("mozilla/17.0").get();
 				Elements temp = doc.select("table.table-info");
 				
@@ -242,7 +380,7 @@ public class EachPage {
 					names = new ArrayList<>(Arrays.asList(ele.getAllElements().first().text().split(" ")));
 					
 					System.out.println();
-					System.out.printf("%-45s"+"รายได้รวม"+" "+names.get(5)+"%-10s"+"รายได้รวม"+" "+names.get(7)+"%-10s"+"รายได้รวม"+" "+names.get(9)+"%-10s"+"รายได้รวม"+" "+names.get(11)+"%-10s"+"รายได้รวมไตรมาส1"+"%-10s"+"รายได้รวมไตรมาส2"+"%-10s"+"รายได้รวมไตรมาส3"+"%-10s"+"รายได้รวมไตรมาส4"+"%-10s"+"กำไรสุทธิ"+" "+names.get(5)+"%-10s"+"กำไรสุทธิ"+" "+names.get(7)+"%-10s"+"กำไรสุทธิ"+" "+names.get(9)+"%-10s"+"กำไรสุทธิ"+" "+names.get(11)+"%-10s"+"กำไรสุทธิไตรมาส1"+"%-10s"+"กำไรสุทธิไตรมาส2"+"%-10s"+"กำไรสุทธิไตรมาส3"+"%-10s"+"กำไรสุทธิไตรมาส4",Company,blank,blank,blank,blank,blank,blank,blank,blank,blank,blank,blank,blank,blank,blank,blank);
+					System.out.printf("%-45s"+"รายได้รวม"+" "+names.get(5)+"%-10s"+"รายได้รวม"+" "+names.get(7)+"%-10s"+"รายได้รวม"+" "+names.get(9)+"%-10s"+"รายได้รวม"+" "+names.get(11)+"%-10s"+"รายได้รวมไตรมาส1"+"%-10s"+"รายได้รวมไตรมาส2"+"%-10s"+"รายได้รวมไตรมาส3"+"%-10s"+"รายได้รวมไตรมาส4"+"%-10s"+"รายได้รวม"+" "+"งบปี 60"+"%-10s"+"กำไรสุทธิ"+" "+names.get(5)+"%-10s"+"กำไรสุทธิ"+" "+names.get(7)+"%-10s"+"กำไรสุทธิ"+" "+names.get(9)+"%-10s"+"กำไรสุทธิ"+" "+names.get(11)+"%-10s"+"กำไรสุทธิไตรมาส1"+"%-10s"+"กำไรสุทธิไตรมาส2"+"%-10s"+"กำไรสุทธิไตรมาส3"+"%-10s"+"กำไรสุทธิไตรมาส4"+"%-10s"+"กำไรสุทธิ"+" "+"งบปี 60",Company,blank,blank,blank,blank,blank,blank,blank,blank,blank,blank,blank,blank,blank,blank,blank,blank,blank);
 					System.out.println();
 					System.out.print("เกษตรและอุตสาหกรรมอาหาร >> ธุรกิจการเกษตร");
 					
@@ -254,7 +392,12 @@ public class EachPage {
 			}
 		}
 		else if (pageNum > 0){
+			
 			try {
+				if(pageNum == 21){
+					website = "https://www.set.or.th/set/companyhighlight.do?symbol=F%26D&ssoPageId=5&language=th&country=TH";
+					
+				}
 				Document doc = Jsoup.connect(website).userAgent("mozilla/17.0").get();
 				Elements temp = doc.select("table.table-info");
 				
@@ -410,12 +553,116 @@ public class EachPage {
 				else if(pageNum == 50){
 					System.out.printf("%-18s","TVO");
 				}
+				else if(pageNum == 51){
+					System.out.printf("%-18s","ABC");
+				}
+				else if(pageNum == 52){
+					System.out.printf("%-18s","AFC");
+				}
+				else if(pageNum == 53){
+					System.out.printf("%-18s","BTNC");
+				}
+				else if(pageNum == 54){
+					System.out.printf("%-18s","CPH");
+				}
+				else if(pageNum == 55){
+					System.out.printf("%-18s","CPL");
+				}
+				else if(pageNum == 56){
+					System.out.printf("%-18s","ICC");
+				}
+				else if(pageNum == 57){
+					System.out.printf("%-18s","LTX");
+				}
+				else if(pageNum == 58){
+					System.out.printf("%-18s","NC");
+				}
+				else if(pageNum == 59){
+					System.out.printf("%-18s","PAF");
+				}
+				else if(pageNum == 60){
+					System.out.printf("%-18s","PG");
+				}
+				else if(pageNum == 61){
+					System.out.printf("%-18s","PRANDA");
+				}
+				else if(pageNum == 62){
+					System.out.printf("%-18s","SABINA");
+				}
+				else if(pageNum == 63){
+					System.out.printf("%-18s","SAWANG");
+				}
+				else if(pageNum == 64){
+					System.out.printf("%-18s","SUC");
+				}
+				else if(pageNum == 65){
+					System.out.printf("%-18s","TNL");
+				}
+				else if(pageNum == 66){
+					System.out.printf("%-18s","TPCORP");
+				}
+				else if(pageNum == 67){
+					System.out.printf("%-18s","TR");
+				}
+				else if(pageNum == 68){
+					System.out.printf("%-18s","TTI");
+				}
+				else if(pageNum == 69){
+					System.out.printf("%-18s","TTL");
+				}
+				else if(pageNum == 70){
+					System.out.printf("%-18s","TTTM");
+				}
+				else if(pageNum == 71){
+					System.out.printf("%-18s","UPF");
+				}
+				else if(pageNum == 72){
+					System.out.printf("%-18s","UT");
+				}
+				else if(pageNum == 73){
+					System.out.printf("%-18s","WACOAL");
+				}
+				else if(pageNum == 74){
+					System.out.printf("%-18s","ACC");
+				}
+				else if(pageNum == 75){
+					System.out.printf("%-18s","AJA");
+				}
+				else if(pageNum == 76){
+					System.out.printf("%-18s","DTCI");
+				}
+				else if(pageNum == 77){
+					System.out.printf("%-18s","FANCY");
+				}
+				else if(pageNum == 78){
+					System.out.printf("%-18s","KYE");
+				}
+				else if(pageNum == 79){
+					System.out.printf("%-18s","L&E");
+				}
+				else if(pageNum == 80){
+					System.out.printf("%-18s","MODERN");
+				}
+				else if(pageNum == 81){
+					System.out.printf("%-18s","OGC");
+				}
+				else if(pageNum == 82){
+					System.out.printf("%-18s","ROCK");
+				}
+				else if(pageNum == 83){
+					System.out.printf("%-18s","SIAM");
+				}
+				else if(pageNum == 84){
+					System.out.printf("%-18s","TSR");
+				}
 				
 				
 				
 				for(Element ele:temp){
 					
 					names = new ArrayList<>(Arrays.asList(ele.getAllElements().first().text().split(" ")));
+					
+					
 					
 				}
 				
@@ -523,6 +770,14 @@ public class EachPage {
 		
 		if(pageNum > 0){
 			for(int i = 0 ; i < names.size(); i++){
+				if(pageNum == 21 || pageNum == 75){
+					if(pageNum ==21)
+						System.out.print("cann't pull data");
+					else if (pageNum == 75)
+						System.out.print("Cann't print all correctly");
+					
+					break;	
+				}
 				if(names.get(i).equals("รายได้รวม")){
 //					for(int j = i+1 ; j < i+6 ; j++){
 //						count++;
@@ -542,17 +797,26 @@ public class EachPage {
 							System.out.printf("%-21s",names.get(k));
 							follow = k;
 						}
-						if(names.get(11).substring(0, 7).equals("ไตรมาส1")){
-							System.out.printf("%-21s"+"%-21s"+"%-21s"+"%-21s", names.get(follow+1),dat,dat,dat);
+						if(names.get(11).substring(0, 7).equals("ไตรมาส1") || names.get(11).substring(0, 7).equals("ไตรมาส2") || names.get(11).substring(0, 7).equals("ไตรมาส3") || names.get(11).substring(0, 7).equals("ไตรมาส4") || names.get(11).substring(0, 7).equals("งบปี 60")){
+							if(names.get(11).substring(0, 7).equals("ไตรมาส1")){
+								System.out.printf("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s", names.get(follow+1),dat,dat,dat,dat);
+							}
+							else if(names.get(11).substring(0, 7).equals("ไตรมาส2")){
+								System.out.printf("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s",dat, names.get(follow+1),dat,dat,dat);
+							}
+							else if(names.get(11).substring(0, 7).equals("ไตรมาส3")){
+								System.out.printf("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s",dat, dat, names.get(follow+1),dat,dat);
+							}
+							else if(names.get(11).substring(0, 7).equals("ไตรมาส4")){
+								System.out.printf("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s",dat, dat, dat, names.get(follow+1),dat);
+							}
+							else if(names.get(11).substring(0, 7).equals("งบปี 60")){
+								System.out.printf("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s",dat, dat, dat, dat, names.get(follow+1));
+							}
 						}
-						else if(names.get(11).substring(0, 7).equals("ไตรมาส2")){
-							System.out.printf("%-21s"+"%-21s"+"%-21s"+"%-21s",dat, names.get(follow+1),dat,dat);
-						}
-						else if(names.get(11).substring(0, 7).equals("ไตรมาส3")){
-							System.out.printf("%-21s"+"%-21s"+"%-21s"+"%-21s",dat, dat, names.get(follow+1),dat);
-						}
-						else if(names.get(11).substring(0, 7).equals("ไตรมาส4")){
-							System.out.printf("%-21s"+"%-21s"+"%-21s"+"%-21s",dat, dat, dat, names.get(follow+1));
+						
+						else{
+							System.out.printf("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s",dat, dat, dat, dat, dat);
 						}
 						
 						
@@ -565,16 +829,22 @@ public class EachPage {
 							follow = k;
 						}
 						if(names.get(9).substring(0, 7).equals("ไตรมาส1")){
-							System.out.printf("%-21s"+"%-21s"+"%-21s"+"%-21s", names.get(follow+1),dat,dat,dat);
+							System.out.printf("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s", names.get(follow+1),dat,dat,dat,dat);
 						}
 						else if(names.get(9).substring(0, 7).equals("ไตรมาส2")){
-							System.out.printf("%-21s"+"%-21s"+"%-21s"+"%-21s",dat, names.get(follow+1),dat,dat);
+							System.out.printf("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s",dat, names.get(follow+1),dat,dat,dat);
 						}
 						else if(names.get(9).substring(0, 7).equals("ไตรมาส3")){
-							System.out.printf("%-21s"+"%-21s"+"%-21s"+"%-21s",dat, dat, names.get(follow+1),dat);
+							System.out.printf("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s",dat, dat, names.get(follow+1),dat,dat);
 						}
 						else if(names.get(9).substring(0, 7).equals("ไตรมาส4")){
-							System.out.printf("%-21s"+"%-21s"+"%-21s"+"%-21s",dat, dat, dat, names.get(follow+1));
+							System.out.printf("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s",dat, dat, dat, names.get(follow+1),dat);
+						}
+						else if(names.get(9).substring(0, 7).equals("งบปี 60")){
+							System.out.printf("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s",dat, dat, dat, dat, names.get(follow+1));
+						}
+						else{
+							System.out.printf("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s",dat, dat, dat, dat, dat);
 						}
 					}
 					
@@ -584,35 +854,48 @@ public class EachPage {
 							System.out.printf("%-21s",names.get(k));
 							follow = k;
 						}
-						if(names.get(7).substring(0, 7).equals("ไตรมาส1")){
-							System.out.printf("%-21s"+"%-21s"+"%-21s"+"%-21s", names.get(follow+1),dat,dat,dat);
+						if(names.get(9).substring(0, 7).equals("ไตรมาส1")){
+							System.out.printf("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s", names.get(follow+1),dat,dat,dat,dat);
 						}
-						else if(names.get(7).substring(0, 7).equals("ไตรมาส2")){
-							System.out.printf("%-21s"+"%-21s"+"%-21s"+"%-21s",dat, names.get(follow+1),dat,dat);
+						else if(names.get(9).substring(0, 7).equals("ไตรมาส2")){
+							System.out.printf("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s",dat, names.get(follow+1),dat,dat,dat);
 						}
-						else if(names.get(7).substring(0, 7).equals("ไตรมาส3")){
-							System.out.printf("%-21s"+"%-21s"+"%-21s"+"%-21s",dat, dat, names.get(follow+1),dat);
+						else if(names.get(9).substring(0, 7).equals("ไตรมาส3")){
+							System.out.printf("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s",dat, dat, names.get(follow+1),dat,dat);
 						}
-						else if(names.get(7).substring(0, 7).equals("ไตรมาส4")){
-							System.out.printf("%-21s"+"%-21s"+"%-21s"+"%-21s",dat, dat, dat, names.get(follow+1));
+						else if(names.get(9).substring(0, 7).equals("ไตรมาส4")){
+							System.out.printf("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s",dat, dat, dat, names.get(follow+1),dat);
+						}
+						else if(names.get(9).substring(0, 7).equals("งบปี 60")){
+							System.out.printf("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s",dat, dat, dat, dat, names.get(follow+1));
+						}
+						else{
+							System.out.printf("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s",dat, dat, dat, dat, dat);
 						}
 					}
+					
 					else{
 						for(int k = i+1 ; k < i+5 ; k++){
 							System.out.printf("%-21s",names.get(k));
 							follow = k;
 						}
 						if(names.get(13).substring(0, 7).equals("ไตรมาส1")){
-							System.out.printf("%-21s"+"%-21s"+"%-21s"+"%-21s", names.get(follow+1),dat,dat,dat);
+							System.out.printf("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s", names.get(follow+1),dat,dat,dat,dat);
 						}
 						else if(names.get(13).substring(0, 7).equals("ไตรมาส2")){
-							System.out.printf("%-21s"+"%-21s"+"%-21s"+"%-21s",dat, names.get(follow+1),dat,dat);
+							System.out.printf("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s",dat, names.get(follow+1),dat,dat,dat);
 						}
 						else if(names.get(13).substring(0, 7).equals("ไตรมาส3")){
-							System.out.printf("%-21s"+"%-21s"+"%-21s"+"%-21s",dat, dat, names.get(follow+1),dat);
+							System.out.printf("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s",dat, dat, names.get(follow+1),dat,dat);
 						}
 						else if(names.get(13).substring(0, 7).equals("ไตรมาส4")){
-							System.out.printf("%-21s"+"%-21s"+"%-21s"+"%-21s",dat, dat, dat, names.get(follow+1));
+							System.out.printf("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s",dat, dat, dat, names.get(follow+1),dat);
+						}
+						else if(names.get(13).substring(0, 7).equals("งบปี 60")){
+							System.out.printf("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s",dat, dat, dat, dat, names.get(follow+1));
+						}
+						else{
+							System.out.printf("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s",dat, dat, dat, dat, dat);
 						}
 					}
 					
@@ -641,16 +924,22 @@ public class EachPage {
 						}
 						
 						if(names.get(11).substring(0, 7).equals("ไตรมาส1")){
-							System.out.printf("%-21s"+"%-21s"+"%-21s"+"%-21s", names.get(follow+1),dat,dat,dat);
+							System.out.printf("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s", names.get(follow+1),dat,dat,dat,dat);
 						}
 						else if(names.get(11).substring(0, 7).equals("ไตรมาส2")){
-							System.out.printf("%-21s"+"%-21s"+"%-21s"+"%-21s",dat, names.get(follow+1),dat,dat);
+							System.out.printf("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s",dat, names.get(follow+1),dat,dat,dat);
 						}
 						else if(names.get(11).substring(0, 7).equals("ไตรมาส3")){
-							System.out.printf("%-21s"+"%-21s"+"%-21s"+"%-21s",dat, dat, names.get(follow+1),dat);
+							System.out.printf("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s",dat, dat, names.get(follow+1),dat,dat);
 						}
 						else if(names.get(11).substring(0, 7).equals("ไตรมาส4")){
-							System.out.printf("%-21s"+"%-21s"+"%-21s"+"%-21s",dat, dat, dat, names.get(follow+1));
+							System.out.printf("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s",dat, dat, dat, names.get(follow+1),dat);
+						}
+						else if(names.get(11).substring(0, 7).equals("งบปี 60")){
+							System.out.printf("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s",dat, dat, dat, dat, names.get(follow+1));
+						}
+						else{
+							System.out.printf("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s",dat, dat, dat, dat, dat);
 						}
 						
 					}
@@ -662,16 +951,22 @@ public class EachPage {
 							follow = k;
 						}
 						if(names.get(9).substring(0, 7).equals("ไตรมาส1")){
-							System.out.printf("%-21s"+"%-21s"+"%-21s"+"%-21s", names.get(follow+1),dat,dat,dat);
+							System.out.printf("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s", names.get(follow+1),dat,dat,dat,dat);
 						}
 						else if(names.get(9).substring(0, 7).equals("ไตรมาส2")){
-							System.out.printf("%-21s"+"%-21s"+"%-21s"+"%-21s",dat, names.get(follow+1),dat,dat);
+							System.out.printf("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s",dat, names.get(follow+1),dat,dat,dat);
 						}
 						else if(names.get(9).substring(0, 7).equals("ไตรมาส3")){
-							System.out.printf("%-21s"+"%-21s"+"%-21s"+"%-21s",dat, dat, names.get(follow+1),dat);
+							System.out.printf("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s",dat, dat, names.get(follow+1),dat,dat);
 						}
 						else if(names.get(9).substring(0, 7).equals("ไตรมาส4")){
-							System.out.printf("%-21s"+"%-21s"+"%-21s"+"%-21s",dat, dat, dat, names.get(follow+1));
+							System.out.printf("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s",dat, dat, dat, names.get(follow+1),dat);
+						}
+						else if(names.get(9).substring(0, 7).equals("งบปี 60")){
+							System.out.printf("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s",dat, dat, dat, dat, names.get(follow+1));
+						}
+						else{
+							System.out.printf("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s",dat, dat, dat, dat, dat);
 						}
 					}
 					
@@ -682,16 +977,22 @@ public class EachPage {
 							follow = k;
 						}
 						if(names.get(7).substring(0, 7).equals("ไตรมาส1")){
-							System.out.printf("%-21s"+"%-21s"+"%-21s"+"%-21s", names.get(follow+1),dat,dat,dat);
+							System.out.printf("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s", names.get(follow+1),dat,dat,dat,dat);
 						}
 						else if(names.get(7).substring(0, 7).equals("ไตรมาส2")){
-							System.out.printf("%-21s"+"%-21s"+"%-21s"+"%-21s",dat, names.get(follow+1),dat,dat);
+							System.out.printf("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s",dat, names.get(follow+1),dat,dat,dat);
 						}
 						else if(names.get(7).substring(0, 7).equals("ไตรมาส3")){
-							System.out.printf("%-21s"+"%-21s"+"%-21s"+"%-21s",dat, dat, names.get(follow+1),dat);
+							System.out.printf("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s",dat, dat, names.get(follow+1),dat,dat);
 						}
 						else if(names.get(7).substring(0, 7).equals("ไตรมาส4")){
-							System.out.printf("%-21s"+"%-21s"+"%-21s"+"%-21s",dat, dat, dat, names.get(follow+1));
+							System.out.printf("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s",dat, dat, dat, names.get(follow+1),dat);
+						}
+						else if(names.get(7).substring(0, 7).equals("งบปี 60")){
+							System.out.printf("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s",dat, dat, dat, dat, names.get(follow+1));
+						}
+						else{
+							System.out.printf("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s",dat, dat, dat, dat, dat);
 						}
 					}
 					else{
@@ -700,17 +1001,24 @@ public class EachPage {
 							follow = k;
 						}	
 						if(names.get(13).substring(0, 7).equals("ไตรมาส1")){
-							System.out.printf("%-21s"+"%-21s"+"%-21s"+"%-21s", names.get(follow+1),dat,dat,dat);
+							System.out.printf("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s", names.get(follow+1),dat,dat,dat,dat);
 						}
 						else if(names.get(13).substring(0, 7).equals("ไตรมาส2")){
-							System.out.printf("%-21s"+"%-21s"+"%-21s"+"%-21s",dat, names.get(follow+1),dat,dat);
+							System.out.printf("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s",dat, names.get(follow+1),dat,dat,dat);
 						}
 						else if(names.get(13).substring(0, 7).equals("ไตรมาส3")){
-							System.out.printf("%-21s"+"%-21s"+"%-21s"+"%-21s",dat, dat, names.get(follow+1),dat);
+							System.out.printf("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s",dat, dat, names.get(follow+1),dat,dat);
 						}
 						else if(names.get(13).substring(0, 7).equals("ไตรมาส4")){
-							System.out.printf("%-21s"+"%-21s"+"%-21s"+"%-21s",dat, dat, dat, names.get(follow+1));
+							System.out.printf("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s",dat, dat, dat, names.get(follow+1),dat);
 						}
+						else if(names.get(13).substring(0, 7).equals("งบปี 60")){
+							System.out.printf("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s",dat, dat, dat, dat, names.get(follow+1));
+						}
+						else{
+							System.out.printf("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s",dat, dat, dat, dat, dat);
+						}
+						
 					}
 						
 					out++;
@@ -747,14 +1055,37 @@ public class EachPage {
 				pageNum++;
 				out--;
 			}
+			System.out.println();
+			break;
+		case 2:
+			System.out.println("สินค้าอุปโภคบริโภค >> แฟชั่น");
+			for(int i = 51 ; i <= 73 ; i++){
+				start();
+				checkString();
+				pageNum++;
+				out--;
+			}
+			System.out.println();
+			break;
+			
+		case 3:
+			System.out.println("สินค้าอุปโภคบริโภค >> ของใช้ในครัวเรือนและสำนักงาน");
+			for(int i = 74 ; i <= 84 ; i++){
+				start();
+				checkString();
+				pageNum++;
+				out--;
+			}
+			System.out.println();
+			break;
+			
 			
 		}
-		
 	}
 	
 	public static void main(String[] args){
 		
-		for(int i = 0 ; i < 2 ; i++){
+		for(int i = 0 ; i < 4 ; i++){
 			Category(i);
 		}
 		
