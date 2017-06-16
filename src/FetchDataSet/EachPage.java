@@ -14,10 +14,12 @@ import org.jsoup.select.Elements;
 
 public class EachPage {
 	
-	static int pageNum = 0;
+	static int pageNum = 0, webNum = 0;
 	static int count = 0, out = 0, follow = 0;
-	static String Company = "บริษัท";
+	static String Company = "บริษัท", Companyweb = "";
 	static String blank = "",dat = "-",website ="";
+	static String[] Vehi = {"AH", "APCS","BAT-3K", "CWT", "EASON", "GYT", "HFT", "IHL", "IRC", "PCSGH", "SAT", "SPG", "STANLY", "TKT", "TNPC", "TRU", "TSC", "YNP"};
+	static ArrayList<String> nameWeb = new ArrayList<String>();
 	static ArrayList<String> names;
 	
 	
@@ -363,6 +365,286 @@ public class EachPage {
 			website = "https://www.set.or.th/set/companyhighlight.do?symbol=TSR&ssoPageId=5&language=th&country=TH";
 
 		}
+		else if (pageNum == 85){
+			website = "https://www.set.or.th/set/companyhighlight.do?symbol=DSGT&ssoPageId=5&language=th&country=TH";
+
+		}
+		else if (pageNum == 86){
+			website = "https://www.set.or.th/set/companyhighlight.do?symbol=JCT&ssoPageId=5&language=th&country=TH";
+
+		}
+		else if (pageNum == 87){
+			website = "https://www.set.or.th/set/companyhighlight.do?symbol=OCC&ssoPageId=5&language=th&country=TH";
+
+		}
+		else if (pageNum == 88){
+			website = "https://www.set.or.th/set/companyhighlight.do?symbol=S+%26+J&ssoPageId=5&language=th&country=TH";
+
+		}
+		else if (pageNum == 89){
+			website = "https://www.set.or.th/set/companyhighlight.do?symbol=STHAI&ssoPageId=5&language=th&country=TH";
+
+		}
+		else if (pageNum == 90){
+			website = "https://www.set.or.th/set/companyhighlight.do?symbol=TNR&ssoPageId=5&language=th&country=TH";
+
+		}
+		else if (pageNum == 91){
+			website = "https://www.set.or.th/set/companyhighlight.do?symbol=TOG&ssoPageId=5&language=th&country=TH";
+
+		}
+		else if (pageNum == 92){
+			website = "https://www.set.or.th/set/companyhighlight.do?symbol=BAY&ssoPageId=5&language=th&country=TH";
+
+		}
+		else if (pageNum == 93){
+			website = "https://www.set.or.th/set/companyhighlight.do?symbol=BBL&ssoPageId=5&language=th&country=TH";
+
+		}
+		else if (pageNum == 94){
+			website = "https://www.set.or.th/set/companyhighlight.do?symbol=CIMBT&ssoPageId=5&language=th&country=TH";
+
+		}
+		else if (pageNum == 95){
+			website = "https://www.set.or.th/set/companyhighlight.do?symbol=KBANK&ssoPageId=5&language=th&country=TH";
+
+		}
+		else if (pageNum == 96){
+			website = "https://www.set.or.th/set/companyhighlight.do?symbol=KKP&ssoPageId=5&language=th&country=TH";
+
+		}
+		else if (pageNum == 97){
+			website = "https://www.set.or.th/set/companyhighlight.do?symbol=KTB&ssoPageId=5&language=th&country=TH";
+
+		}
+		else if (pageNum == 98){
+			website = "https://www.set.or.th/set/companyhighlight.do?symbol=LHBANK&ssoPageId=5&language=th&country=TH";
+
+		}
+		else if (pageNum == 99){
+			website = "https://www.set.or.th/set/companyhighlight.do?symbol=SCB&ssoPageId=5&language=th&country=TH";
+
+		}
+		else if (pageNum == 100){
+			website = "https://www.set.or.th/set/companyhighlight.do?symbol=TCAP&ssoPageId=5&language=th&country=TH";
+
+		}
+		else if (pageNum == 101){
+			website = "https://www.set.or.th/set/companyhighlight.do?symbol=TISCO&ssoPageId=5&language=th&country=TH";
+
+		}
+		else if (pageNum == 102){
+			website = "https://www.set.or.th/set/companyhighlight.do?symbol=TMB&ssoPageId=5&language=th&country=TH";
+
+		}
+		else if (pageNum == 103){
+			website = "https://www.set.or.th/set/companyhighlight.do?symbol=AEC&ssoPageId=5&language=th&country=TH";
+
+		}
+		else if (pageNum == 104){
+			website = "https://www.set.or.th/set/companyhighlight.do?symbol=AEONTS&ssoPageId=5&language=th&country=TH";
+
+		}
+		else if (pageNum == 105){
+			website = "https://www.set.or.th/set/companyhighlight.do?symbol=AMANAH&ssoPageId=5&language=th&country=TH";
+
+		}
+		else if (pageNum == 106){
+			website = "https://www.set.or.th/set/companyhighlight.do?symbol=ASAP&ssoPageId=5&language=th&country=TH";
+
+		}
+		else if (pageNum == 107){
+			website = "https://www.set.or.th/set/companyhighlight.do?symbol=ASK&ssoPageId=5&language=th&country=TH";
+
+		}
+		else if (pageNum == 108){
+			website = "https://www.set.or.th/set/companyhighlight.do?symbol=ASP&ssoPageId=5&language=th&country=TH";
+
+		}
+		else if (pageNum == 109){
+			website = "https://www.set.or.th/set/companyhighlight.do?symbol=BFIT&ssoPageId=5&language=th&country=TH";
+
+		}
+		else if (pageNum == 110){
+			website = "https://www.set.or.th/set/companyhighlight.do?symbol=CGH&ssoPageId=5&language=th&country=TH";
+
+		}
+		else if (pageNum == 111){
+			website = "https://www.set.or.th/set/companyhighlight.do?symbol=CNS&ssoPageId=5&language=th&country=TH";
+
+		}
+		else if (pageNum == 112){
+			website = "https://www.set.or.th/set/companyhighlight.do?symbol=ECL&ssoPageId=5&language=th&country=TH";
+
+		}
+		else if (pageNum == 113){
+			website = "https://www.set.or.th/set/companyhighlight.do?symbol=FNS&ssoPageId=5&language=th&country=TH";
+
+		}
+		else if (pageNum == 114){
+			website = "https://www.set.or.th/set/companyhighlight.do?symbol=FSS&ssoPageId=5&language=th&country=TH";
+
+		}
+		else if (pageNum == 115){
+			website = "https://www.set.or.th/set/companyhighlight.do?symbol=GBX&ssoPageId=5&language=th&country=TH";
+
+		}
+		else if (pageNum == 116){
+			website = "https://www.set.or.th/set/companyhighlight.do?symbol=GL&ssoPageId=5&language=th&country=TH";
+
+		}
+		else if (pageNum == 117){
+			website = "https://www.set.or.th/set/companyhighlight.do?symbol=IFS&ssoPageId=5&language=th&country=TH";
+
+		}
+		else if (pageNum == 118){
+			website = "https://www.set.or.th/set/companyhighlight.do?symbol=JMT&ssoPageId=5&language=th&country=TH";
+
+		}
+		else if (pageNum == 119){
+			website = "https://www.set.or.th/set/companyhighlight.do?symbol=KCAR&ssoPageId=5&language=th&country=TH";
+
+		}
+		else if (pageNum == 120){
+			website = "https://www.set.or.th/set/companyhighlight.do?symbol=KGI&ssoPageId=5&language=th&country=TH";
+
+		}
+		else if (pageNum == 121){
+			website = "https://www.set.or.th/set/companyhighlight.do?symbol=KTC&ssoPageId=5&language=th&country=TH";
+
+		}
+		
+		else if (pageNum == 122){
+			website = "https://www.set.or.th/set/companyhighlight.do?symbol=MBKET&ssoPageId=5&language=th&country=TH";
+
+		}
+		else if (pageNum == 123){
+			website = "https://www.set.or.th/set/companyhighlight.do?symbol=MFC&ssoPageId=5&language=th&country=TH";
+
+		}
+		else if (pageNum == 124){
+			website = "https://www.set.or.th/set/companyhighlight.do?symbol=ML&ssoPageId=5&language=th&country=TH";
+
+		}
+		else if (pageNum == 125){
+			website = "https://www.set.or.th/set/companyhighlight.do?symbol=MTLS&ssoPageId=5&language=th&country=TH";
+
+		}
+		else if (pageNum == 126){
+			website = "https://www.set.or.th/set/companyhighlight.do?symbol=PE&ssoPageId=5&language=th&country=TH";
+
+		}
+		else if (pageNum == 127){
+			website = "https://www.set.or.th/set/companyhighlight.do?symbol=PL&ssoPageId=5&language=th&country=TH";
+
+		}
+		else if (pageNum == 128){
+			website = "https://www.set.or.th/set/companyhighlight.do?symbol=S11&ssoPageId=5&language=th&country=TH";
+
+		}
+		else if (pageNum == 129){
+			website = "https://www.set.or.th/set/companyhighlight.do?symbol=SAWAD&ssoPageId=5&language=th&country=TH";
+
+		}
+		else if (pageNum == 130){
+			website = "https://www.set.or.th/set/companyhighlight.do?symbol=THANI&ssoPageId=5&language=th&country=TH";
+
+		}
+		else if (pageNum == 131){
+			website = "https://www.set.or.th/set/companyhighlight.do?symbol=TK&ssoPageId=5&language=th&country=TH";
+
+		}
+		else if (pageNum == 132){
+			website = "https://www.set.or.th/set/companyhighlight.do?symbol=TNITY&ssoPageId=5&language=th&country=TH";
+
+		}
+		else if (pageNum == 133){
+			website = "https://www.set.or.th/set/companyhighlight.do?symbol=UOBKH&ssoPageId=5&language=th&country=TH";
+
+		}
+		else if (pageNum == 134){
+			website = "https://www.set.or.th/set/companyhighlight.do?symbol=ZMICO&ssoPageId=5&language=th&country=TH";
+
+		}
+		else if (pageNum == 135){
+			website = "https://www.set.or.th/set/companyhighlight.do?symbol=AYUD&ssoPageId=5&language=th&country=TH";
+
+		}
+		
+		else if (pageNum == 136){
+			website = "https://www.set.or.th/set/companyhighlight.do?symbol=BKI&ssoPageId=5&language=th&country=TH";
+
+		}
+		else if (pageNum == 137){
+			website = "https://www.set.or.th/set/companyhighlight.do?symbol=BLA&ssoPageId=5&language=th&country=TH";
+
+		}
+		else if (pageNum == 138){
+			website = "https://www.set.or.th/set/companyhighlight.do?symbol=BUI&ssoPageId=5&language=th&country=TH";
+
+		}
+		else if (pageNum == 139){
+			website = "https://www.set.or.th/set/companyhighlight.do?symbol=CHARAN&ssoPageId=5&language=th&country=TH";
+
+		}
+		else if (pageNum == 140){
+			website = "https://www.set.or.th/set/companyhighlight.do?symbol=INSURE&ssoPageId=5&language=th&country=TH";
+
+		}
+		else if (pageNum == 141){
+			website = "https://www.set.or.th/set/companyhighlight.do?symbol=MTI&ssoPageId=5&language=th&country=TH";
+
+		}
+		else if (pageNum == 142){
+			website = "https://www.set.or.th/set/companyhighlight.do?symbol=NKI&ssoPageId=5&language=th&country=TH";
+
+		}
+		else if (pageNum == 143){
+			website = "https://www.set.or.th/set/companyhighlight.do?symbol=NSI&ssoPageId=5&language=th&country=TH";
+
+		}
+		else if (pageNum == 144){
+			website = "https://www.set.or.th/set/companyhighlight.do?symbol=SMK&ssoPageId=5&language=th&country=TH";
+
+		}
+		else if (pageNum == 145){
+			website = "https://www.set.or.th/set/companyhighlight.do?symbol=THRE&ssoPageId=5&language=th&country=TH";
+
+		}
+		else if (pageNum == 146){
+			website = "https://www.set.or.th/set/companyhighlight.do?symbol=THREL&ssoPageId=5&language=th&country=TH";
+
+		}
+		else if (pageNum == 147){
+			website = "https://www.set.or.th/set/companyhighlight.do?symbol=TIC&ssoPageId=5&language=th&country=TH";
+
+		}
+		else if (pageNum == 148){
+			website = "https://www.set.or.th/set/companyhighlight.do?symbol=TIP&ssoPageId=5&language=th&country=TH";
+
+		}
+		else if (pageNum == 149){
+			website = "https://www.set.or.th/set/companyhighlight.do?symbol=TSI&ssoPageId=5&language=th&country=TH";
+
+		}
+		else if (pageNum == 150){
+			website = "https://www.set.or.th/set/companyhighlight.do?symbol=TVI&ssoPageId=5&language=th&country=TH";
+
+		}
+		else if (pageNum > 150 && pageNum <= 168){
+			
+			for(int i = 0 ; i < Vehi.length ; i++){
+				nameWeb.add(Vehi[i]);
+			}
+			Companyweb = nameWeb.get(webNum);
+			website = "https://www.set.or.th/set/companyhighlight.do?symbol="+Companyweb+"&ssoPageId=5&language=th&country=TH";
+			webNum++;
+		
+		
+		}
+		
+		
+		
 		
 		
 		
@@ -655,6 +937,209 @@ public class EachPage {
 				else if(pageNum == 84){
 					System.out.printf("%-18s","TSR");
 				}
+				else if(pageNum == 85){
+					System.out.printf("%-18s","DSGT");
+				}
+				else if(pageNum == 86){
+					System.out.printf("%-18s","JCT");
+				}
+				else if(pageNum == 87){
+					System.out.printf("%-18s","OCC");
+				}
+				else if(pageNum == 88){
+					System.out.printf("%-18s","S & J");
+				}
+				else if(pageNum == 89){
+					System.out.printf("%-18s","STHAI");
+				}
+				else if(pageNum == 90){
+					System.out.printf("%-18s","TNR");
+				}
+				else if(pageNum == 91){
+					System.out.printf("%-18s","TOG");
+				}
+				else if(pageNum == 92){
+					System.out.printf("%-18s","BAY");
+				}
+				else if(pageNum == 93){
+					System.out.printf("%-18s","BBL");
+				}
+				else if(pageNum == 94){
+					System.out.printf("%-18s","CIMBT");
+				}
+				else if(pageNum == 95){
+					System.out.printf("%-18s","KBANK");
+				}
+				else if(pageNum == 96){
+					System.out.printf("%-18s","KKP");
+				}
+				else if(pageNum == 97){
+					System.out.printf("%-18s","KTB");
+				}
+				else if(pageNum == 98){
+					System.out.printf("%-18s","LHBANK");
+				}
+				else if(pageNum == 99){
+					System.out.printf("%-18s","SCB");
+				}
+				else if(pageNum == 100){
+					System.out.printf("%-18s","TCAP");
+				}
+				else if(pageNum == 101){
+					System.out.printf("%-18s","TISCO");
+				}
+				else if(pageNum == 102){
+					System.out.printf("%-18s","TMB");
+				}
+				else if(pageNum == 103){
+					System.out.printf("%-18s","AEC");
+				}
+				else if(pageNum == 104){
+					System.out.printf("%-18s","AEONTS");
+				}
+				else if(pageNum == 105){
+					System.out.printf("%-18s","AMANAH");
+				}
+				else if(pageNum == 106){
+					System.out.printf("%-18s","ASAP");
+				}
+				else if(pageNum == 107){
+					System.out.printf("%-18s","ASK");
+				}
+				else if(pageNum == 108){
+					System.out.printf("%-18s","ASP");
+				}
+				else if(pageNum == 109){
+					System.out.printf("%-18s","BFIT");
+				}
+				else if(pageNum == 110){
+					System.out.printf("%-18s","CGH");
+				}
+				else if(pageNum == 111){
+					System.out.printf("%-18s","CNS");
+				}
+				else if(pageNum == 112){
+					System.out.printf("%-18s","ECL");
+				}
+				else if(pageNum == 113){
+					System.out.printf("%-18s","FNS");
+				}
+				else if(pageNum == 114){
+					System.out.printf("%-18s","FSS");
+				}
+				else if(pageNum == 115){
+					System.out.printf("%-18s","GBX");
+				}
+				else if(pageNum == 116){
+					System.out.printf("%-18s","GL");
+				}
+				else if(pageNum == 117){
+					System.out.printf("%-18s","IFS");
+				}
+				else if(pageNum == 118){
+					System.out.printf("%-18s","JMT");
+				}
+				else if(pageNum == 119){
+					System.out.printf("%-18s","KCAR");
+				}
+				else if(pageNum == 120){
+					System.out.printf("%-18s","KGI");
+				}
+				else if(pageNum == 121){
+					System.out.printf("%-18s","KTC");
+				}
+				else if(pageNum == 122){
+					System.out.printf("%-18s","MBKET");
+				}
+				else if(pageNum == 123){
+					System.out.printf("%-18s","MFC");
+				}
+				else if(pageNum == 124){
+					System.out.printf("%-18s","ML");
+				}
+				else if(pageNum == 125){
+					System.out.printf("%-18s","MTLS");
+				}
+				else if(pageNum == 126){
+					System.out.printf("%-18s","PE");
+				}
+				else if(pageNum == 127){
+					System.out.printf("%-18s","PL");
+				}
+				else if(pageNum == 128){
+					System.out.printf("%-18s","S11");
+				}
+				else if(pageNum == 129){
+					System.out.printf("%-18s","SAWAD");
+				}
+				else if(pageNum == 130){
+					System.out.printf("%-18s","THANI");
+				}
+				else if(pageNum == 131){
+					System.out.printf("%-18s","TK");
+				}
+				else if(pageNum == 132){
+					System.out.printf("%-18s","TNITY");
+				}
+				else if(pageNum == 133){
+					System.out.printf("%-18s","UOBKH");
+				}
+				else if(pageNum == 134){
+					System.out.printf("%-18s","ZMICO");
+				}
+				else if(pageNum == 135){
+					System.out.printf("%-18s","AYUD");
+				}
+				else if(pageNum == 136){
+					System.out.printf("%-18s","BKI");
+				}
+				else if(pageNum == 137){
+					System.out.printf("%-18s","BLA");
+				}
+				else if(pageNum == 138){
+					System.out.printf("%-18s","BUI");
+				}
+				else if(pageNum == 139){
+					System.out.printf("%-18s","CHARAN");
+				}
+				else if(pageNum == 140){
+					System.out.printf("%-18s","INSURE");
+				}
+				else if(pageNum == 141){
+					System.out.printf("%-18s","MTI");
+				}
+				else if(pageNum == 142){
+					System.out.printf("%-18s","NKI");
+				}
+				else if(pageNum == 143){
+					System.out.printf("%-18s","NSI");
+				}
+				else if(pageNum == 144){
+					System.out.printf("%-18s","SMK");
+				}
+				else if(pageNum == 145){
+					System.out.printf("%-18s","THRE");
+				}
+				else if(pageNum == 146){
+					System.out.printf("%-18s","THREL");
+				}
+				else if(pageNum == 147){
+					System.out.printf("%-18s","TIC");
+				}
+				else if(pageNum == 148){
+					System.out.printf("%-18s","TIP");
+				}
+				else if(pageNum == 149){
+					System.out.printf("%-18s","TSI");
+				}
+				else if(pageNum == 150){
+					System.out.printf("%-18s","TVI");
+				}
+				else if (pageNum > 150 && pageNum <= 168){
+					System.out.printf("%-18s",Companyweb);
+				}
+				
+				
 				
 				
 				
@@ -770,8 +1255,8 @@ public class EachPage {
 		
 		if(pageNum > 0){
 			for(int i = 0 ; i < names.size(); i++){
-				if(pageNum == 21 || pageNum == 75){
-					if(pageNum ==21)
+				if(pageNum == 21 || pageNum == 75 || pageNum == 88){
+					if(pageNum == 21 || pageNum == 88)
 						System.out.print("cann't pull data");
 					else if (pageNum == 75)
 						System.out.print("Cann't print all correctly");
@@ -1045,10 +1530,11 @@ public class EachPage {
 				out--;
 			}
 			System.out.println();
+			System.out.println();
 			break;
 			
 		case 1:
-			System.out.println("เกษตรและอุตสาหกรรมอาหาร >> อาหารและเครื่องดื่ม");
+			System.out.print("เกษตรและอุตสาหกรรมอาหาร >> อาหารและเครื่องดื่ม");
 			for(int i = 12 ; i <= 50 ; i++){
 				start();
 				checkString();
@@ -1056,9 +1542,10 @@ public class EachPage {
 				out--;
 			}
 			System.out.println();
+			System.out.println();
 			break;
 		case 2:
-			System.out.println("สินค้าอุปโภคบริโภค >> แฟชั่น");
+			System.out.print("สินค้าอุปโภคบริโภค >> แฟชั่น");
 			for(int i = 51 ; i <= 73 ; i++){
 				start();
 				checkString();
@@ -1066,16 +1553,79 @@ public class EachPage {
 				out--;
 			}
 			System.out.println();
+			System.out.println();
 			break;
 			
 		case 3:
-			System.out.println("สินค้าอุปโภคบริโภค >> ของใช้ในครัวเรือนและสำนักงาน");
+			System.out.print("สินค้าอุปโภคบริโภค >> ของใช้ในครัวเรือนและสำนักงาน");
 			for(int i = 74 ; i <= 84 ; i++){
 				start();
 				checkString();
 				pageNum++;
 				out--;
 			}
+			System.out.println();
+			System.out.println();
+			break;
+			
+		case 4:
+			System.out.print("สินค้าอุปโภคบริโภค >> ของใช้ส่วนตัวและเวชภัณฑ์");
+			for(int i = 85 ; i <= 91 ; i++){
+				start();
+				checkString();
+				pageNum++;
+				out--;
+			}
+			System.out.println();
+			System.out.println();
+			break;
+			
+		case 5:
+			System.out.print("ธุรกิจการเงิน >> ธนาคาร");
+			for(int i = 92 ; i <= 102 ; i++){
+				start();
+				checkString();
+				pageNum++;
+				out--;
+			}
+			System.out.println();
+			System.out.println();
+			break;
+			
+			
+		case 6:
+			System.out.print("ธุรกิจการเงิน >> เงินทุนและหลักทรัพย์");
+			for(int i = 103 ; i <= 134 ; i++){
+				start();
+				checkString();
+				pageNum++;
+				out--;
+			}
+			System.out.println();
+			System.out.println();
+			break;
+		
+		case 7:
+			System.out.print("ธุรกิจการเงิน >> ประกันภัยและประกันชีวิต");
+			for(int i = 135 ; i <= 150 ; i++){
+				start();
+				checkString();
+				pageNum++;
+				out--;
+			}
+			System.out.println();
+			System.out.println();
+			break;
+		
+		case 8:
+			System.out.print("สินค้าอุตสาหกรรม >> ยานยนต์");
+			for(int i = 151 ; i <= 168 ; i++){
+				start();
+				checkString();
+				pageNum++;
+				out--;
+			}
+			System.out.println();
 			System.out.println();
 			break;
 			
@@ -1085,7 +1635,7 @@ public class EachPage {
 	
 	public static void main(String[] args){
 		
-		for(int i = 0 ; i < 4 ; i++){
+		for(int i = 0 ; i < 9 ; i++){
 			Category(i);
 		}
 		
