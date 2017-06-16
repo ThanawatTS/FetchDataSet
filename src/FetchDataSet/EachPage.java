@@ -19,6 +19,12 @@ public class EachPage {
 	static String Company = "บริษัท", Companyweb = "";
 	static String blank = "",dat = "-",website ="";
 	static String[] Vehi = {"AH", "APCS","BAT-3K", "CWT", "EASON", "GYT", "HFT", "IHL", "IRC", "PCSGH", "SAT", "SPG", "STANLY", "TKT", "TNPC", "TRU", "TSC", "YNP"};
+	static String[] FacAndMach = {"ALLA", "ASEFA", "CRANE", "CTW", "FMT", "KKC", "PK", "SNC", "TCJ", "VARO"};
+	static String[] PaperAndPrint = {"UTP"};
+	static String[] PitoAndChemi = {"GC", "GGC", "GIFT", "IVL", "PATO", "PMTA", "PTTGC", "SUTHA", "TCB", "TCCC", "TPA", "UP", "VNT", "WG", "YCI" };
+	static String[] Container = {"AJ", "ALUCON", "CSC", "NEP", "NPP", "PTL", "SITHAI", "SLP", "SMPC", "SPACK", "TCOAT", "TFI", "THIP", "TMD", "TOPP","TPBI","TPP"};
+	static String[] Steel = {"AMC", "BSBM", "CEN", "CITY", "CSP", "GJS", "GSTEL", "INOX", "LHK", "MAX", "MCS", "MILL", "PAP", "PERM", "RICH", "SAM", "SMIT", "SSI", "SSSC", "TGPRO", "THE", "TIW", "TMT", "TSTH", "TUCC", "TWP", "TYCN"};
+	static String[] ConstructionMaterial = {"CCP", "DCC", "DCON", "DRT", "EPG", "GEL", "PPP", "Q-CON", "RCI", "SCC", "SCCC", "SCP", "TASCO", "TCMC", "TGCI", "TPIPL", "UMI", "VNG", "WIIK"};
 	static ArrayList<String> nameWeb = new ArrayList<String>();
 	static ArrayList<String> names;
 	
@@ -642,6 +648,57 @@ public class EachPage {
 		
 		
 		}
+		else if (pageNum > 168 && pageNum <= 178){
+
+			for(int i = 0 ; i < FacAndMach.length ; i++){
+				nameWeb.add(FacAndMach[i]);
+			}
+			Companyweb = nameWeb.get(webNum);
+			website = "https://www.set.or.th/set/companyhighlight.do?symbol="+Companyweb+"&ssoPageId=5&language=th&country=TH";
+			webNum++;
+
+
+		}
+		else if (pageNum > 178 && pageNum <= 179){
+			for(int i = 0 ; i < PaperAndPrint.length ; i++){
+				nameWeb.add(PaperAndPrint[i]);
+			}
+			Companyweb = nameWeb.get(webNum);
+			website = "https://www.set.or.th/set/companyhighlight.do?symbol="+Companyweb+"&ssoPageId=5&language=th&country=TH";
+			webNum++;
+		}
+		else if (pageNum > 179 && pageNum <= 194){
+			for(int i = 0 ; i < PitoAndChemi.length ; i++){
+				nameWeb.add(PitoAndChemi[i]);
+			}
+			Companyweb = nameWeb.get(webNum);
+			website = "https://www.set.or.th/set/companyhighlight.do?symbol="+Companyweb+"&ssoPageId=5&language=th&country=TH";
+			webNum++;
+		}
+		else if (pageNum > 194 && pageNum <= 211){
+			for(int i = 0 ; i < Container.length ; i++){
+				nameWeb.add(Container[i]);
+			}
+			Companyweb = nameWeb.get(webNum);
+			website = "https://www.set.or.th/set/companyhighlight.do?symbol="+Companyweb+"&ssoPageId=5&language=th&country=TH";
+			webNum++;
+		}
+		else if (pageNum > 211 && pageNum <= 238){
+			for(int i = 0 ; i < Steel.length ; i++){
+				nameWeb.add(Steel[i]);
+			}
+			Companyweb = nameWeb.get(webNum);
+			website = "https://www.set.or.th/set/companyhighlight.do?symbol="+Companyweb+"&ssoPageId=5&language=th&country=TH";
+			webNum++;
+		}
+		else if (pageNum > 238 && pageNum <= 257){
+			for(int i = 0 ; i < ConstructionMaterial.length ; i++){
+				nameWeb.add(ConstructionMaterial[i]);
+			}
+			Companyweb = nameWeb.get(webNum);
+			website = "https://www.set.or.th/set/companyhighlight.do?symbol="+Companyweb+"&ssoPageId=5&language=th&country=TH";
+			webNum++;
+		}
 		
 		
 		
@@ -1138,6 +1195,24 @@ public class EachPage {
 				else if (pageNum > 150 && pageNum <= 168){
 					System.out.printf("%-18s",Companyweb);
 				}
+				else if (pageNum > 168 && pageNum <= 178){
+					System.out.printf("%-18s", Companyweb);
+				}
+				else if (pageNum > 178 && pageNum <= 179){
+					System.out.printf("%-18s", Companyweb);
+				}
+				else if (pageNum > 179 && pageNum <= 194){
+					System.out.printf("%-18s", Companyweb);
+				}
+				else if (pageNum > 194 && pageNum <= 211){
+					System.out.printf("%-18s", Companyweb);
+				}
+				else if (pageNum > 211 && pageNum <= 238){
+					System.out.printf("%-18s", Companyweb);
+				}
+				else if (pageNum > 238 && pageNum <= 257){
+					System.out.printf("%-18s", Companyweb);
+				}
 				
 				
 				
@@ -1255,11 +1330,13 @@ public class EachPage {
 		
 		if(pageNum > 0){
 			for(int i = 0 ; i < names.size(); i++){
-				if(pageNum == 21 || pageNum == 75 || pageNum == 88){
+				if(pageNum == 21 || pageNum == 75 || pageNum == 88 || pageNum == 181 || pageNum == 236){
 					if(pageNum == 21 || pageNum == 88)
 						System.out.print("cann't pull data");
 					else if (pageNum == 75)
 						System.out.print("Cann't print all correctly");
+					else if (pageNum == 181 || pageNum == 236)
+						System.out.print("Didn't have any information yet");
 					
 					break;	
 				}
@@ -1334,24 +1411,49 @@ public class EachPage {
 					}
 					
 					else if (names.get(5).substring(2).equals("ปี 59")){
-						System.out.printf("%-21s"+"%-21s"+"%21s",dat,dat,dat);
+						System.out.printf("%-21s"+"%-21s"+"%-21s",dat,dat,dat);
 						for(int k = i+1 ; k < i+2 ; k++){
 							System.out.printf("%-21s",names.get(k));
 							follow = k;
 						}
-						if(names.get(9).substring(0, 7).equals("ไตรมาส1")){
+						if(names.get(7).substring(0, 7).equals("ไตรมาส1")){
 							System.out.printf("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s", names.get(follow+1),dat,dat,dat,dat);
 						}
-						else if(names.get(9).substring(0, 7).equals("ไตรมาส2")){
+						else if(names.get(7).substring(0, 7).equals("ไตรมาส2")){
 							System.out.printf("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s",dat, names.get(follow+1),dat,dat,dat);
 						}
-						else if(names.get(9).substring(0, 7).equals("ไตรมาส3")){
+						else if(names.get(7).substring(0, 7).equals("ไตรมาส3")){
 							System.out.printf("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s",dat, dat, names.get(follow+1),dat,dat);
 						}
-						else if(names.get(9).substring(0, 7).equals("ไตรมาส4")){
+						else if(names.get(7).substring(0, 7).equals("ไตรมาส4")){
 							System.out.printf("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s",dat, dat, dat, names.get(follow+1),dat);
 						}
-						else if(names.get(9).substring(0, 7).equals("งบปี 60")){
+						else if(names.get(7).substring(0, 7).equals("งบปี 60")){
+							System.out.printf("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s",dat, dat, dat, dat, names.get(follow+1));
+						}
+						else{
+							System.out.printf("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s",dat, dat, dat, dat, dat);
+						}
+					}
+					else if (names.get(5).substring(0,7).equals("ไตรมาส1")){
+						System.out.printf("%-21s"+"%-21s"+"%-21s"+"%-21s",dat, dat,dat,dat);
+						for(int k = i+1 ; k <= i+1 ; k++){
+							System.out.printf("%-21s",names.get(k));
+							follow = k;
+						}
+						if(names.get(7).substring(0, 7).equals("ไตรมาส1")){
+							System.out.printf("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s", names.get(follow+1),dat,dat,dat,dat);
+						}
+						else if(names.get(7).substring(0, 7).equals("ไตรมาส2")){
+							System.out.printf("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s",dat, names.get(follow+1),dat,dat,dat);
+						}
+						else if(names.get(7).substring(0, 7).equals("ไตรมาส3")){
+							System.out.printf("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s",dat, dat, names.get(follow+1),dat,dat);
+						}
+						else if(names.get(7).substring(0, 7).equals("ไตรมาส4")){
+							System.out.printf("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s",dat, dat, dat, names.get(follow+1),dat);
+						}
+						else if(names.get(7).substring(0, 7).equals("งบปี 60")){
 							System.out.printf("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s",dat, dat, dat, dat, names.get(follow+1));
 						}
 						else{
@@ -1364,7 +1466,10 @@ public class EachPage {
 							System.out.printf("%-21s",names.get(k));
 							follow = k;
 						}
-						if(names.get(13).substring(0, 7).equals("ไตรมาส1")){
+						if(names.get(14).equals("บัญชีทางการเงินที่สำคัญ")){
+							
+						}
+						else if(names.get(13).substring(0, 7).equals("ไตรมาส1")){
 							System.out.printf("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s", names.get(follow+1),dat,dat,dat,dat);
 						}
 						else if(names.get(13).substring(0, 7).equals("ไตรมาส2")){
@@ -1480,12 +1585,41 @@ public class EachPage {
 							System.out.printf("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s",dat, dat, dat, dat, dat);
 						}
 					}
+					else if (names.get(5).substring(0,7).equals("ไตรมาส1")){
+						System.out.printf("%-21s"+"%-21s"+"%-21s"+"%-21s",dat, dat,dat,dat);
+						for(int k = i+1 ; k <= i+1 ; k++){
+							System.out.printf("%-21s",names.get(k));
+							follow = k;
+						}
+						if(names.get(7).substring(0, 7).equals("ไตรมาส1")){
+							System.out.printf("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s", names.get(follow+1),dat,dat,dat,dat);
+						}
+						else if(names.get(7).substring(0, 7).equals("ไตรมาส2")){
+							System.out.printf("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s",dat, names.get(follow+1),dat,dat,dat);
+						}
+						else if(names.get(7).substring(0, 7).equals("ไตรมาส3")){
+							System.out.printf("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s",dat, dat, names.get(follow+1),dat,dat);
+						}
+						else if(names.get(7).substring(0, 7).equals("ไตรมาส4")){
+							System.out.printf("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s",dat, dat, dat, names.get(follow+1),dat);
+						}
+						else if(names.get(7).substring(0, 7).equals("งบปี 60")){
+							System.out.printf("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s",dat, dat, dat, dat, names.get(follow+1));
+						}
+						else{
+							System.out.printf("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s",dat, dat, dat, dat, dat);
+						}
+					}
 					else{
 						for(int k = i+1 ; k < i+5 ; k++){
 							System.out.printf("%-21s",names.get(k));
 							follow = k;
 						}	
-						if(names.get(13).substring(0, 7).equals("ไตรมาส1")){
+
+						if(names.get(14).equals("บัญชีทางการเงินที่สำคัญ")){
+
+						}
+						else if(names.get(13).substring(0, 7).equals("ไตรมาส1")){
 							System.out.printf("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s", names.get(follow+1),dat,dat,dat,dat);
 						}
 						else if(names.get(13).substring(0, 7).equals("ไตรมาส2")){
@@ -1627,15 +1761,98 @@ public class EachPage {
 			}
 			System.out.println();
 			System.out.println();
+			webNum=0;
+			nameWeb.clear();
 			break;
 			
+		case 9:
+			System.out.print("สินค้าอุตสาหกรรม >> วัสดุอุตสาหกรรมและเครื่องจักร");
+			for(int i = 169 ; i <= 178 ; i++){
+				start();
+				checkString();
+				pageNum++;
+				out--;
+			}
+			System.out.println();
+			System.out.println();
+			webNum=0;
+			nameWeb.clear();
+			break;
+			
+		case 10:
+			System.out.print("สินค้าอุตสาหกรรม >> กระดาษและวัสดุการพิมพ์");
+			for(int i = 179 ; i <= 179 ; i++){
+				start();
+				checkString();
+				pageNum++;
+				out--;
+			}
+			System.out.println();
+			System.out.println();
+			webNum=0;
+			nameWeb.clear();
+			break;
+			
+		case 11:
+			System.out.print("สินค้าอุตสาหกรรม >> ปิโตรเคมีและเคมีภัณฑ์");
+			for(int i = 180 ; i <= 194 ; i++){
+				start();
+				checkString();
+				pageNum++;
+				out--;
+			}
+			System.out.println();
+			System.out.println();
+			webNum=0;
+			nameWeb.clear();
+			break;
+			
+		case 12:
+			System.out.print("สินค้าอุตสาหกรรม >> บรรจุภัณฑ์");
+			for(int i = 195 ; i <= 211 ; i++){
+				start();
+				checkString();
+				pageNum++;
+				out--;
+			}
+			System.out.println();
+			System.out.println();
+			webNum=0;
+			nameWeb.clear();
+			break;
+		case 13:
+			System.out.print("สินค้าอุตสาหกรรม >> เหล็ก");
+			for(int i = 212 ; i <= 238 ; i++){
+				start();
+				checkString();
+				pageNum++;
+				out--;
+			}
+			System.out.println();
+			System.out.println();
+			webNum=0;
+			nameWeb.clear();
+			break;
+		case 14:
+			System.out.print("อสังหาริมทรัพย์และก่อสร้าง >> วัสดุก่อสร้าง");
+			for(int i = 239 ; i <= 257 ; i++){
+				start();
+				checkString();
+				pageNum++;
+				out--;
+			}
+			System.out.println();
+			System.out.println();
+			webNum=0;
+			nameWeb.clear();
+			break;
 			
 		}
 	}
 	
 	public static void main(String[] args){
-		
-		for(int i = 0 ; i < 9 ; i++){
+		pageNum=212;
+		for(int i = 13 ; i < 15 ; i++){
 			Category(i);
 		}
 		
