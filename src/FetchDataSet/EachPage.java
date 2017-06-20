@@ -25,9 +25,34 @@ public class EachPage {
 	static String[] Container = {"AJ", "ALUCON", "CSC", "NEP", "NPP", "PTL", "SITHAI", "SLP", "SMPC", "SPACK", "TCOAT", "TFI", "THIP", "TMD", "TOPP","TPBI","TPP"};
 	static String[] Steel = {"AMC", "BSBM", "CEN", "CITY", "CSP", "GJS", "GSTEL", "INOX", "LHK", "MAX", "MCS", "MILL", "PAP", "PERM", "RICH", "SAM", "SMIT", "SSI", "SSSC", "TGPRO", "THE", "TIW", "TMT", "TSTH", "TUCC", "TWP", "TYCN"};
 	static String[] ConstructionMaterial = {"CCP", "DCC", "DCON", "DRT", "EPG", "GEL", "PPP", "Q-CON", "RCI", "SCC", "SCCC", "SCP", "TASCO", "TCMC", "TGCI", "TPIPL", "UMI", "VNG", "WIIK"};
+	static String[] Estate = {"A", "AMATA", "AMATAV", "ANAN", "AP", "APX", "AQ", "BLAND", "BROCK", "CGD", "CI", "CPN", "ESTAR", "EVER", "GLAND", "GOLD", "J", "KC", "KWG", "LALIN", "LH", "LPN", "MBK", "MJD", "MK", "NCH", "NNCL", "NOBLE", "NUSA", "ORI", "PACE", "PF", "PLAT", "POLAR", "PRECHA", "PRIN", "PRINC", "PSH", "QH", "RICHY", "RML", "ROJNA", "S", "SAMCO", "SC", "SENA", "SF", "SIRI", "SPALI", "TFD", "TICON", "U", "UV", "WHA", "WIN"};
+	static String[] CoEstate = {"AMATAR", "BKKCP", "CPNCG", "CPNRF", "CPTGF", "CRYSTAL", "CTARAF", "DTCPF", "ERWPF", "FUTUREPF", "GLANDRT", "GOLDPF", "GVREIT", "HPF", "HREIT", "IMPACT", "JCP", "KPNPF", "LHHOTEL", "LHPF", "LHSC", "LUXF", "M-II", "M-PAT", "M-STOR", "MIPF", "MIT", "MJLF", "MINIT", "MINIT2", "MNRF", "MONTRI", "POPF", "PPF", "QHHR", "QHOP", "QHPF", "SBPF", "SIRIP", "SPF", "SRIPANWA", "SSPF", "SSTPF", "SSTSS", "TCIF", "TFUND", "TGROWTH", "THIF", "TIF1", "TLGF", "TLHPF", "TLOGIS", "TNPF", "TPRIME", "TREIT", "TRIF", "TTLPF", "TU-PF", "UNIPF", "URBNPF", "WHABT", "WHAPF", "WHART"};
+	static String[] Constructors = {"BJCHI", "CK", "CNT", "EMC", "ITD", "NWR", "PAE", "PLE", "PREB", "PYLON", "SEAFCO", "SQ", "SRICHA", "STEC", "STPI", "SYNTEC", "TPOLY", "TRC", "TTCL", "UNIQ"};
+	static String[] EnergyAndCus = {"ABPIF", "AI", "AKR", "BAFS", "BANPU", "BCP", "BCPG", "BPP", "CKP", "DEMCO", "EA", "EARTH", "EASTW", "EGATIF", "EGCO", "ESSO", "GLOW", "GPSC", "GUNKUL", "IEC", "IFEC", "IRPC", "LANNA", "MDX", "PTG", "PTT" ,"PTTEP", "RATCH", "RPC", "SCG", "SCI", "SCN", "SGP", "SOLAR", "SPCG", "SUPER", "SUSCO", "TAE", "TCC", "TOP", "TPIPP", "TTW", "WHAUP" };
+	static String[] Mineral = {"PDI", "THL"};
+	static String[] Commercial = {"BEAUTY", "BIG", "BIGC", "BJC", "COL", "COM7", "CPALL", "CSS", "FN", "GLOBAL", "HMPRO", "IT", "KAMART", "LOXLEY", "MAKRO", "MC", "MEGA", "MIDA", "ROBINS", "SINGER", "SPC", "SPI"};
+	static String[] Medical = {"AHC", "BCH" ,"BDMS" ,"BH", "CHG", "CMR", "EKH", "KDH", "LPH", "M-CHAI" ,"NEW", "NTV", "RAM", "RJH", "RPH", "SKR", "SVH", "VIBHA", "VIH"};
+	static String[] MediaAndPrint = {"AMARIN", "AQUA", "AS", "BEC", "EPCO", "FE", "GRAMMY", "MACO", "MAJOR", "MATCH", "MATI", "MCOT", "MONO", "MPIC", "NMG", "PLANB", "POST", "PRAKIT", "RS", "SE-ED", "SMM", "SPORT", "TBSP", "TH", "TKS", "TRITN", "VGI", "WAVE" ,"WORK"};
+	static String[] Service = {"BWG", "GENCO", "PRO"};
+	static String[] TravleAndRecreation = {"ASIA", "CENTEL", "CSR", "DTC", "ERW", "GRAND", "GREEN", "LRH", "MANRIN", "OHTL", "ROH", "SHANG"};
+	static String[] Logistic = {"AAV", "AOT", "ASIMAR", "BA", "BEM", "BTC", "BTS", "BTSGIF", "JUTHA", "JWD", "KWC", "NOK", "NYT", "PSL", "RCL", "THAI", "TSTE", "TTA", "WICE"};
+	static String[] Electronic = {"CCET", "DELTA", "DRACO", "EIC", "HANA", "KCE", "METCO", "SMT", "SPPT", "SVI", "TEAM"};
+	static String[] TechnologyAndMedia = {"ADVANCE", "AIT", "ALT", "BLISS", "CSL", "DIF", "DTAC", "FER", "FORTH", "ILINK", "INET", "INTUCH", "JAS", "JASIF", "JMART", "JTS", "MFEC", "MSC", "PT", "SAMART", "SAMTEL", "SIM", "SIS", "SVOA", "SYMC", "SYNEX", "THCOM", "TRUE", "TWZ"};
 	static ArrayList<String> nameWeb = new ArrayList<String>();
 	static ArrayList<String> names;
 	
+	private static void count(){
+		System.out.println(EnergyAndCus.length);
+		System.out.println(Mineral.length);
+		System.out.println(Commercial.length);
+		System.out.println(Medical.length);
+		System.out.println(MediaAndPrint.length);
+		System.out.println(Service.length);
+		System.out.println(TravleAndRecreation.length);
+		System.out.println(Logistic.length);
+		System.out.println(Electronic.length);
+		System.out.println(TechnologyAndMedia.length);
+	}
 	
 	private static void start(){
 		
@@ -699,10 +724,114 @@ public class EachPage {
 			website = "https://www.set.or.th/set/companyhighlight.do?symbol="+Companyweb+"&ssoPageId=5&language=th&country=TH";
 			webNum++;
 		}
+		else if (pageNum > 257 && pageNum <= 312){
+			for(int i = 0 ; i < Estate.length ; i++){
+				nameWeb.add(Estate[i]);
+			}
+			Companyweb = nameWeb.get(webNum);
+			website = "https://www.set.or.th/set/companyhighlight.do?symbol="+Companyweb+"&ssoPageId=5&language=th&country=TH";
+			webNum++;
+		}
+		else if (pageNum > 312 && pageNum <= 375){
+			for(int i = 0 ; i < CoEstate.length ; i++){
+				nameWeb.add(CoEstate[i]);
+			}
+			Companyweb = nameWeb.get(webNum);
+			website = "https://www.set.or.th/set/companyhighlight.do?symbol="+Companyweb+"&ssoPageId=5&language=th&country=TH";
+			webNum++;
+		}
+		else if (pageNum > 375 && pageNum <= 395){
+			for(int i = 0 ; i < Constructors.length ; i++){
+				nameWeb.add(Constructors[i]);
+			}
+			Companyweb = nameWeb.get(webNum);
+			website = "https://www.set.or.th/set/companyhighlight.do?symbol="+Companyweb+"&ssoPageId=5&language=th&country=TH";
+			webNum++;
+		}
+		else if (pageNum > 395 && pageNum <= 438){
+			for(int i = 0 ; i < EnergyAndCus.length ; i++){
+				nameWeb.add(EnergyAndCus[i]);
+			}
+			Companyweb = nameWeb.get(webNum);
+			website = "https://www.set.or.th/set/companyhighlight.do?symbol="+Companyweb+"&ssoPageId=5&language=th&country=TH";
+			webNum++;
+		}
+		else if (pageNum > 438 && pageNum <= 440){
+			for(int i = 0 ; i < Mineral.length ; i++){
+				nameWeb.add(Mineral[i]);
+			}
+			Companyweb = nameWeb.get(webNum);
+			website = "https://www.set.or.th/set/companyhighlight.do?symbol="+Companyweb+"&ssoPageId=5&language=th&country=TH";
+			webNum++;
+		}
+		else if (pageNum > 440 && pageNum <= 462){
+			for(int i = 0 ; i < Commercial.length ; i++){
+				nameWeb.add(Commercial[i]);
+			}
+			Companyweb = nameWeb.get(webNum);
+			website = "https://www.set.or.th/set/companyhighlight.do?symbol="+Companyweb+"&ssoPageId=5&language=th&country=TH";
+			webNum++;
+		}
+		else if (pageNum > 462 && pageNum <= 481){
+			for(int i = 0 ; i < Medical.length ; i++){
+				nameWeb.add(Medical[i]);
+			}
+			Companyweb = nameWeb.get(webNum);
+			website = "https://www.set.or.th/set/companyhighlight.do?symbol="+Companyweb+"&ssoPageId=5&language=th&country=TH";
+			webNum++;
+		}
 		
+		else if (pageNum > 481 && pageNum <= 510){
+			for(int i = 0 ; i < MediaAndPrint.length ; i++){
+				nameWeb.add(MediaAndPrint[i]);
+			}
+			Companyweb = nameWeb.get(webNum);
+			website = "https://www.set.or.th/set/companyhighlight.do?symbol="+Companyweb+"&ssoPageId=5&language=th&country=TH";
+			webNum++;
+		}
 		
+		else if (pageNum > 510 && pageNum <= 513){
+			for(int i = 0 ; i < Service.length ; i++){
+				nameWeb.add(Service[i]);
+			}
+			Companyweb = nameWeb.get(webNum);
+			website = "https://www.set.or.th/set/companyhighlight.do?symbol="+Companyweb+"&ssoPageId=5&language=th&country=TH";
+			webNum++;
+		}
 		
+		else if (pageNum > 513 && pageNum <= 525){
+			for(int i = 0 ; i < TravleAndRecreation.length ; i++){
+				nameWeb.add(TravleAndRecreation[i]);
+			}
+			Companyweb = nameWeb.get(webNum);
+			website = "https://www.set.or.th/set/companyhighlight.do?symbol="+Companyweb+"&ssoPageId=5&language=th&country=TH";
+			webNum++;
+		}
 		
+		else if (pageNum > 525 && pageNum <= 544){
+			for(int i = 0 ; i < Logistic.length ; i++){
+				nameWeb.add(Logistic[i]);
+			}
+			Companyweb = nameWeb.get(webNum);
+			website = "https://www.set.or.th/set/companyhighlight.do?symbol="+Companyweb+"&ssoPageId=5&language=th&country=TH";
+			webNum++;
+		}
+		else if (pageNum > 544 && pageNum <= 555){
+			for(int i = 0 ; i < Electronic.length ; i++){
+				nameWeb.add(Electronic[i]);
+			}
+			Companyweb = nameWeb.get(webNum);
+			website = "https://www.set.or.th/set/companyhighlight.do?symbol="+Companyweb+"&ssoPageId=5&language=th&country=TH";
+			webNum++;
+		}
+		else if (pageNum > 555 && pageNum <= 584){
+			for(int i = 0 ; i < TechnologyAndMedia.length ; i++){
+				nameWeb.add(TechnologyAndMedia[i]);
+			}
+			Companyweb = nameWeb.get(webNum);
+			website = "https://www.set.or.th/set/companyhighlight.do?symbol="+Companyweb+"&ssoPageId=5&language=th&country=TH";
+			webNum++;
+		}
 		
 		
 		if(pageNum == 0){
@@ -1213,15 +1342,52 @@ public class EachPage {
 				else if (pageNum > 238 && pageNum <= 257){
 					System.out.printf("%-18s", Companyweb);
 				}
-				
-				
-				
+				else if (pageNum > 257 && pageNum <= 312){
+					System.out.printf("%-18s", Companyweb);
+				}
+				else if (pageNum > 312 && pageNum <= 375){
+					System.out.printf("%-18s", Companyweb);
+				}
+				else if (pageNum > 375 && pageNum <= 395){
+					System.out.printf("%-18s", Companyweb);
+				}
+				else if (pageNum > 395 && pageNum <= 438){
+					System.out.printf("%-18s", Companyweb);
+				}
+				else if (pageNum > 438 && pageNum <= 440){
+					System.out.printf("%-18s", Companyweb);
+				}
+				else if (pageNum > 440 && pageNum <= 462){
+					System.out.printf("%-18s", Companyweb);
+				}
+				else if (pageNum > 462 && pageNum <= 481){
+					System.out.printf("%-18s", Companyweb);
+				}
+				else if (pageNum > 481 && pageNum <= 510){
+					System.out.printf("%-18s", Companyweb);
+				}
+				else if (pageNum > 510 && pageNum <= 513){
+					System.out.printf("%-18s", Companyweb);
+				}
+				else if (pageNum > 513 && pageNum <= 525){
+					System.out.printf("%-18s", Companyweb);
+				}
+				else if (pageNum > 525 && pageNum <= 544){
+					System.out.printf("%-18s", Companyweb);
+				}
+				else if (pageNum > 544 && pageNum <= 555){
+					System.out.printf("%-18s", Companyweb);
+				}
+				else if (pageNum > 555 && pageNum <= 584){
+					System.out.printf("%-18s", Companyweb);
+				}
 				
 				
 				for(Element ele:temp){
 					
 					names = new ArrayList<>(Arrays.asList(ele.getAllElements().first().text().split(" ")));
 					
+				
 					
 					
 				}
@@ -1330,12 +1496,12 @@ public class EachPage {
 		
 		if(pageNum > 0){
 			for(int i = 0 ; i < names.size(); i++){
-				if(pageNum == 21 || pageNum == 75 || pageNum == 88 || pageNum == 181 || pageNum == 236){
+				if(pageNum == 21 || pageNum == 75 || pageNum == 88 || pageNum == 181 || pageNum == 236 || pageNum == 243 || (pageNum >= 313 && pageNum <= 375) || pageNum == 396 || pageNum == 409 || pageNum == 436 || pageNum == 438 || pageNum == 569){
 					if(pageNum == 21 || pageNum == 88)
 						System.out.print("cann't pull data");
-					else if (pageNum == 75)
+					else if (pageNum == 75 || pageNum == 243)
 						System.out.print("Cann't print all correctly");
-					else if (pageNum == 181 || pageNum == 236)
+					else if (pageNum == 181 || pageNum == 236 || (pageNum >= 313 && pageNum <= 376) || pageNum == 396 || pageNum == 409 || pageNum == 436 || pageNum == 438 || pageNum == 569)
 						System.out.print("Didn't have any information yet");
 					
 					break;	
@@ -1383,6 +1549,7 @@ public class EachPage {
 						
 						
 					}
+					
 					
 					else if (names.get(5).substring(2).equals("ปี 58")){
 						System.out.printf("%-21s"+"%-21s",dat,dat);
@@ -1466,8 +1633,8 @@ public class EachPage {
 							System.out.printf("%-21s",names.get(k));
 							follow = k;
 						}
-						if(names.get(14).equals("บัญชีทางการเงินที่สำคัญ")){
-							
+						if(names.get(14).equals("บัญชีทางการเงินที่สำคัญ") || names.get(14).equals("บัญชีทางการเงินที่สำคัญ")){
+							System.out.printf("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s",dat, dat, dat, dat, dat);
 						}
 						else if(names.get(13).substring(0, 7).equals("ไตรมาส1")){
 							System.out.printf("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s", names.get(follow+1),dat,dat,dat,dat);
@@ -1484,6 +1651,7 @@ public class EachPage {
 						else if(names.get(13).substring(0, 7).equals("งบปี 60")){
 							System.out.printf("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s",dat, dat, dat, dat, names.get(follow+1));
 						}
+						
 						else{
 							System.out.printf("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s",dat, dat, dat, dat, dat);
 						}
@@ -1616,8 +1784,8 @@ public class EachPage {
 							follow = k;
 						}	
 
-						if(names.get(14).equals("บัญชีทางการเงินที่สำคัญ")){
-
+						if(names.get(14).equals("บัญชีทางการเงินที่สำคัญ") || names.get(14).equals("บัญชีทางการเงินที่สำคัญ")){
+							System.out.printf("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s",dat, dat, dat, dat, dat);
 						}
 						else if(names.get(13).substring(0, 7).equals("ไตรมาส1")){
 							System.out.printf("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s", names.get(follow+1),dat,dat,dat,dat);
@@ -1847,14 +2015,197 @@ public class EachPage {
 			nameWeb.clear();
 			break;
 			
+		case 15:
+			System.out.print("อสังหาริมทรัพย์และก่อสร้าง >> พัฒนาอสังหาริมทรัพย์");
+			for(int i = 258 ; i <= 312 ; i++){
+				start();
+				checkString();
+				pageNum++;
+				out--;
+			}
+			System.out.println();
+			System.out.println();
+			webNum=0;
+			nameWeb.clear();
+			break;
+			
+		case 16:
+			System.out.print("อสังหาริมทรัพย์และก่อสร้าง >> กองทุนรวมอสังหาริมทรัพย์และกองทรัสต์เพื่อการลงทุนในอสังหาริมทรัพย์");
+			for(int i = 313 ; i <= 375 ; i++){
+				start();
+				checkString();
+				pageNum++;
+				out--;
+			}
+			System.out.println();
+			System.out.println();
+			webNum=0;
+			nameWeb.clear();
+			break;
+			
+		case 17:
+			System.out.print("อสังหาริมทรัพย์และก่อสร้าง >> บริการรับเหมาก่อสร้าง");
+			for(int i = 376 ; i <= 395 ; i++){
+				start();
+				checkString();
+				pageNum++;
+				out--;
+			}
+			System.out.println();
+			System.out.println();
+			webNum=0;
+			nameWeb.clear();
+			break;
+			
+		case 18:
+			System.out.print("ทรัพยากร >> พลังงานและสาธารณูปโภค");
+			for(int i = 396 ; i <= 438 ; i++){
+				start();
+				checkString();
+				pageNum++;
+				out--;
+			}
+			System.out.println();
+			System.out.println();
+			webNum=0;
+			nameWeb.clear();
+			break;
+			
+		case 19:
+			System.out.print("ทรัพยากร >> เหมืองแร่");
+			for(int i = 439 ; i <= 440 ; i++){
+				start();
+				checkString();
+				pageNum++;
+				out--;
+			}
+			System.out.println();
+			System.out.println();
+			webNum=0;
+			nameWeb.clear();
+			break;
+			
+		case 20:
+			System.out.print("บริการ >> พาณิชย์");
+			for(int i = 441 ; i <= 462 ; i++){
+				start();
+				checkString();
+				pageNum++;
+				out--;
+			}
+			System.out.println();
+			System.out.println();
+			webNum=0;
+			nameWeb.clear();
+			break;
+			
+		case 21:
+			System.out.print("บริการ >> การแพทย์");
+			for(int i = 463 ; i <= 481 ; i++){
+				start();
+				checkString();
+				pageNum++;
+				out--;
+			}
+			System.out.println();
+			System.out.println();
+			webNum=0;
+			nameWeb.clear();
+			break;
+			
+		case 22:
+			System.out.print("บริการ >> สื่อและสิ่งพิมพ์");
+			for(int i = 482 ; i <= 510 ; i++){
+				start();
+				checkString();
+				pageNum++;
+				out--;
+			}
+			System.out.println();
+			System.out.println();
+			webNum=0;
+			nameWeb.clear();
+			break;
+
+		case 23:
+			System.out.print("บริการ >> บริการเฉพาะกิจ");
+			for(int i = 511 ; i <= 513 ; i++){
+				start();
+				checkString();
+				pageNum++;
+				out--;
+			}
+			System.out.println();
+			System.out.println();
+			webNum=0;
+			nameWeb.clear();
+			break;
+			
+		case 24:
+			System.out.print("บริการ >> การท่องเที่ยวและสันทนาการ");
+			for(int i = 514 ; i <= 525 ; i++){
+				start();
+				checkString();
+				pageNum++;
+				out--;
+			}
+			System.out.println();
+			System.out.println();
+			webNum=0;
+			nameWeb.clear();
+			break;
+			
+		case 25:
+			System.out.print("บริการ >> ขนส่งและโลจิสติกส์");
+			for(int i = 526 ; i <= 544 ; i++){
+				start();
+				checkString();
+				pageNum++;
+				out--;
+			}
+			System.out.println();
+			System.out.println();
+			webNum=0;
+			nameWeb.clear();
+			break;
+			
+		case 26:
+			System.out.print("เทคโนโลยี >> ชิ้นส่วนอิเล็กทรอนิกส์");
+			for(int i = 545 ; i <= 555 ; i++){
+				start();
+				checkString();
+				pageNum++;
+				out--;
+			}
+			System.out.println();
+			System.out.println();
+			webNum=0;
+			nameWeb.clear();
+			break;
+
+		case 27:
+			System.out.print("เทคโนโลยี >> เทคโนโลยีสารสนเทศและการสื่อสาร");
+			for(int i = 556 ; i <= 584 ; i++){
+				start();
+				checkString();
+				pageNum++;
+				out--;
+			}
+			System.out.println();
+			System.out.println();
+			webNum=0;
+			nameWeb.clear();
+			break;
+			
 		}
 	}
 	
 	public static void main(String[] args){
-		pageNum=212;
-		for(int i = 13 ; i < 15 ; i++){
+		
+		for(int i = 0 ; i < 28	 ; i++){
 			Category(i);
 		}
+		
 		
 		
 	}
