@@ -1,6 +1,9 @@
 package FetchDataSet;
 
+import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.io.PrintStream;
 import java.util.ArrayList;
 import java.util.Arrays;
 
@@ -30,6 +33,12 @@ public class SetTrade {
 	public static void main(String[] args){
 		addChar();
 		NumCo = new ArrayList<Integer>();
+		
+		
+		
+		
+		
+		
 		
 		try {
 			Document doc = Jsoup.connect("https://marketdata.set.or.th/mkt/commonstocklistresult.do?market=SET&type=S").userAgent("mozilla/17.0").get();
@@ -1268,7 +1277,8 @@ public class SetTrade {
 			System.out.println(allnameCo29);
 			
 			System.out.println();
-			System.out.println("จำนวนหลักทรัพย์");
+			System.out.println("จำนวนหลักทรัพย์ทั้งหมดในประเทศไทย(อัพเดท)");
+			System.out.println("-----------------------");
 			System.out.println("เกษตรและอุตสาหกรรมอาหาร >> ธุรกิจการเกษตร: "+NumCo.get(0));
 			System.out.println("เกษตรและอุตสาหกรรมอาหาร >> อาหารและเครื่องดื่ม: "+NumCo.get(1));
 			System.out.println("สินค้าอุปโภคบริโภค >> แฟชั่น: "+NumCo.get(2));
@@ -1297,7 +1307,7 @@ public class SetTrade {
 			System.out.println("บริการ >> ขนส่งและโลจิสติกส์: "+ NumCo.get(25));
 			System.out.println("เทคโนโลยี >> ชิ้นส่วนอิเล็กทรอนิกส์: "+NumCo.get(26));
 			System.out.println("เทคโนโลยี >> เทคโนโลยีสารสนเทศและการสื่อสาร: "+NumCo.get(27));
-			
+			System.out.println("-----------------------");
 			System.out.println("ToTal: "+countCoall);
 			
 		} catch (IOException e) {
@@ -1305,5 +1315,12 @@ public class SetTrade {
 			e.printStackTrace();
 		}
 		
+		
+		
+		
+		
+		
 	}
+	
+	
 }

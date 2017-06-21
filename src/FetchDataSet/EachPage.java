@@ -1,7 +1,9 @@
 package FetchDataSet;
 
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 import java.io.IOException;
-
+import java.io.PrintStream;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -51,7 +53,8 @@ public class EachPage {
 	static ArrayList<String> names;
 
 	private static void count(){
-		System.out.println("ข้อมูลตอนนี้");
+		System.out.println("ข้อมูลหลักทรัพย์");
+		System.out.println("-----------------------");
 		System.out.println("เกษตรและอุตสาหกรรมอาหาร >> ธุรกิจการเกษตร: "+Agriculture.length);
 		System.out.println("เกษตรและอุตสาหกรรมอาหาร >> อาหารและเครื่องดื่ม: "+FoodAndDrink.length);
 		System.out.println("สินค้าอุปโภคบริโภค >> แฟชั่น: "+Fashion.length);
@@ -85,8 +88,9 @@ public class EachPage {
 		countCoall += (PitoAndChemi.length + Container.length + Steel.length + ConstructionMaterial.length + Estate.length + CoEstate.length);
 		countCoall += (Constructors.length + EnergyAndCus.length + Mineral.length + Commercial.length + Medical.length + MediaAndPrint.length);
 		countCoall += (Service.length + TravleAndRecreation.length + Logistic.length + Electronic.length + TechnologyAndMedia.length);
-	
+		System.out.println("-----------------------");
 		System.out.println("ToTal: "+countCoall);
+		
 	}
 
 	private static void start(){
@@ -404,13 +408,11 @@ public class EachPage {
 			}
 		}
 		
-
-
-
 	}
 
 	private static void checkString(){
 
+		
 		if(pageNum > 0){
 			for(int i = 0 ; i < names.size(); i++){
 				if(pageNum == 21 || pageNum == 75 || pageNum == 88 || pageNum == 181 || pageNum == 236 || pageNum == 243 || (pageNum >= 313 && pageNum <= 375) || pageNum == 396 || pageNum == 409 || pageNum == 436 || pageNum == 438 || pageNum == 569){
@@ -1113,13 +1115,15 @@ public class EachPage {
 	}
 
 	public static void main(String[] args){
-
+		
 		for(int i = 0 ; i < 28	 ; i++){
 			Category(i);
 		}
 
 		count();
 
+		
+		
 
 	}
 }
