@@ -12,10 +12,11 @@ public class GUI extends JFrame{
 	private JPanel main;
 	private JTextPane textData;
 	private JScrollPane slide;
-	
+	String Test= "";
 	
 	public GUI(){
 		iniCompo();
+		test();
 		setBounds(100,100,1100,510);
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
 	}
@@ -36,6 +37,11 @@ public class GUI extends JFrame{
 		main.add(slide);
 		add(slide);
 		
+	}
+	
+	private void test(){
+		Test ="GAM";
+		textData.setText(Test);
 	}
 
 	public static void main(String[] args){

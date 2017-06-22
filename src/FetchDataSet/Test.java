@@ -1,5 +1,6 @@
 package FetchDataSet;
 
+import java.awt.BorderLayout;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -7,13 +8,18 @@ import java.io.PrintStream;
 import java.util.ArrayList;
 import java.util.Arrays;
 
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.JScrollPane;
+import javax.swing.JTextPane;
+
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
 
-public class SetTrade {
+public class Test extends JFrame {
 	
 	static ArrayList<String> names,checkchar,renames = new ArrayList<String>();
 	static String join,join2;
@@ -21,23 +27,48 @@ public class SetTrade {
 	static int count = 0, i = 0, nextrow = 0, hasSym = 0, pass=0;
 	static int countCo = 0, countCoall = 0;
 	static ArrayList<Integer> NumCo;
-	static String allnameCo="",allnameCo1="",allnameCo2="",allnameCo3="",allnameCo4="",allnameCo5="",allnameCo6="",allnameCo7="",allnameCo8="",allnameCo9="",allnameCo10="",allnameCo11="",allnameCo12="",allnameCo13="",allnameCo14="",allnameCo15="",allnameCo16="",allnameCo17="",allnameCo18="",allnameCo19="",allnameCo20="",allnameCo21="",allnameCo22="",allnameCo23="",allnameCo24="",allnameCo25="",allnameCo26="",allnameCo27="",allnameCo28="",allnameCo29="";
+	static String allnameCo="",allnameCo1="",allnameCo2="",allnameCo3="",allnameCo4="",allnameCo5="",allnameCo6="",allnameCo7="",allnameCo8="",allnameCo9="",allnameCo10="",allnameCo11="",allnameCo12="",allnameCo13="",allnameCo14="",allnameCo15="",allnameCo16="",allnameCo17="",allnameCo18="",allnameCo19="",allnameCo20="",allnameCo21="",allnameCo22="",allnameCo23="",allnameCo24="",allnameCo25="",allnameCo26="",allnameCo27="",allnameCo28="",allnameCo29="",All ="";
 	static String allTitleCo1="",allTitleCo2="",allTitleCo3="",allTitleCo4="",allTitleCo5="",allTitleCo6="",allTitleCo7="",allTitleCo8="",allTitleCo9="",allTitleCo10="",allTitleCo11="",allTitleCo12="",allTitleCo13="",allTitleCo14="",allTitleCo15="",allTitleCo16="",allTitleCo17="",allTitleCo18="",allTitleCo19="",allTitleCo20="",allTitleCo21="",allTitleCo22="",allTitleCo23="",allTitleCo24="",allTitleCo25="",allTitleCo26="",allTitleCo27="",allTitleCo28="",allTitleCo29="";
 	static String DataTime="";
 	static String checkSym = "a b c d e f g h i j k l m n o r p s q u v w x y z";
+	private JPanel main;
+	private static JTextPane textData;
+	private JScrollPane slide;
+	String Test= "";
 	
+	public Test(){
+		iniCompo();
+		
+		setBounds(100,100,1100,510);
+		setDefaultCloseOperation(EXIT_ON_CLOSE);
+	}
+	
+	
+	private void iniCompo() {
+		setLayout(new BorderLayout());
+		
+		main = new JPanel();
+		add(main,BorderLayout.CENTER);
+		main.setLayout(null);
+		
+		
+		textData = new JTextPane();
+		main.add(textData);
+		add(textData);
+		
+		slide = new JScrollPane(textData);
+		main.add(slide);
+		add(slide);
+	}
+
+
 	public static void addChar(){
 		checkchar = new ArrayList<>(Arrays.asList(checkSym.split(" ")));
 	}
 	
-	public static void main(String[] args){
+	public static void Start(){
 		addChar();
 		NumCo = new ArrayList<Integer>();
-		
-		
-		
-		
-		
 		
 		
 		try {
@@ -1195,6 +1226,7 @@ public class SetTrade {
 			System.out.println(allTitleCo2);
 			System.out.println(allnameCo2);
 			
+			
 			System.out.println("เกษตรและอุตสาหกรรมอาหาร >> อาหารและเครื่องดื่ม");
 			System.out.println(allnameCo3);
 			
@@ -1276,48 +1308,124 @@ public class SetTrade {
 			System.out.println("เทคโนโลยี >> เทคโนโลยีสารสนเทศและการสื่อสาร");
 			System.out.println(allnameCo29);
 			
+			
+			All = DataTime+"\n \n";
+			
 			System.out.println();
 			System.out.println("จำนวนหลักทรัพย์ทั้งหมดในประเทศไทย(อัพเดท)");
+			All += "จำนวนหลักทรัพย์ทั้งหมดในประเทศไทย(อัพเดท)"+"\n";
 			System.out.println("-----------------------");
+			All += "-----------------------"+"\n";
 			System.out.println("เกษตรและอุตสาหกรรมอาหาร >> ธุรกิจการเกษตร: "+NumCo.get(0));
+			All += "เกษตรและอุตสาหกรรมอาหาร >> ธุรกิจการเกษตร: "+NumCo.get(0)+"\n";
+			
 			System.out.println("เกษตรและอุตสาหกรรมอาหาร >> อาหารและเครื่องดื่ม: "+NumCo.get(1));
+			All += "เกษตรและอุตสาหกรรมอาหาร >> อาหารและเครื่องดื่ม: "+NumCo.get(1)+"\n";
+			
 			System.out.println("สินค้าอุปโภคบริโภค >> แฟชั่น: "+NumCo.get(2));
+			All += "สินค้าอุปโภคบริโภค >> แฟชั่น: "+NumCo.get(2)+"\n";
+			
 			System.out.println("สินค้าอุปโภคบริโภค >> ของใช้ในครัวเรือนและสำนักงาน: "+NumCo.get(3));
+			All += "สินค้าอุปโภคบริโภค >> ของใช้ในครัวเรือนและสำนักงาน: "+NumCo.get(3)+"\n";
+			
 			System.out.println("สินค้าอุปโภคบริโภค >> ของใช้ส่วนตัวและเวชภัณฑ์: "+NumCo.get(4));
+			All += "สินค้าอุปโภคบริโภค >> ของใช้ส่วนตัวและเวชภัณฑ์: "+NumCo.get(4)+"\n";
+			
 			System.out.println("ธุรกิจการเงิน >> ธนาคาร: "+NumCo.get(5));
+			All += "ธุรกิจการเงิน >> ธนาคาร: "+NumCo.get(5)+"\n";
+			
 			System.out.println("ธุรกิจการเงิน >> เงินทุนและหลักทรัพย์: "+NumCo.get(6));
+			All += "ธุรกิจการเงิน >> เงินทุนและหลักทรัพย์: "+NumCo.get(6)+"\n";
+			
 			System.out.println("ธุรกิจการเงิน >> ประกันภัยและประกันชีวิต: "+NumCo.get(7));
+			All += "ธุรกิจการเงิน >> ประกันภัยและประกันชีวิต: "+NumCo.get(7)+"\n";
+			
 			System.out.println("สินค้าอุตสาหกรรม >> ยานยนต์: "+NumCo.get(8));
+			All += "สินค้าอุตสาหกรรม >> ยานยนต์: "+NumCo.get(8)+"\n";
+			
 			System.out.println("สินค้าอุตสาหกรรม >> วัสดุอุตสาหกรรมและเครื่องจักร: "+NumCo.get(9));
+			All += "สินค้าอุตสาหกรรม >> วัสดุอุตสาหกรรมและเครื่องจักร: "+NumCo.get(9)+"\n";
+			
 			System.out.println("สินค้าอุตสาหกรรม >> กระดาษและวัสดุการพิมพ์: "+NumCo.get(10));
+			All += "สินค้าอุตสาหกรรม >> กระดาษและวัสดุการพิมพ์: "+NumCo.get(10)+"\n";
+			
 			System.out.println("สินค้าอุตสาหกรรม >> ปิโตรเคมีและเคมีภัณฑ์: "+NumCo.get(11));
+			All += "สินค้าอุตสาหกรรม >> ปิโตรเคมีและเคมีภัณฑ์: "+NumCo.get(11)+"\n";
+			
 			System.out.println("สินค้าอุตสาหกรรม >> บรรจุภัณฑ์: "+NumCo.get(12));
+			All += "สินค้าอุตสาหกรรม >> บรรจุภัณฑ์: "+NumCo.get(12)+"\n";
+			
 			System.out.println("สินค้าอุตสาหกรรม >> เหล็ก: "+NumCo.get(13));
+			All += "สินค้าอุตสาหกรรม >> เหล็ก: "+NumCo.get(13)+"\n";
+			
 			System.out.println("อสังหาริมทรัพย์และก่อสร้าง >> วัสดุก่อสร้าง: "+NumCo.get(14));
+			All += "อสังหาริมทรัพย์และก่อสร้าง >> วัสดุก่อสร้าง: "+NumCo.get(14)+"\n";
+			
 			System.out.println("อสังหาริมทรัพย์และก่อสร้าง >> พัฒนาอสังหาริมทรัพย์: "+NumCo.get(15));
+			All += "อสังหาริมทรัพย์และก่อสร้าง >> พัฒนาอสังหาริมทรัพย์: "+NumCo.get(15)+"\n";
+			
 			System.out.println("อสังหาริมทรัพย์และก่อสร้าง >> กองทุนรวมอสังหาริมทรัพย์และกองทรัสต์เพื่อการลงทุนในอสังหาริมทรัพย์: "+NumCo.get(16));
+			All += "อสังหาริมทรัพย์และก่อสร้าง >> กองทุนรวมอสังหาริมทรัพย์และกองทรัสต์เพื่อการลงทุนในอสังหาริมทรัพย์: "+NumCo.get(16)+"\n";
+			
 			System.out.println("อสังหาริมทรัพย์และก่อสร้าง >> บริการรับเหมาก่อสร้าง: "+NumCo.get(17));
+			All += "อสังหาริมทรัพย์และก่อสร้าง >> บริการรับเหมาก่อสร้าง: "+NumCo.get(17)+"\n";
+			
 			System.out.println("ทรัพยากร >> พลังงานและสาธารณูปโภค: "+ NumCo.get(18));
+			All += "ทรัพยากร >> พลังงานและสาธารณูปโภค: "+ NumCo.get(18)+"\n";
+			
 			System.out.println("ทรัพยากร >> เหมืองแร่: "+NumCo.get(19));
+			All += "ทรัพยากร >> เหมืองแร่: "+NumCo.get(19)+"\n";
+			
 			System.out.println("บริการ >> พาณิชย์: "+ NumCo.get(20));
+			All += "บริการ >> พาณิชย์: "+ NumCo.get(20)+"\n";
+			
 			System.out.println("บริการ >> การแพทย์: "+ NumCo.get(21));
+			All += "บริการ >> การแพทย์: "+ NumCo.get(21)+"\n";
+			
 			System.out.println("บริการ >> สื่อและสิ่งพิมพ์: "+NumCo.get(22));
+			All += "บริการ >> สื่อและสิ่งพิมพ์: "+NumCo.get(22)+"\n";
+			
 			System.out.println("บริการ >> บริการเฉพาะกิจ: "+NumCo.get(23));
+			All += "บริการ >> บริการเฉพาะกิจ: "+NumCo.get(23)+"\n";
+			
 			System.out.println("บริการ >> การท่องเที่ยวและสันทนาการ: "+NumCo.get(24));
+			All += "บริการ >> การท่องเที่ยวและสันทนาการ: "+NumCo.get(24)+"\n";
+			
 			System.out.println("บริการ >> ขนส่งและโลจิสติกส์: "+ NumCo.get(25));
+			All += "บริการ >> ขนส่งและโลจิสติกส์: "+ NumCo.get(25)+"\n";
+			
 			System.out.println("เทคโนโลยี >> ชิ้นส่วนอิเล็กทรอนิกส์: "+NumCo.get(26));
+			All += "เทคโนโลยี >> ชิ้นส่วนอิเล็กทรอนิกส์: "+NumCo.get(26)+"\n";
+			
 			System.out.println("เทคโนโลยี >> เทคโนโลยีสารสนเทศและการสื่อสาร: "+NumCo.get(27));
+			All += "เทคโนโลยี >> เทคโนโลยีสารสนเทศและการสื่อสาร: "+NumCo.get(27)+"\n";
+			
 			System.out.println("-----------------------");
+			All += "-----------------------"+"\n";
+			
 			System.out.println("ToTal: "+countCoall);
+			All += "ToTal: "+countCoall+"\n";
 			
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		
+	}
+	
+	public static void Showdata(){
 		
+		textData.setText(All);
+	}
+	
+	public static void main(String[] args){
+		Start();
+		Test test = new Test();
+		test.setVisible(true);
+		Showdata();
 		
 	}
+	
 	
 	
 }
