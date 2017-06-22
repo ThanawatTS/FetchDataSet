@@ -18,6 +18,7 @@ public class EachPage {
 
 	static int pageNum = 0, webNum = 0;
 	static int count = 0, out = 0, follow = 0, countCoall = 0;
+	static String All = "";
 	static String Company = "หลักทรัพย์", Companyweb = "";
 	static String blank = "",dat = "-",website ="";
 	static String[] Agriculture = {"CHOTI", "EE", "GFPT", "LEE", "STA", "TLUXE", "TRUBB", "TWPC", "UPOIC", "UVAN", "VPO"};
@@ -379,7 +380,10 @@ public class EachPage {
 					System.out.print("เกษตรและอุตสาหกรรมอาหาร >> ธุรกิจการเกษตร");
 
 				}
+				
+				 
 
+				
 			} catch (IOException e) {
 
 				e.printStackTrace();
@@ -396,6 +400,7 @@ public class EachPage {
 
 				if (pageNum >= 1 && pageNum <= 584){
 					System.out.printf("%-18s",Companyweb);
+					
 				}
 
 				for(Element ele:temp){
