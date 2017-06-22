@@ -1,6 +1,9 @@
 package FetchDataSet;
 
 import java.awt.BorderLayout;
+import java.awt.ComponentOrientation;
+import java.awt.event.AdjustmentEvent;
+import java.awt.event.AdjustmentListener;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -10,8 +13,10 @@ import java.util.Arrays;
 
 import javax.swing.JFrame;
 import javax.swing.JPanel;
+import javax.swing.JScrollBar;
 import javax.swing.JScrollPane;
 import javax.swing.JTextPane;
+import javax.swing.ScrollPaneConstants;
 
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
@@ -33,13 +38,15 @@ public class Test extends JFrame {
 	static String checkSym = "a b c d e f g h i j k l m n o r p s q u v w x y z";
 	private JPanel main;
 	private static JTextPane textData;
-	private JScrollPane slide;
+	private JScrollPane slide,slideRight;
+	private JScrollBar bar,barHo;
 	String Test= "";
 	
 	public Test(){
 		iniCompo();
 		
 		setBounds(100,100,1100,510);
+		pack();
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
 	}
 	
@@ -56,9 +63,23 @@ public class Test extends JFrame {
 		main.add(textData);
 		add(textData);
 		
-		slide = new JScrollPane(textData);
-		main.add(slide);
-		add(slide);
+		bar = new JScrollBar(JScrollBar.VERTICAL, 30, 40, 0, 500);
+		barHo =new JScrollBar(JScrollBar.HORIZONTAL, 30, 20, 0, 500);
+		
+		class MyAdjustmentListener implements AdjustmentListener {
+            public void adjustmentValueChanged(AdjustmentEvent e) {
+                repaint();
+            }
+        }
+		
+		bar.addAdjustmentListener(new MyAdjustmentListener());
+		barHo.addAdjustmentListener(new MyAdjustmentListener());
+		
+		
+		add(bar,BorderLayout.EAST);
+		add(barHo,BorderLayout.SOUTH);
+		
+		
 	}
 
 
@@ -1365,7 +1386,7 @@ public class Test extends JFrame {
 			All += "อสังหาริมทรัพย์และก่อสร้าง >> พัฒนาอสังหาริมทรัพย์: "+NumCo.get(15)+"\n";
 			
 			System.out.println("อสังหาริมทรัพย์และก่อสร้าง >> กองทุนรวมอสังหาริมทรัพย์และกองทรัสต์เพื่อการลงทุนในอสังหาริมทรัพย์: "+NumCo.get(16));
-			All += "อสังหาริมทรัพย์และก่อสร้าง >> กองทุนรวมอสังหาริมทรัพย์และกองทรัสต์เพื่อการลงทุนในอสังหาริมทรัพย์: "+NumCo.get(16)+"\n";
+			All += "อสังหาริมทรัพย์และก่อสร้าง >> กองทุนรวมอสังหาริมทรัพย์และกองทรัสต์เพื่อการลงทุนในอสังหาริมทรัพย์: "+NumCo.get(16)+"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa \n";
 			
 			System.out.println("อสังหาริมทรัพย์และก่อสร้าง >> บริการรับเหมาก่อสร้าง: "+NumCo.get(17));
 			All += "อสังหาริมทรัพย์และก่อสร้าง >> บริการรับเหมาก่อสร้าง: "+NumCo.get(17)+"\n";
