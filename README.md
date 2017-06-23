@@ -6,3 +6,5 @@ https://www.java.com/en/download/
 
 Eclipse:
 https://eclipse.org/mars/
+
+Recommend copy and paste to excel ;3
