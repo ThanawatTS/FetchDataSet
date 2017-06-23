@@ -516,38 +516,54 @@ public class EachPageJar extends JFrame {
 
 					if(names.get(5).substring(2).equals("ปี 57")){
 						System.out.printf("%-21s",dat);
-						All += String.format("%-21s",dat);
+						All += String.format("%-40s",dat);
 						for(int k = i+1 ; k < i+4 ; k++){
 							System.out.printf("%-21s",names.get(k));
-							All += String.format("%-21s",names.get(k));
+							cal = 0;
+							
+							if(names.get(k).length() == 10){
+								All += String.format("%-30s",names.get(k));
+							}
+							else if (names.get(k).length() > 10){
+								cal = 30;
+								cal -= names.get(k).length() - 10 ;
+								
+								All += String.format("%-"+cal+"s", names.get(k));
+							}
+							else if (names.get(k).length() < 10){
+								cal = 30;
+								cal += 10 - names.get(k).length() ;
+								All += String.format("%-"+cal+"s",names.get(k));
+							}
+							
 							follow = k;
 						}
 						if(names.get(11).substring(0, 7).equals("ไตรมาส1") || names.get(11).substring(0, 7).equals("ไตรมาส2") || names.get(11).substring(0, 7).equals("ไตรมาส3") || names.get(11).substring(0, 7).equals("ไตรมาส4") || names.get(11).substring(0, 7).equals("งบปี 60")){
 							if(names.get(11).substring(0, 7).equals("ไตรมาส1")){
 								System.out.printf("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s", names.get(follow+1),dat,dat,dat,dat);
-								All += String.format("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s", names.get(follow+1),dat,dat,dat,dat);
+								All += String.format("%-45s"+"%-45s"+"%-45s"+"%-45s"+"%-35s", names.get(follow+1),dat,dat,dat,dat);
 							}
 							else if(names.get(11).substring(0, 7).equals("ไตรมาส2")){
 								System.out.printf("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s",dat, names.get(follow+1),dat,dat,dat);
-								All += String.format("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s",dat, names.get(follow+1),dat,dat,dat);
+								All += String.format("%-45s"+"%-45s"+"%-45s"+"%-45s"+"%-35s",dat, names.get(follow+1),dat,dat,dat);
 							}
 							else if(names.get(11).substring(0, 7).equals("ไตรมาส3")){
 								System.out.printf("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s",dat, dat, names.get(follow+1),dat,dat);
-								All += String.format("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s",dat, dat, names.get(follow+1),dat,dat);
+								All += String.format("%-45s"+"%-45s"+"%-45s"+"%-45s"+"%-35s",dat, dat, names.get(follow+1),dat,dat);
 							}
 							else if(names.get(11).substring(0, 7).equals("ไตรมาส4")){
 								System.out.printf("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s",dat, dat, dat, names.get(follow+1),dat);
-								All += String.format("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s",dat, dat, dat, names.get(follow+1),dat);
+								All += String.format("%-45s"+"%-45s"+"%-45s"+"%-45s"+"%-35s",dat, dat, dat, names.get(follow+1),dat);
 							}
 							else if(names.get(11).substring(0, 7).equals("งบปี 60")){
 								System.out.printf("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s",dat, dat, dat, dat, names.get(follow+1));
-								All += String.format("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s",dat, dat, dat, dat, names.get(follow+1));
+								All += String.format("%-45s"+"%-45s"+"%-45s"+"%-45s"+"%-35s",dat, dat, dat, dat, names.get(follow+1));
 							}
 						}
 
 						else{
 							System.out.printf("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s",dat, dat, dat, dat, dat);
-							All += String.format("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s",dat, dat, dat, dat, dat);
+							All += String.format("%-45s"+"%-45s"+"%-45s"+"%-45s"+"%-35s",dat, dat, dat, dat, dat);
 						}
 
 
@@ -556,24 +572,23 @@ public class EachPageJar extends JFrame {
 
 					else if (names.get(5).substring(2).equals("ปี 58")){
 						System.out.printf("%-21s"+"%-21s",dat,dat);
-						All += String.format("%-45s"+"%-40s",dat,dat);
+						All += String.format("%-40s"+"%-35s",dat,dat);
 						
 						for(int k = i+1 ; k < i+3 ; k++){
 							System.out.printf("%-21s",names.get(k));
-							//All += String.format("%-21s",names.get(k));
 							cal = 0;
 							
 							if(names.get(k).length() == 10){
-								All += String.format("%-35s",names.get(k));
+								All += String.format("%-30s",names.get(k));
 							}
 							else if (names.get(k).length() > 10){
-								cal = 35;
+								cal = 30;
 								cal -= names.get(k).length() - 10 ;
 								
 								All += String.format("%-"+cal+"s", names.get(k));
 							}
 							else if (names.get(k).length() < 10){
-								cal = 35;
+								cal = 30;
 								cal += 10 - names.get(k).length() ;
 								All += String.format("%-"+cal+"s",names.get(k));
 							}
@@ -586,110 +601,141 @@ public class EachPageJar extends JFrame {
 							}
 						else if(names.get(9).substring(0, 7).equals("ไตรมาส2")){
 							System.out.printf("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s",dat, names.get(follow+1),dat,dat,dat);
-							All += String.format("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s",dat, names.get(follow+1),dat,dat,dat);
+							All += String.format("%-45s"+"%-45s"+"%-45s"+"%-45s"+"%-35s",dat, names.get(follow+1),dat,dat,dat);
 						}
 						else if(names.get(9).substring(0, 7).equals("ไตรมาส3")){
 							System.out.printf("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s",dat, dat, names.get(follow+1),dat,dat);
-							All += String.format("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s",dat, dat, names.get(follow+1),dat,dat);
+							All += String.format("%-45s"+"%-45s"+"%-45s"+"%-45s"+"%-35s",dat, dat, names.get(follow+1),dat,dat);
 						}
 						else if(names.get(9).substring(0, 7).equals("ไตรมาส4")){
 							System.out.printf("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s",dat, dat, dat, names.get(follow+1),dat);
-							All += String.format("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s",dat, dat, dat, names.get(follow+1),dat);
+							All += String.format("%-45s"+"%-45s"+"%-45s"+"%-45s"+"%-35s",dat, dat, dat, names.get(follow+1),dat);
 						}
 						else if(names.get(9).substring(0, 7).equals("งบปี 60")){
 							System.out.printf("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s",dat, dat, dat, dat, names.get(follow+1));
-							All += String.format("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s",dat, dat, dat, dat, names.get(follow+1));
+							All += String.format("%-45s"+"%-45s"+"%-45s"+"%-45s"+"%-35s",dat, dat, dat, dat, names.get(follow+1));
 						}
 						else{
 							System.out.printf("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s",dat, dat, dat, dat, dat);
-							All += String.format("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s",dat, dat, dat, dat, dat);
+							All += String.format("%-45s"+"%-45s"+"%-45s"+"%-45s"+"%-35s",dat, dat, dat, dat, dat);
 						}
 					}
 
 					else if (names.get(5).substring(2).equals("ปี 59")){
 						System.out.printf("%-21s"+"%-21s"+"%-21s",dat,dat,dat);
-						All += String.format("%-21s"+"%-21s"+"%-21s",dat,dat,dat);
+						All += String.format("%-40s"+"%-40s"+"%-35s",dat,dat,dat);
 						for(int k = i+1 ; k < i+2 ; k++){
 							System.out.printf("%-21s",names.get(k));
-							All += String.format("%-21s",names.get(k));
+							cal = 0;
+							
+							if(names.get(k).length() == 10){
+								All += String.format("%-30s",names.get(k));
+							}
+							else if (names.get(k).length() > 10){
+								cal = 30;
+								cal -= names.get(k).length() - 10 ;
+								
+								All += String.format("%-"+cal+"s", names.get(k));
+							}
+							else if (names.get(k).length() < 10){
+								cal = 30;
+								cal += 10 - names.get(k).length() ;
+								All += String.format("%-"+cal+"s",names.get(k));
+							}
+							
 							follow = k;
 						}
 						if(names.get(7).substring(0, 7).equals("ไตรมาส1")){
 							System.out.printf("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s", names.get(follow+1),dat,dat,dat,dat);
-							All += String.format("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s", names.get(follow+1),dat,dat,dat,dat);
+							All += String.format("%-45s"+"%-45s"+"%-45s"+"%-45s"+"%-35s", names.get(follow+1),dat,dat,dat,dat);
 						}
 						else if(names.get(7).substring(0, 7).equals("ไตรมาส2")){
 							System.out.printf("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s",dat, names.get(follow+1),dat,dat,dat);
-							All += String.format("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s",dat, names.get(follow+1),dat,dat,dat);
+							All += String.format("%-45s"+"%-45s"+"%-45s"+"%-45s"+"%-35s",dat, names.get(follow+1),dat,dat,dat);
 						}
 						else if(names.get(7).substring(0, 7).equals("ไตรมาส3")){
 							System.out.printf("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s",dat, dat, names.get(follow+1),dat,dat);
-							All += String.format("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s",dat, dat, names.get(follow+1),dat,dat);
+							All += String.format("%-45s"+"%-45s"+"%-45s"+"%-45s"+"%-35s",dat, dat, names.get(follow+1),dat,dat);
 						}
 						else if(names.get(7).substring(0, 7).equals("ไตรมาส4")){
 							System.out.printf("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s",dat, dat, dat, names.get(follow+1),dat);
-							All += String.format("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s",dat, dat, dat, names.get(follow+1),dat);
+							All += String.format("%-45s"+"%-45s"+"%-45s"+"%-45s"+"%-35s",dat, dat, dat, names.get(follow+1),dat);
 						}
 						else if(names.get(7).substring(0, 7).equals("งบปี 60")){
 							System.out.printf("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s",dat, dat, dat, dat, names.get(follow+1));
-							All += String.format("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s",dat, dat, dat, dat, names.get(follow+1));
+							All += String.format("%-45s"+"%-45s"+"%-45s"+"%-45s"+"%-35s",dat, dat, dat, dat, names.get(follow+1));
 						}
 						else{
 							System.out.printf("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s",dat, dat, dat, dat, dat);
-							All += String.format("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s",dat, dat, dat, dat, dat);
+							All += String.format("%-45s"+"%-45s"+"%-45s"+"%-45s"+"%-35s",dat, dat, dat, dat, dat);
 						}
 					}
 					else if (names.get(5).substring(0,7).equals("ไตรมาส1")){
 						System.out.printf("%-21s"+"%-21s"+"%-21s"+"%-21s",dat, dat,dat,dat);
-						All += String.format("%-21s"+"%-21s"+"%-21s"+"%-21s",dat, dat,dat,dat);
+						All += String.format("%-40s"+"%-40s"+"%-40s"+"%-35s",dat, dat,dat,dat);
 						for(int k = i+1 ; k <= i+1 ; k++){
 							System.out.printf("%-21s",names.get(k));
-							All += String.format("%-21s",names.get(k));
+								cal = 0;
+							
+							if(names.get(k).length() == 10){
+								All += String.format("%-30s",names.get(k));
+							}
+							else if (names.get(k).length() > 10){
+								cal = 30;
+								cal -= names.get(k).length() - 10 ;
+								
+								All += String.format("%-"+cal+"s", names.get(k));
+							}
+							else if (names.get(k).length() < 10){
+								cal = 30;
+								cal += 10 - names.get(k).length() ;
+								All += String.format("%-"+cal+"s",names.get(k));
+							}
+							
 							follow = k;
 						}
 						if(names.get(7).substring(0, 7).equals("ไตรมาส1")){
 							System.out.printf("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s", names.get(follow+1),dat,dat,dat,dat);
-							All += String.format("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s", names.get(follow+1),dat,dat,dat,dat);
+							All += String.format("%-45s"+"%-45s"+"%-45s"+"%-45s"+"%-35s", names.get(follow+1),dat,dat,dat,dat);
 						}
 						else if(names.get(7).substring(0, 7).equals("ไตรมาส2")){
 							System.out.printf("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s",dat, names.get(follow+1),dat,dat,dat);
-							All += String.format("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s",dat, names.get(follow+1),dat,dat,dat);
+							All += String.format("%-45s"+"%-45s"+"%-45s"+"%-45s"+"%-35s",dat, names.get(follow+1),dat,dat,dat);
 						}
 						else if(names.get(7).substring(0, 7).equals("ไตรมาส3")){
 							System.out.printf("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s",dat, dat, names.get(follow+1),dat,dat);
-							All += String.format("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s",dat, dat, names.get(follow+1),dat,dat);
+							All += String.format("%-45s"+"%-45s"+"%-45s"+"%-45s"+"%-35s",dat, dat, names.get(follow+1),dat,dat);
 						}
 						else if(names.get(7).substring(0, 7).equals("ไตรมาส4")){
 							System.out.printf("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s",dat, dat, dat, names.get(follow+1),dat);
-							All += String.format("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s",dat, dat, dat, names.get(follow+1),dat);
+							All += String.format("%-45s"+"%-45s"+"%-45s"+"%-45s"+"%-35s",dat, dat, dat, names.get(follow+1),dat);
 						}
 						else if(names.get(7).substring(0, 7).equals("งบปี 60")){
 							System.out.printf("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s",dat, dat, dat, dat, names.get(follow+1));
-							All += String.format("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s",dat, dat, dat, names.get(follow+1),dat);
+							All += String.format("%-45s"+"%-45s"+"%-45s"+"%-45s"+"%-35s",dat, dat, dat, names.get(follow+1),dat);
 						}
 						else{
 							System.out.printf("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s",dat, dat, dat, dat, dat);
-							All += String.format("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s",dat, dat, dat, dat, dat);
+							All += String.format("%-45s"+"%-45s"+"%-45s"+"%-45s"+"%-35s",dat, dat, dat, dat, dat);
 						}
 					}
 
 					else{
 						for(int k = i+1 ; k < i+5 ; k++){
 							System.out.printf("%-21s",names.get(k));
-							System.out.println(names.get(k).length());
 							cal = 0;
 							
 							if(names.get(k).length() == 10){
-								All += String.format("%-35s",names.get(k));
+								All += String.format("%-30s",names.get(k));
 							}
 							else if (names.get(k).length() > 10){
-								cal = 35;
+								cal = 30;
 								cal -= names.get(k).length() - 10 ;
 								
 								All += String.format("%-"+cal+"s", names.get(k));
 							}
 							else if (names.get(k).length() < 10){
-								cal = 35;
+								cal = 30;
 								cal += 10 - names.get(k).length() ;
 								All += String.format("%-"+cal+"s",names.get(k));
 							}
@@ -698,7 +744,7 @@ public class EachPageJar extends JFrame {
 						}
 						if(names.get(14).equals("บัญชีทางการเงินที่สำคัญ") || names.get(14).equals("บัญชีทางการเงินที่สำคัญ")){
 							System.out.printf("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s",dat, dat, dat, dat, dat);
-							All += String.format("%-35s"+"%-35s"+"%-35s"+"%-35s"+"%-35s",dat, dat, dat, dat, dat);
+							All += String.format("%-45s"+"%-45s"+"%-45s"+"%-45s"+"%-35s",dat, dat, dat, dat, dat);
 						}
 						else if(names.get(13).substring(0, 7).equals("ไตรมาส1")){
 							System.out.printf("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s", names.get(follow+1),dat,dat,dat,dat);
@@ -706,24 +752,24 @@ public class EachPageJar extends JFrame {
 						}
 						else if(names.get(13).substring(0, 7).equals("ไตรมาส2")){
 							System.out.printf("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s",dat, names.get(follow+1),dat,dat,dat);
-							All += String.format("%-35s"+"%-35s"+"%-35s"+"%-35s"+"%-35s",dat, names.get(follow+1),dat,dat,dat);
+							All += String.format("%-45s"+"%-45s"+"%-45s"+"%-45s"+"%-35s",dat, names.get(follow+1),dat,dat,dat);
 						}
 						else if(names.get(13).substring(0, 7).equals("ไตรมาส3")){
 							System.out.printf("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s",dat, dat, names.get(follow+1),dat,dat);
-							All += String.format("%-35s"+"%-35s"+"%-35s"+"%-35s"+"%-35s",dat, dat, names.get(follow+1),dat,dat);
+							All += String.format("%-45s"+"%-45s"+"%-45s"+"%-45s"+"%-35s",dat, dat, names.get(follow+1),dat,dat);
 						}
 						else if(names.get(13).substring(0, 7).equals("ไตรมาส4")){
 							System.out.printf("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s",dat, dat, dat, names.get(follow+1),dat);
-							All += String.format("%-35s"+"%-35s"+"%-35s"+"%-35s"+"%-35s",dat, dat, dat, names.get(follow+1),dat);
+							All += String.format("%-45s"+"%-45s"+"%-45s"+"%-45s"+"%-35s",dat, dat, dat, names.get(follow+1),dat);
 						}
 						else if(names.get(13).substring(0, 7).equals("งบปี 60")){
 							System.out.printf("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s",dat, dat, dat, dat, names.get(follow+1));
-							All += String.format("%-35s"+"%-35s"+"%-35s"+"%-35s"+"%-35s",dat, dat, dat, dat, names.get(follow+1));
+							All += String.format("%-45s"+"%-45s"+"%-45s"+"%-45s"+"%-35s",dat, dat, dat, dat, names.get(follow+1));
 						}
 
 						else{
 							System.out.printf("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s",dat, dat, dat, dat, dat);
-							All += String.format("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s",dat, dat, dat, dat, dat);
+							All += String.format("%-45s"+"%-45s"+"%-45s"+"%-45s"+"%-35s",dat, dat, dat, dat, dat);
 						}
 					}
 
@@ -734,174 +780,254 @@ public class EachPageJar extends JFrame {
 
 					if(names.get(5).substring(2).equals("ปี 57")){
 						System.out.printf("%-21s",dat);
-						All += String.format("%-21s",dat);
+						All += String.format("%-40s",dat);
 						for(int k = i+1 ; k < i+4 ; k++){
 							System.out.printf("%-21s",names.get(k));
-							All += String.format("%-21s",names.get(k));
+							cal = 0;
+							
+							if(names.get(k).length() == 10){
+								All += String.format("%-30s",names.get(k));
+							}
+							else if (names.get(k).length() > 10){
+								cal = 30;
+								cal -= names.get(k).length() - 10 ;
+								
+								All += String.format("%-"+cal+"s", names.get(k));
+							}
+							else if (names.get(k).length() < 10){
+								cal = 30;
+								cal += 10 - names.get(k).length() ;
+								All += String.format("%-"+cal+"s",names.get(k));
+							}
+							
 							follow = k;
 						}
 
 						if(names.get(11).substring(0, 7).equals("ไตรมาส1")){
 							System.out.printf("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s", names.get(follow+1),dat,dat,dat,dat);
-							All += String.format("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s", names.get(follow+1),dat,dat,dat,dat);
+							All += String.format("%-45s"+"%-45s"+"%-45s"+"%-45s"+"%-45s", names.get(follow+1),dat,dat,dat,dat);
 						}
 						else if(names.get(11).substring(0, 7).equals("ไตรมาส2")){
 							System.out.printf("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s",dat, names.get(follow+1),dat,dat,dat);
-							All += String.format("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s",dat, names.get(follow+1),dat,dat,dat);
+							All += String.format("%-45s"+"%-45s"+"%-45s"+"%-45s"+"%-45s",dat, names.get(follow+1),dat,dat,dat);
 						}
 						else if(names.get(11).substring(0, 7).equals("ไตรมาส3")){
 							System.out.printf("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s",dat, dat, names.get(follow+1),dat,dat);
-							All += String.format("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s",dat, dat, names.get(follow+1),dat,dat);
+							All += String.format("%-45s"+"%-45s"+"%-45s"+"%-45s"+"%-45s",dat, dat, names.get(follow+1),dat,dat);
 						}
 						else if(names.get(11).substring(0, 7).equals("ไตรมาส4")){
 							System.out.printf("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s",dat, dat, dat, names.get(follow+1),dat);
-							All += String.format("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s",dat, dat, dat, names.get(follow+1),dat);
+							All += String.format("%-45s"+"%-45s"+"%-45s"+"%-45s"+"%-45s",dat, dat, dat, names.get(follow+1),dat);
 						}
 						else if(names.get(11).substring(0, 7).equals("งบปี 60")){
 							System.out.printf("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s",dat, dat, dat, dat, names.get(follow+1));
-							All += String.format("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s",dat, dat, dat, dat, names.get(follow+1));
+							All += String.format("%-45s"+"%-45s"+"%-45s"+"%-45s"+"%-45s",dat, dat, dat, dat, names.get(follow+1));
 						}
 						else{
 							System.out.printf("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s",dat, dat, dat, dat, dat);
-							All += String.format("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s",dat, dat, dat, dat, dat);
+							All += String.format("%-45s"+"%-45s"+"%-45s"+"%-45s"+"%-45s",dat, dat, dat, dat, dat);
 						}
 
 					}
 
 					else if (names.get(5).substring(2).equals("ปี 58")){
 						System.out.printf("%-21s"+"%-21s",dat,dat);
-						All += String.format("%-21s"+"%-21s",dat,dat);
+						All += String.format("%-40s"+"%-35s",dat,dat);
 						for(int k = i+1 ; k < i+3 ; k++){
 							System.out.printf("%-21s",names.get(k));
-							All += String.format("%-21s",names.get(k));
+							cal = 0;
+							
+							if(names.get(k).length() == 10){
+								All += String.format("%-30s",names.get(k));
+							}
+							else if (names.get(k).length() > 10){
+								cal = 30;
+								cal -= names.get(k).length() - 10 ;
+								
+								All += String.format("%-"+cal+"s", names.get(k));
+							}
+							else if (names.get(k).length() < 10){
+								cal = 30;
+								cal += 10 - names.get(k).length() ;
+								All += String.format("%-"+cal+"s",names.get(k));
+							}
+							
 							follow = k;
 						}
 						if(names.get(9).substring(0, 7).equals("ไตรมาส1")){
 							System.out.printf("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s", names.get(follow+1),dat,dat,dat,dat);
-							All += String.format("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s", names.get(follow+1),dat,dat,dat,dat);
+							All += String.format("%-45s"+"%-45s"+"%-45s"+"%-45s"+"%-45s", names.get(follow+1),dat,dat,dat,dat);
 						}
 						else if(names.get(9).substring(0, 7).equals("ไตรมาส2")){
 							System.out.printf("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s",dat, names.get(follow+1),dat,dat,dat);
-							All += String.format("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s",dat, names.get(follow+1),dat,dat,dat);
+							All += String.format("%-45s"+"%-45s"+"%-45s"+"%-45s"+"%-45s",dat, names.get(follow+1),dat,dat,dat);
 						}
 						else if(names.get(9).substring(0, 7).equals("ไตรมาส3")){
 							System.out.printf("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s",dat, dat, names.get(follow+1),dat,dat);
-							All += String.format("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s",dat, dat, names.get(follow+1),dat,dat);
+							All += String.format("%-45s"+"%-45s"+"%-45s"+"%-45s"+"%-45s",dat, dat, names.get(follow+1),dat,dat);
 						}
 						else if(names.get(9).substring(0, 7).equals("ไตรมาส4")){
 							System.out.printf("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s",dat, dat, dat, names.get(follow+1),dat);
-							All += String.format("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s",dat, dat, dat, names.get(follow+1),dat);
+							All += String.format("%-45s"+"%-45s"+"%-45s"+"%-45s"+"%-45s",dat, dat, dat, names.get(follow+1),dat);
 						}
 						else if(names.get(9).substring(0, 7).equals("งบปี 60")){
 							System.out.printf("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s",dat, dat, dat, dat, names.get(follow+1));
-							All += String.format("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s",dat, dat, dat, dat, names.get(follow+1));
+							All += String.format("%-45s"+"%-45s"+"%-45s"+"%-45s"+"%-45s",dat, dat, dat, dat, names.get(follow+1));
 						}
 						else{
 							System.out.printf("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s",dat, dat, dat, dat, dat);
-							All += String.format("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s",dat, dat, dat, dat, dat);
+							All += String.format("%-45s"+"%-45s"+"%-45s"+"%-45s"+"%-45s",dat, dat, dat, dat, dat);
 						}
 					}
 
 					else if (names.get(5).substring(2).equals("ปี 59")){
 						System.out.printf("%-21s"+"%-21s"+"%-21s",dat,dat,dat);
-						All += String.format("%-21s"+"%-21s"+"%-21s",dat,dat,dat);
+						All += String.format("%-40s"+"%-40s"+"%-35s",dat,dat,dat);
 						for(int k = i+1 ; k < i+2 ; k++){
 							System.out.printf("%-21s",names.get(k));
-							All += String.format("%-21s",names.get(k));
+							cal = 0;
+							
+							if(names.get(k).length() == 10){
+								All += String.format("%-30s",names.get(k));
+							}
+							else if (names.get(k).length() > 10){
+								cal = 30;
+								cal -= names.get(k).length() - 10 ;
+								
+								All += String.format("%-"+cal+"s", names.get(k));
+							}
+							else if (names.get(k).length() < 10){
+								cal = 30;
+								cal += 10 - names.get(k).length() ;
+								All += String.format("%-"+cal+"s",names.get(k));
+							}
+							
 							follow = k;
 						}
 						if(names.get(7).substring(0, 7).equals("ไตรมาส1")){
 							System.out.printf("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s", names.get(follow+1),dat,dat,dat,dat);
-							All += String.format("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s", names.get(follow+1),dat,dat,dat,dat);
+							All += String.format("%-45s"+"%-45s"+"%-45s"+"%-45s"+"%-45s", names.get(follow+1),dat,dat,dat,dat);
 						}
 						else if(names.get(7).substring(0, 7).equals("ไตรมาส2")){
 							System.out.printf("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s",dat, names.get(follow+1),dat,dat,dat);
-							All += String.format("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s",dat, names.get(follow+1),dat,dat,dat);
+							All += String.format("%-45s"+"%-45s"+"%-45s"+"%-45s"+"%-45s",dat, names.get(follow+1),dat,dat,dat);
 						}
 						else if(names.get(7).substring(0, 7).equals("ไตรมาส3")){
 							System.out.printf("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s",dat, dat, names.get(follow+1),dat,dat);
-							All += String.format("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s",dat, dat, names.get(follow+1),dat,dat);
+							All += String.format("%-45s"+"%-45s"+"%-45s"+"%-45s"+"%-45s",dat, dat, names.get(follow+1),dat,dat);
 						}
 						else if(names.get(7).substring(0, 7).equals("ไตรมาส4")){
 							System.out.printf("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s",dat, dat, dat, names.get(follow+1),dat);
-							All += String.format("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s",dat, dat, dat, names.get(follow+1),dat);
+							All += String.format("%-45s"+"%-45s"+"%-45s"+"%-45s"+"%-45s",dat, dat, dat, names.get(follow+1),dat);
 						}
 						else if(names.get(7).substring(0, 7).equals("งบปี 60")){
 							System.out.printf("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s",dat, dat, dat, dat, names.get(follow+1));
-							All += String.format("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s",dat, dat, dat, dat, names.get(follow+1));
+							All += String.format("%-45s"+"%-45s"+"%-45s"+"%-45s"+"%-45s",dat, dat, dat, dat, names.get(follow+1));
 						}
 						else{
 							System.out.printf("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s",dat, dat, dat, dat, dat);
-							All += String.format("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s",dat, dat, dat, dat, dat);
+							All += String.format("%-45s"+"%-45s"+"%-45s"+"%-45s"+"%-45s",dat, dat, dat, dat, dat);
 						}
 					}
 					else if (names.get(5).substring(0,7).equals("ไตรมาส1")){
 						System.out.printf("%-21s"+"%-21s"+"%-21s"+"%-21s",dat, dat,dat,dat);
-						All += String.format("%-21s"+"%-21s"+"%-21s"+"%-21s",dat, dat,dat,dat);
+						All += String.format("%-40s"+"%-40s"+"%-40s"+"%-35s",dat, dat,dat,dat);
 						for(int k = i+1 ; k <= i+1 ; k++){
 							System.out.printf("%-21s",names.get(k));
-							All += String.format("%-21s",names.get(k));
+							cal = 0;
+							
+							if(names.get(k).length() == 10){
+								All += String.format("%-30s",names.get(k));
+							}
+							else if (names.get(k).length() > 10){
+								cal = 30;
+								cal -= names.get(k).length() - 10 ;
+								
+								All += String.format("%-"+cal+"s", names.get(k));
+							}
+							else if (names.get(k).length() < 10){
+								cal = 30;
+								cal += 10 - names.get(k).length() ;
+								All += String.format("%-"+cal+"s",names.get(k));
+							}
+							
 							follow = k;
 						}
 						if(names.get(7).substring(0, 7).equals("ไตรมาส1")){
 							System.out.printf("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s", names.get(follow+1),dat,dat,dat,dat);
-							All += String.format("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s", names.get(follow+1),dat,dat,dat,dat);
+							All += String.format("%-45s"+"%-45s"+"%-45s"+"%-45s"+"%-45s", names.get(follow+1),dat,dat,dat,dat);
 						}
 						else if(names.get(7).substring(0, 7).equals("ไตรมาส2")){
 							System.out.printf("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s",dat, names.get(follow+1),dat,dat,dat);
-							All += String.format("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s",dat, names.get(follow+1),dat,dat,dat);
+							All += String.format("%-45s"+"%-45s"+"%-45s"+"%-45s"+"%-45s",dat, names.get(follow+1),dat,dat,dat);
 						}
 						else if(names.get(7).substring(0, 7).equals("ไตรมาส3")){
 							System.out.printf("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s",dat, dat, names.get(follow+1),dat,dat);
-							All += String.format("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s",dat, dat, names.get(follow+1),dat,dat);
+							All += String.format("%-45s"+"%-45s"+"%-45s"+"%-45s"+"%-45s",dat, dat, names.get(follow+1),dat,dat);
 						}
 						else if(names.get(7).substring(0, 7).equals("ไตรมาส4")){
 							System.out.printf("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s",dat, dat, dat, names.get(follow+1),dat);
-							All += String.format("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s",dat, dat, dat, names.get(follow+1),dat);
+							All += String.format("%-45s"+"%-45s"+"%-45s"+"%-45s"+"%-45s",dat, dat, dat, names.get(follow+1),dat);
 						}
 						else if(names.get(7).substring(0, 7).equals("งบปี 60")){
 							System.out.printf("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s",dat, dat, dat, dat, names.get(follow+1));
-							All += String.format("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s",dat, dat, dat, dat, names.get(follow+1));
+							All += String.format("%-45s"+"%-45s"+"%-45s"+"%-45s"+"%-45s",dat, dat, dat, dat, names.get(follow+1));
 						}
 						else{
 							System.out.printf("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s",dat, dat, dat, dat, dat);
-							All += String.format("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s",dat, dat, dat, dat, dat);
+							All += String.format("%-45s"+"%-45s"+"%-45s"+"%-45s"+"%-45s",dat, dat, dat, dat, dat);
 						}
 					}
 					else{
 						for(int k = i+1 ; k < i+5 ; k++){
 							System.out.printf("%-21s",names.get(k));
-							All += String.format("%-35s",names.get(k));
+							cal = 0;
+							
+							if(names.get(k).length() == 10){
+								All += String.format("%-30s",names.get(k));
+							}
+							else if (names.get(k).length() > 10){
+								cal = 30;
+								cal -= names.get(k).length() - 10 ;
+								
+								All += String.format("%-"+cal+"s", names.get(k));
+							}
+							else if (names.get(k).length() < 10){
+								cal = 30;
+								cal += 10 - names.get(k).length() ;
+								All += String.format("%-"+cal+"s",names.get(k));
+							}
+							
 							follow = k;
 						}	
 
 						if(names.get(14).equals("บัญชีทางการเงินที่สำคัญ") || names.get(14).equals("บัญชีทางการเงินที่สำคัญ")){
 							System.out.printf("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s",dat, dat, dat, dat, dat);
-							All += String.format("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s",dat, dat, dat, dat, dat);
+							All += String.format("%-45s"+"%-45s"+"%-45s"+"%-45s"+"%-45s",dat, dat, dat, dat, dat);
 						}
 						else if(names.get(13).substring(0, 7).equals("ไตรมาส1")){
 							System.out.printf("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s", names.get(follow+1),dat,dat,dat,dat);
-							All += String.format("%-45s"+"%-40s"+"%-40s"+"%-40s"+"%-35s", names.get(follow+1),dat,dat,dat,dat);
+							All += String.format("%-45s"+"%-45s"+"%-45s"+"%-45s"+"%-45s", names.get(follow+1),dat,dat,dat,dat);
 						}
 						else if(names.get(13).substring(0, 7).equals("ไตรมาส2")){
 							System.out.printf("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s",dat, names.get(follow+1),dat,dat,dat);
-							All += String.format("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s",dat, names.get(follow+1),dat,dat,dat);
+							All += String.format("%-45s"+"%-45s"+"%-45s"+"%-45s"+"%-45s",dat, names.get(follow+1),dat,dat,dat);
 						}
 						else if(names.get(13).substring(0, 7).equals("ไตรมาส3")){
 							System.out.printf("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s",dat, dat, names.get(follow+1),dat,dat);
-							All += String.format("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s",dat, dat, names.get(follow+1),dat,dat);
+							All += String.format("%-45s"+"%-45s"+"%-45s"+"%-45s"+"%-45s",dat, dat, names.get(follow+1),dat,dat);
 						}
 						else if(names.get(13).substring(0, 7).equals("ไตรมาส4")){
 							System.out.printf("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s",dat, dat, dat, names.get(follow+1),dat);
-							All += String.format("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s",dat, dat, dat, names.get(follow+1),dat);
+							All += String.format("%-45s"+"%-45s"+"%-45s"+"%-45s"+"%-45s",dat, dat, dat, names.get(follow+1),dat);
 						}
 						else if(names.get(13).substring(0, 7).equals("งบปี 60")){
 							System.out.printf("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s",dat, dat, dat, dat, names.get(follow+1));
-							All += String.format("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s",dat, dat, dat, dat, names.get(follow+1));
+							All += String.format("%-45s"+"%-45s"+"%-45s"+"%-45s"+"%-45s",dat, dat, dat, dat, names.get(follow+1));
 						}
 						else{
 							System.out.printf("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s",dat, dat, dat, dat, dat);
-							All += String.format("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s",dat, dat, dat, dat, dat);
+							All += String.format("%-45s"+"%-45s"+"%-45s"+"%-45s"+"%-45s",dat, dat, dat, dat, dat);
 						}
 
 					}
@@ -938,6 +1064,7 @@ public class EachPageJar extends JFrame {
 
 		case 1:
 			System.out.print("เกษตรและอุตสาหกรรมอาหาร >> อาหารและเครื่องดื่ม");
+			All += "เกษตรและอุตสาหกรรมอาหาร >> อาหารและเครื่องดื่ม";
 			for(int i = 12 ; i <= 50 ; i++){
 				start();
 				checkString();
@@ -953,6 +1080,7 @@ public class EachPageJar extends JFrame {
 
 		case 2:
 			System.out.print("สินค้าอุปโภคบริโภค >> แฟชั่น");
+			All += "สินค้าอุปโภคบริโภค >> แฟชั่น";
 			for(int i = 51 ; i <= 73 ; i++){
 				start();
 				checkString();
@@ -968,6 +1096,7 @@ public class EachPageJar extends JFrame {
 
 		case 3:
 			System.out.print("สินค้าอุปโภคบริโภค >> ของใช้ในครัวเรือนและสำนักงาน");
+			All += "สินค้าอุปโภคบริโภค >> ของใช้ในครัวเรือนและสำนักงาน";
 			for(int i = 74 ; i <= 84 ; i++){
 				start();
 				checkString();
@@ -983,6 +1112,7 @@ public class EachPageJar extends JFrame {
 
 		case 4:
 			System.out.print("สินค้าอุปโภคบริโภค >> ของใช้ส่วนตัวและเวชภัณฑ์");
+			All += "สินค้าอุปโภคบริโภค >> ของใช้ส่วนตัวและเวชภัณฑ์";
 			for(int i = 85 ; i <= 91 ; i++){
 				start();
 				checkString();
@@ -998,6 +1128,7 @@ public class EachPageJar extends JFrame {
 
 		case 5:
 			System.out.print("ธุรกิจการเงิน >> ธนาคาร");
+			All += "ธุรกิจการเงิน >> ธนาคาร";
 			for(int i = 92 ; i <= 102 ; i++){
 				start();
 				checkString();
@@ -1345,20 +1476,9 @@ public class EachPageJar extends JFrame {
 		}
 	}
 
-	private static void ShowGUI(){
-//		textData.setText(All);
-		textArea.setText(All);
-//		textArea.setLineWrap(true);
-		textArea.setWrapStyleWord(true);
-	}
+	
 	public static void main(String[] args){
 		
-		for(int i = 0 ; i < 1	 ; i++){
-			Category(i);
-		}
-
-		count();
-
 		
 		EachPageJar epj = new EachPageJar();
 		epj.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -1366,12 +1486,26 @@ public class EachPageJar extends JFrame {
 		JScrollPane scroll = new JScrollPane(textArea,JScrollPane.VERTICAL_SCROLLBAR_AS_NEEDED,JScrollPane.HORIZONTAL_SCROLLBAR_AS_NEEDED);
 		
 		textArea.setText(All);
-			//textArea.setLineWrap(true);
-			textArea.setWrapStyleWord(true);
+		textArea.setWrapStyleWord(true);
+		
 		epj.add(scroll);
 		epj.setSize(500,500);
 		epj.setVisible(true);
 		epj.setLocationRelativeTo(null);
+		
+		for(int i = 0 ; i < 2	 ; i++){
+			Category(i);
+			textArea.setText(All);
+			
+		}
+
+		count();
+
+	
+		
+		//textArea.setLineWrap(true);
+		
+		
 
 		//ShowGUI();
 		
