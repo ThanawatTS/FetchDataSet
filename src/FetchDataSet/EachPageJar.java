@@ -203,7 +203,9 @@ public class EachPageJar extends JFrame {
 			for(int i = 0 ; i < Office.length ; i++){
 				nameWeb.add(Office[i]);
 			}
+			
 			Companyweb = nameWeb.get(webNum);
+			
 			website = "https://www.set.or.th/set/companyhighlight.do?symbol="+Companyweb+"&ssoPageId=5&language=th&country=TH";
 			webNum++;
 
@@ -494,8 +496,8 @@ public class EachPageJar extends JFrame {
 		
 		if(pageNum > 0){
 			for(int i = 0 ; i < names.size(); i++){
-				if(pageNum == 21 || pageNum == 75 || pageNum == 88 || pageNum == 181 || pageNum == 236 || pageNum == 243 || (pageNum >= 313 && pageNum <= 375) || pageNum == 396 || pageNum == 409 || pageNum == 436 || pageNum == 438 || pageNum == 569){
-					if(pageNum == 21 || pageNum == 88){
+				if(pageNum == 21 || pageNum == 75 ||pageNum == 79 || pageNum == 88 || pageNum == 181 || pageNum == 236 || pageNum == 243 || (pageNum >= 313 && pageNum <= 375) || pageNum == 396 || pageNum == 409 || pageNum == 436 || pageNum == 438 || pageNum == 569){
+					if(pageNum == 21 || pageNum == 79 || pageNum == 88){
 						System.out.print("cann't pull data");
 						All += String.format("cann't pull data");
 					}
@@ -522,16 +524,16 @@ public class EachPageJar extends JFrame {
 							cal = 0;
 							
 							if(names.get(k).length() == 10){
-								All += String.format("%-30s",names.get(k));
+								All += String.format("%-35s",names.get(k));
 							}
 							else if (names.get(k).length() > 10){
-								cal = 30;
+								cal = 35;
 								cal -= names.get(k).length() - 10 ;
 								
 								All += String.format("%-"+cal+"s", names.get(k));
 							}
 							else if (names.get(k).length() < 10){
-								cal = 30;
+								cal = 35;
 								cal += 10 - names.get(k).length() ;
 								All += String.format("%-"+cal+"s",names.get(k));
 							}
@@ -563,7 +565,7 @@ public class EachPageJar extends JFrame {
 
 						else{
 							System.out.printf("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s",dat, dat, dat, dat, dat);
-							All += String.format("%-45s"+"%-45s"+"%-45s"+"%-45s"+"%-35s",dat, dat, dat, dat, dat);
+							All += String.format("%-48s"+"%-48s"+"%-48s"+"%-48s"+"%-35s",dat, dat, dat, dat, dat);
 						}
 
 
@@ -572,23 +574,23 @@ public class EachPageJar extends JFrame {
 
 					else if (names.get(5).substring(2).equals("ปี 58")){
 						System.out.printf("%-21s"+"%-21s",dat,dat);
-						All += String.format("%-40s"+"%-35s",dat,dat);
+						All += String.format("%-45s"+"%-40s",dat,dat);
 						
 						for(int k = i+1 ; k < i+3 ; k++){
 							System.out.printf("%-21s",names.get(k));
 							cal = 0;
 							
 							if(names.get(k).length() == 10){
-								All += String.format("%-30s",names.get(k));
+								All += String.format("%-35s",names.get(k));
 							}
 							else if (names.get(k).length() > 10){
-								cal = 30;
+								cal = 35;
 								cal -= names.get(k).length() - 10 ;
 								
 								All += String.format("%-"+cal+"s", names.get(k));
 							}
 							else if (names.get(k).length() < 10){
-								cal = 30;
+								cal = 35;
 								cal += 10 - names.get(k).length() ;
 								All += String.format("%-"+cal+"s",names.get(k));
 							}
@@ -617,28 +619,28 @@ public class EachPageJar extends JFrame {
 						}
 						else{
 							System.out.printf("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s",dat, dat, dat, dat, dat);
-							All += String.format("%-45s"+"%-45s"+"%-45s"+"%-45s"+"%-35s",dat, dat, dat, dat, dat);
+							All += String.format("%-48s"+"%-48s"+"%-48s"+"%-48s"+"%-35s",dat, dat, dat, dat, dat);
 						}
 					}
 
 					else if (names.get(5).substring(2).equals("ปี 59")){
 						System.out.printf("%-21s"+"%-21s"+"%-21s",dat,dat,dat);
-						All += String.format("%-40s"+"%-40s"+"%-35s",dat,dat,dat);
+						All += String.format("%-45s"+"%-45s"+"%-40s",dat,dat,dat);
 						for(int k = i+1 ; k < i+2 ; k++){
 							System.out.printf("%-21s",names.get(k));
 							cal = 0;
 							
 							if(names.get(k).length() == 10){
-								All += String.format("%-30s",names.get(k));
+								All += String.format("%-35s",names.get(k));
 							}
 							else if (names.get(k).length() > 10){
-								cal = 30;
+								cal = 35;
 								cal -= names.get(k).length() - 10 ;
 								
 								All += String.format("%-"+cal+"s", names.get(k));
 							}
 							else if (names.get(k).length() < 10){
-								cal = 30;
+								cal = 35;
 								cal += 10 - names.get(k).length() ;
 								All += String.format("%-"+cal+"s",names.get(k));
 							}
@@ -667,27 +669,27 @@ public class EachPageJar extends JFrame {
 						}
 						else{
 							System.out.printf("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s",dat, dat, dat, dat, dat);
-							All += String.format("%-45s"+"%-45s"+"%-45s"+"%-45s"+"%-35s",dat, dat, dat, dat, dat);
+							All += String.format("%-48s"+"%-48s"+"%-48s"+"%-48s"+"%-35s",dat, dat, dat, dat, dat);
 						}
 					}
 					else if (names.get(5).substring(0,7).equals("ไตรมาส1")){
 						System.out.printf("%-21s"+"%-21s"+"%-21s"+"%-21s",dat, dat,dat,dat);
-						All += String.format("%-40s"+"%-40s"+"%-40s"+"%-35s",dat, dat,dat,dat);
+						All += String.format("%-45s"+"%-45s"+"%-45s"+"%-40s",dat, dat,dat,dat);
 						for(int k = i+1 ; k <= i+1 ; k++){
 							System.out.printf("%-21s",names.get(k));
 								cal = 0;
 							
 							if(names.get(k).length() == 10){
-								All += String.format("%-30s",names.get(k));
+								All += String.format("%-35s",names.get(k));
 							}
 							else if (names.get(k).length() > 10){
-								cal = 30;
+								cal = 35;
 								cal -= names.get(k).length() - 10 ;
 								
 								All += String.format("%-"+cal+"s", names.get(k));
 							}
 							else if (names.get(k).length() < 10){
-								cal = 30;
+								cal = 35;
 								cal += 10 - names.get(k).length() ;
 								All += String.format("%-"+cal+"s",names.get(k));
 							}
@@ -716,7 +718,7 @@ public class EachPageJar extends JFrame {
 						}
 						else{
 							System.out.printf("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s",dat, dat, dat, dat, dat);
-							All += String.format("%-45s"+"%-45s"+"%-45s"+"%-45s"+"%-35s",dat, dat, dat, dat, dat);
+							All += String.format("%-48s"+"%-48s"+"%-48s"+"%-30s", dat, dat, dat, dat);
 						}
 					}
 
@@ -726,16 +728,16 @@ public class EachPageJar extends JFrame {
 							cal = 0;
 							
 							if(names.get(k).length() == 10){
-								All += String.format("%-30s",names.get(k));
+								All += String.format("%-35s",names.get(k));
 							}
 							else if (names.get(k).length() > 10){
-								cal = 30;
+								cal = 35;
 								cal -= names.get(k).length() - 10 ;
 								
 								All += String.format("%-"+cal+"s", names.get(k));
 							}
 							else if (names.get(k).length() < 10){
-								cal = 30;
+								cal = 35;
 								cal += 10 - names.get(k).length() ;
 								All += String.format("%-"+cal+"s",names.get(k));
 							}
@@ -744,7 +746,7 @@ public class EachPageJar extends JFrame {
 						}
 						if(names.get(14).equals("บัญชีทางการเงินที่สำคัญ") || names.get(14).equals("บัญชีทางการเงินที่สำคัญ")){
 							System.out.printf("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s",dat, dat, dat, dat, dat);
-							All += String.format("%-45s"+"%-45s"+"%-45s"+"%-45s"+"%-35s",dat, dat, dat, dat, dat);
+							All += String.format("%-48s"+"%-48s"+"%-48s"+"%-48s"+"%-35s",dat, dat, dat, dat, dat);
 						}
 						else if(names.get(13).substring(0, 7).equals("ไตรมาส1")){
 							System.out.printf("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s", names.get(follow+1),dat,dat,dat,dat);
@@ -769,7 +771,7 @@ public class EachPageJar extends JFrame {
 
 						else{
 							System.out.printf("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s",dat, dat, dat, dat, dat);
-							All += String.format("%-45s"+"%-45s"+"%-45s"+"%-45s"+"%-35s",dat, dat, dat, dat, dat);
+							All += String.format("%-48s"+"%-48s"+"%-48s"+"%-48s"+"%-35s",dat, dat, dat, dat, dat);
 						}
 					}
 
@@ -825,7 +827,7 @@ public class EachPageJar extends JFrame {
 						}
 						else{
 							System.out.printf("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s",dat, dat, dat, dat, dat);
-							All += String.format("%-45s"+"%-45s"+"%-45s"+"%-45s"+"%-45s",dat, dat, dat, dat, dat);
+							All += String.format("%-48s"+"%-48s"+"%-48s"+"%-48s"+"%-45s",dat, dat, dat, dat, dat);
 						}
 
 					}
@@ -876,7 +878,7 @@ public class EachPageJar extends JFrame {
 						}
 						else{
 							System.out.printf("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s",dat, dat, dat, dat, dat);
-							All += String.format("%-45s"+"%-45s"+"%-45s"+"%-45s"+"%-45s",dat, dat, dat, dat, dat);
+							All += String.format("%-48s"+"%-48s"+"%-48s"+"%-48s"+"%-45s",dat, dat, dat, dat, dat);
 						}
 					}
 
@@ -926,7 +928,7 @@ public class EachPageJar extends JFrame {
 						}
 						else{
 							System.out.printf("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s",dat, dat, dat, dat, dat);
-							All += String.format("%-45s"+"%-45s"+"%-45s"+"%-45s"+"%-45s",dat, dat, dat, dat, dat);
+							All += String.format("%-48s"+"%-48s"+"%-48s"+"%-48s"+"%-45s",dat, dat, dat, dat, dat);
 						}
 					}
 					else if (names.get(5).substring(0,7).equals("ไตรมาส1")){
@@ -946,7 +948,7 @@ public class EachPageJar extends JFrame {
 								All += String.format("%-"+cal+"s", names.get(k));
 							}
 							else if (names.get(k).length() < 10){
-								cal = 30;
+								cal = 35;
 								cal += 10 - names.get(k).length() ;
 								All += String.format("%-"+cal+"s",names.get(k));
 							}
@@ -975,7 +977,7 @@ public class EachPageJar extends JFrame {
 						}
 						else{
 							System.out.printf("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s",dat, dat, dat, dat, dat);
-							All += String.format("%-45s"+"%-45s"+"%-45s"+"%-45s"+"%-45s",dat, dat, dat, dat, dat);
+							All += String.format("%-48s"+"%-48s"+"%-48s"+"%-48s", dat, dat, dat, dat);
 						}
 					}
 					else{
@@ -1003,7 +1005,7 @@ public class EachPageJar extends JFrame {
 
 						if(names.get(14).equals("บัญชีทางการเงินที่สำคัญ") || names.get(14).equals("บัญชีทางการเงินที่สำคัญ")){
 							System.out.printf("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s",dat, dat, dat, dat, dat);
-							All += String.format("%-45s"+"%-45s"+"%-45s"+"%-45s"+"%-45s",dat, dat, dat, dat, dat);
+							All += String.format("%-48s"+"%-48s"+"%-48s"+"%-48s"+"%-35s",dat, dat, dat, dat, dat);
 						}
 						else if(names.get(13).substring(0, 7).equals("ไตรมาส1")){
 							System.out.printf("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s", names.get(follow+1),dat,dat,dat,dat);
@@ -1027,7 +1029,7 @@ public class EachPageJar extends JFrame {
 						}
 						else{
 							System.out.printf("%-21s"+"%-21s"+"%-21s"+"%-21s"+"%-21s",dat, dat, dat, dat, dat);
-							All += String.format("%-45s"+"%-45s"+"%-45s"+"%-45s"+"%-45s",dat, dat, dat, dat, dat);
+							All += String.format("%-48s"+"%-48s"+"%-48s"+"%-48s"+"%-35s",dat, dat, dat, dat, dat);
 						}
 
 					}
@@ -1145,6 +1147,7 @@ public class EachPageJar extends JFrame {
 
 		case 6:
 			System.out.print("ธุรกิจการเงิน >> เงินทุนและหลักทรัพย์");
+			All += "ธุรกิจการเงิน >> เงินทุนและหลักทรัพย์";
 			for(int i = 103 ; i <= 134 ; i++){
 				start();
 				checkString();
@@ -1160,6 +1163,7 @@ public class EachPageJar extends JFrame {
 
 		case 7:
 			System.out.print("ธุรกิจการเงิน >> ประกันภัยและประกันชีวิต");
+			All += "ธุรกิจการเงิน >> ประกันภัยและประกันชีวิต";
 			for(int i = 135 ; i <= 150 ; i++){
 				start();
 				checkString();
@@ -1175,6 +1179,7 @@ public class EachPageJar extends JFrame {
 
 		case 8:
 			System.out.print("สินค้าอุตสาหกรรม >> ยานยนต์");
+			All += "สินค้าอุตสาหกรรม >> ยานยนต์";
 			for(int i = 151 ; i <= 168 ; i++){
 				start();
 				checkString();
@@ -1190,6 +1195,7 @@ public class EachPageJar extends JFrame {
 
 		case 9:
 			System.out.print("สินค้าอุตสาหกรรม >> วัสดุอุตสาหกรรมและเครื่องจักร");
+			All += "สินค้าอุตสาหกรรม >> วัสดุอุตสาหกรรมและเครื่องจักร";
 			for(int i = 169 ; i <= 178 ; i++){
 				start();
 				checkString();
@@ -1205,6 +1211,7 @@ public class EachPageJar extends JFrame {
 
 		case 10:
 			System.out.print("สินค้าอุตสาหกรรม >> กระดาษและวัสดุการพิมพ์");
+			All += "สินค้าอุตสาหกรรม >> กระดาษและวัสดุการพิมพ์";
 			for(int i = 179 ; i <= 179 ; i++){
 				start();
 				checkString();
@@ -1220,6 +1227,7 @@ public class EachPageJar extends JFrame {
 
 		case 11:
 			System.out.print("สินค้าอุตสาหกรรม >> ปิโตรเคมีและเคมีภัณฑ์");
+			All += "สินค้าอุตสาหกรรม >> ปิโตรเคมีและเคมีภัณฑ์";
 			for(int i = 180 ; i <= 194 ; i++){
 				start();
 				checkString();
@@ -1235,6 +1243,7 @@ public class EachPageJar extends JFrame {
 
 		case 12:
 			System.out.print("สินค้าอุตสาหกรรม >> บรรจุภัณฑ์");
+			All += "สินค้าอุตสาหกรรม >> บรรจุภัณฑ์";
 			for(int i = 195 ; i <= 211 ; i++){
 				start();
 				checkString();
@@ -1249,6 +1258,7 @@ public class EachPageJar extends JFrame {
 			break;
 		case 13:
 			System.out.print("สินค้าอุตสาหกรรม >> เหล็ก");
+			All += "สินค้าอุตสาหกรรม >> เหล็ก";
 			for(int i = 212 ; i <= 238 ; i++){
 				start();
 				checkString();
@@ -1263,6 +1273,7 @@ public class EachPageJar extends JFrame {
 			break;
 		case 14:
 			System.out.print("อสังหาริมทรัพย์และก่อสร้าง >> วัสดุก่อสร้าง");
+			All += "อสังหาริมทรัพย์และก่อสร้าง >> วัสดุก่อสร้าง";
 			for(int i = 239 ; i <= 257 ; i++){
 				start();
 				checkString();
@@ -1278,6 +1289,7 @@ public class EachPageJar extends JFrame {
 
 		case 15:
 			System.out.print("อสังหาริมทรัพย์และก่อสร้าง >> พัฒนาอสังหาริมทรัพย์");
+			All += "อสังหาริมทรัพย์และก่อสร้าง >> พัฒนาอสังหาริมทรัพย์";
 			for(int i = 258 ; i <= 312 ; i++){
 				start();
 				checkString();
@@ -1293,6 +1305,7 @@ public class EachPageJar extends JFrame {
 
 		case 16:
 			System.out.print("อสังหาริมทรัพย์และก่อสร้าง >> กองทุนรวมอสังหาริมทรัพย์และกองทรัสต์เพื่อการลงทุนในอสังหาริมทรัพย์");
+			All += "อสังหาริมทรัพย์และก่อสร้าง >> กองทุนรวมอสังหาริมทรัพย์และกองทรัสต์เพื่อการลงทุนในอสังหาริมทรัพย์";
 			for(int i = 313 ; i <= 375 ; i++){
 				start();
 				checkString();
@@ -1308,6 +1321,7 @@ public class EachPageJar extends JFrame {
 
 		case 17:
 			System.out.print("อสังหาริมทรัพย์และก่อสร้าง >> บริการรับเหมาก่อสร้าง");
+			All += "อสังหาริมทรัพย์และก่อสร้าง >> บริการรับเหมาก่อสร้าง";
 			for(int i = 376 ; i <= 395 ; i++){
 				start();
 				checkString();
@@ -1323,6 +1337,7 @@ public class EachPageJar extends JFrame {
 
 		case 18:
 			System.out.print("ทรัพยากร >> พลังงานและสาธารณูปโภค");
+			All += "ทรัพยากร >> พลังงานและสาธารณูปโภค";
 			for(int i = 396 ; i <= 438 ; i++){
 				start();
 				checkString();
@@ -1338,6 +1353,7 @@ public class EachPageJar extends JFrame {
 
 		case 19:
 			System.out.print("ทรัพยากร >> เหมืองแร่");
+			All += "ทรัพยากร >> เหมืองแร่";
 			for(int i = 439 ; i <= 440 ; i++){
 				start();
 				checkString();
@@ -1353,6 +1369,7 @@ public class EachPageJar extends JFrame {
 
 		case 20:
 			System.out.print("บริการ >> พาณิชย์");
+			All += "บริการ >> พาณิชย์";
 			for(int i = 441 ; i <= 462 ; i++){
 				start();
 				checkString();
@@ -1368,6 +1385,7 @@ public class EachPageJar extends JFrame {
 
 		case 21:
 			System.out.print("บริการ >> การแพทย์");
+			All += "บริการ >> การแพทย์";
 			for(int i = 463 ; i <= 481 ; i++){
 				start();
 				checkString();
@@ -1383,6 +1401,7 @@ public class EachPageJar extends JFrame {
 
 		case 22:
 			System.out.print("บริการ >> สื่อและสิ่งพิมพ์");
+			All += "บริการ >> สื่อและสิ่งพิมพ์";
 			for(int i = 482 ; i <= 510 ; i++){
 				start();
 				checkString();
@@ -1398,6 +1417,7 @@ public class EachPageJar extends JFrame {
 
 		case 23:
 			System.out.print("บริการ >> บริการเฉพาะกิจ");
+			All += "บริการ >> บริการเฉพาะกิจ";
 			for(int i = 511 ; i <= 513 ; i++){
 				start();
 				checkString();
@@ -1413,6 +1433,7 @@ public class EachPageJar extends JFrame {
 
 		case 24:
 			System.out.print("บริการ >> การท่องเที่ยวและสันทนาการ");
+			All += "บริการ >> การท่องเที่ยวและสันทนาการ";
 			for(int i = 514 ; i <= 525 ; i++){
 				start();
 				checkString();
@@ -1428,6 +1449,7 @@ public class EachPageJar extends JFrame {
 
 		case 25:
 			System.out.print("บริการ >> ขนส่งและโลจิสติกส์");
+			All += "บริการ >> ขนส่งและโลจิสติกส์";
 			for(int i = 526 ; i <= 544 ; i++){
 				start();
 				checkString();
@@ -1443,6 +1465,7 @@ public class EachPageJar extends JFrame {
 
 		case 26:
 			System.out.print("เทคโนโลยี >> ชิ้นส่วนอิเล็กทรอนิกส์");
+			All += "เทคโนโลยี >> ชิ้นส่วนอิเล็กทรอนิกส์" ;
 			for(int i = 545 ; i <= 555 ; i++){
 				start();
 				checkString();
@@ -1458,6 +1481,7 @@ public class EachPageJar extends JFrame {
 
 		case 27:
 			System.out.print("เทคโนโลยี >> เทคโนโลยีสารสนเทศและการสื่อสาร");
+			All += "เทคโนโลยี >> เทคโนโลยีสารสนเทศและการสื่อสาร";
 			for(int i = 556 ; i <= 584 ; i++){
 				start();
 				checkString();
@@ -1493,22 +1517,22 @@ public class EachPageJar extends JFrame {
 		epj.setVisible(true);
 		epj.setLocationRelativeTo(null);
 		
-		for(int i = 0 ; i < 2	 ; i++){
-			Category(i);
-			textArea.setText(All);
+		try{
 			
+			for(int i = 0 ; i < 28	 ; i++){
+				Category(i);
+				textArea.setText(All);
+				
+				
+			}
 		}
-
+		catch(Exception e){
+			All += "\n \n \n"+"-------------------   ERROR!!! IT WILL STOP FETCHING -------------- \n \n  THANAWAT GAM ^-^  \\(0)(0)/ \n \n \n ----------------------BYE---------------------- \n \n \n";
+			textArea.setText(All);
+		}
+		
 		count();
-
-	
-		
-		//textArea.setLineWrap(true);
-		
-		
-
-		//ShowGUI();
-		
+		textArea.setText(All);
 		
 
 	}
