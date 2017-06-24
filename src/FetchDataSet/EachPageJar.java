@@ -445,7 +445,7 @@ public class EachPageJar extends JFrame {
 					System.out.print("เกษตรและอุตสาหกรรมอาหาร >> ธุรกิจการเกษตร");
 
 				}
-				All = String.format("%-45s"+"รายได้รวม"+names.get(5)+"%-10s"+"รายได้รวม"+names.get(7)+"%-10s"+"รายได้รวม"+names.get(9)+"%-10s"+"รายได้รวม"+names.get(11)+"%-10s"+"รายได้รวมไตรมาส1"+"%-10s"+"รายได้รวมไตรมาส2"+"%-10s"+"รายได้รวมไตรมาส3"+"%-10s"+"รายได้รวมไตรมาส4"+"%-10s"+"รายได้รวม"+"งบปี 60"+"%-10s"+"กำไรสุทธิ"+names.get(5)+"%-10s"+"กำไรสุทธิ"+names.get(7)+"%-10s"+"กำไรสุทธิ"+names.get(9)+"%-10s"+"กำไรสุทธิ"+names.get(11)+"%-10s"+"กำไรสุทธิไตรมาส1"+"%-10s"+"กำไรสุทธิไตรมาส2"+"%-10s"+"กำไรสุทธิไตรมาส3"+"%-10s"+"กำไรสุทธิไตรมาส4"+"%-10s"+"กำไรสุทธิ"+"งบปี 60",Company,blank,blank,blank,blank,blank,blank,blank,blank,blank,blank,blank,blank,blank,blank,blank,blank,blank);
+				All = String.format("%-45s"+"รายได้รวม"+names.get(5)+"%-10s"+"รายได้รวม"+names.get(7)+"%-10s"+"รายได้รวม"+names.get(9)+"%-10s"+"รายได้รวม"+names.get(11)+"%-10s"+"รายได้รวมไตรมาส1"+"%-10s"+"รายได้รวมไตรมาส2"+"%-10s"+"รายได้รวมไตรมาส3"+"%-10s"+"รายได้รวมไตรมาส4"+"%-10s"+"รายได้รวม"+"งบปี 60"+"%-10s"+"กำไรสุทธิ"+names.get(5)+"%-10s"+"กำไรสุทธิ"+names.get(7)+"%-10s"+"กำไรสุทธิ"+names.get(9)+"%-10s"+"กำไรสุทธิ"+names.get(11)+"%-10s"+"กำไรสุทธิไตรมาส1"+"%-10s"+"กำไรสุทธิไตรมาส2"+"%-10s"+"กำไรสุทธิไตรมาส3"+"%-10s"+"กำไรสุทธิไตรมาส4"+"%-10s"+"กำไรสุทธิ"+"งบปี60",Company,blank,blank,blank,blank,blank,blank,blank,blank,blank,blank,blank,blank,blank,blank,blank,blank,blank);
 				All += "\n"+"เกษตรและอุตสาหกรรมอาหาร >> ธุรกิจการเกษตร";
 				
 
@@ -1084,7 +1084,7 @@ public class EachPageJar extends JFrame {
 
 		case 0:
 
-			for(int i = 0 ; i <= 11 ; i++){
+			for(int i = 0 ; i <= Agriculture.length  ; i++){
 				start();
 				checkString();
 				pageNum++;
@@ -1100,7 +1100,7 @@ public class EachPageJar extends JFrame {
 		case 1:
 			System.out.print("เกษตรและอุตสาหกรรมอาหาร >> อาหารและเครื่องดื่ม");
 			All += "เกษตรและอุตสาหกรรมอาหาร >> อาหารและเครื่องดื่ม";
-			for(int i = 12 ; i <= 50 ; i++){
+			for(int i = 0 ; i < FoodAndDrink.length ; i++){
 				start();
 				checkString();
 				pageNum++;
@@ -1116,7 +1116,7 @@ public class EachPageJar extends JFrame {
 		case 2:
 			System.out.print("สินค้าอุปโภคบริโภค >> แฟชั่น");
 			All += "สินค้าอุปโภคบริโภค >> แฟชั่น";
-			for(int i = 51 ; i <= 73 ; i++){
+			for(int i = 0 ; i < Fashion.length ; i++){
 				start();
 				checkString();
 				pageNum++;
@@ -1132,7 +1132,7 @@ public class EachPageJar extends JFrame {
 		case 3:
 			System.out.print("สินค้าอุปโภคบริโภค >> ของใช้ในครัวเรือนและสำนักงาน");
 			All += "สินค้าอุปโภคบริโภค >> ของใช้ในครัวเรือนและสำนักงาน";
-			for(int i = 74 ; i <= 84 ; i++){
+			for(int i = 0 ; i < Office.length ; i++){
 				start();
 				checkString();
 				pageNum++;
@@ -1148,7 +1148,7 @@ public class EachPageJar extends JFrame {
 		case 4:
 			System.out.print("สินค้าอุปโภคบริโภค >> ของใช้ส่วนตัวและเวชภัณฑ์");
 			All += "สินค้าอุปโภคบริโภค >> ของใช้ส่วนตัวและเวชภัณฑ์";
-			for(int i = 85 ; i <= 91 ; i++){
+			for(int i = 0 ; i < MedicalSupplies.length ; i++){
 				start();
 				checkString();
 				pageNum++;
@@ -1164,7 +1164,7 @@ public class EachPageJar extends JFrame {
 		case 5:
 			System.out.print("ธุรกิจการเงิน >> ธนาคาร");
 			All += "ธุรกิจการเงิน >> ธนาคาร";
-			for(int i = 92 ; i <= 102 ; i++){
+			for(int i = 0 ; i < Bank.length ; i++){
 				start();
 				checkString();
 				pageNum++;
@@ -1181,7 +1181,7 @@ public class EachPageJar extends JFrame {
 		case 6:
 			System.out.print("ธุรกิจการเงิน >> เงินทุนและหลักทรัพย์");
 			All += "ธุรกิจการเงิน >> เงินทุนและหลักทรัพย์";
-			for(int i = 103 ; i <= 134 ; i++){
+			for(int i = 0 ; i < Fund.length; i++){
 				start();
 				checkString();
 				pageNum++;
@@ -1197,7 +1197,7 @@ public class EachPageJar extends JFrame {
 		case 7:
 			System.out.print("ธุรกิจการเงิน >> ประกันภัยและประกันชีวิต");
 			All += "ธุรกิจการเงิน >> ประกันภัยและประกันชีวิต";
-			for(int i = 135 ; i <= 150 ; i++){
+			for(int i = 0 ; i < Insurance.length ; i++){
 				start();
 				checkString();
 				pageNum++;
@@ -1213,7 +1213,7 @@ public class EachPageJar extends JFrame {
 		case 8:
 			System.out.print("สินค้าอุตสาหกรรม >> ยานยนต์");
 			All += "สินค้าอุตสาหกรรม >> ยานยนต์";
-			for(int i = 151 ; i <= 168 ; i++){
+			for(int i = 0 ; i < Vehi.length ; i++){
 				start();
 				checkString();
 				pageNum++;
@@ -1229,7 +1229,7 @@ public class EachPageJar extends JFrame {
 		case 9:
 			System.out.print("สินค้าอุตสาหกรรม >> วัสดุอุตสาหกรรมและเครื่องจักร");
 			All += "สินค้าอุตสาหกรรม >> วัสดุอุตสาหกรรมและเครื่องจักร";
-			for(int i = 169 ; i <= 178 ; i++){
+			for(int i = 0 ; i < FacAndMach.length ; i++){
 				start();
 				checkString();
 				pageNum++;
@@ -1245,7 +1245,7 @@ public class EachPageJar extends JFrame {
 		case 10:
 			System.out.print("สินค้าอุตสาหกรรม >> กระดาษและวัสดุการพิมพ์");
 			All += "สินค้าอุตสาหกรรม >> กระดาษและวัสดุการพิมพ์";
-			for(int i = 179 ; i <= 179 ; i++){
+			for(int i = 0 ; i < PaperAndPrint.length ; i++){
 				start();
 				checkString();
 				pageNum++;
@@ -1261,7 +1261,7 @@ public class EachPageJar extends JFrame {
 		case 11:
 			System.out.print("สินค้าอุตสาหกรรม >> ปิโตรเคมีและเคมีภัณฑ์");
 			All += "สินค้าอุตสาหกรรม >> ปิโตรเคมีและเคมีภัณฑ์";
-			for(int i = 180 ; i <= 194 ; i++){
+			for(int i = 0 ; i < PitoAndChemi.length ; i++){
 				start();
 				checkString();
 				pageNum++;
@@ -1277,7 +1277,7 @@ public class EachPageJar extends JFrame {
 		case 12:
 			System.out.print("สินค้าอุตสาหกรรม >> บรรจุภัณฑ์");
 			All += "สินค้าอุตสาหกรรม >> บรรจุภัณฑ์";
-			for(int i = 195 ; i <= 211 ; i++){
+			for(int i = 0 ; i < Container.length ; i++){
 				start();
 				checkString();
 				pageNum++;
@@ -1292,7 +1292,7 @@ public class EachPageJar extends JFrame {
 		case 13:
 			System.out.print("สินค้าอุตสาหกรรม >> เหล็ก");
 			All += "สินค้าอุตสาหกรรม >> เหล็ก";
-			for(int i = 212 ; i <= 238 ; i++){
+			for(int i = 0 ; i < Steel.length ; i++){
 				start();
 				checkString();
 				pageNum++;
@@ -1307,7 +1307,7 @@ public class EachPageJar extends JFrame {
 		case 14:
 			System.out.print("อสังหาริมทรัพย์และก่อสร้าง >> วัสดุก่อสร้าง");
 			All += "อสังหาริมทรัพย์และก่อสร้าง >> วัสดุก่อสร้าง";
-			for(int i = 239 ; i <= 257 ; i++){
+			for(int i = 0 ; i < ConstructionMaterial.length ; i++){
 				start();
 				checkString();
 				pageNum++;
@@ -1323,7 +1323,7 @@ public class EachPageJar extends JFrame {
 		case 15:
 			System.out.print("อสังหาริมทรัพย์และก่อสร้าง >> พัฒนาอสังหาริมทรัพย์");
 			All += "อสังหาริมทรัพย์และก่อสร้าง >> พัฒนาอสังหาริมทรัพย์";
-			for(int i = 258 ; i <= 312 ; i++){
+			for(int i = 0 ; i < Estate.length ; i++){
 				start();
 				checkString();
 				pageNum++;
@@ -1339,7 +1339,7 @@ public class EachPageJar extends JFrame {
 		case 16:
 			System.out.print("อสังหาริมทรัพย์และก่อสร้าง >> กองทุนรวมอสังหาริมทรัพย์และกองทรัสต์เพื่อการลงทุนในอสังหาริมทรัพย์");
 			All += "อสังหาริมทรัพย์และก่อสร้าง >> กองทุนรวมอสังหาริมทรัพย์และกองทรัสต์เพื่อการลงทุนในอสังหาริมทรัพย์";
-			for(int i = 313 ; i <= 375 ; i++){
+			for(int i = 0 ; i < CoEstate.length ; i++){
 				start();
 				checkString();
 				pageNum++;
@@ -1355,7 +1355,7 @@ public class EachPageJar extends JFrame {
 		case 17:
 			System.out.print("อสังหาริมทรัพย์และก่อสร้าง >> บริการรับเหมาก่อสร้าง");
 			All += "อสังหาริมทรัพย์และก่อสร้าง >> บริการรับเหมาก่อสร้าง";
-			for(int i = 376 ; i <= 395 ; i++){
+			for(int i = 0 ; i < Constructors.length ; i++){
 				start();
 				checkString();
 				pageNum++;
@@ -1371,7 +1371,7 @@ public class EachPageJar extends JFrame {
 		case 18:
 			System.out.print("ทรัพยากร >> พลังงานและสาธารณูปโภค");
 			All += "ทรัพยากร >> พลังงานและสาธารณูปโภค";
-			for(int i = 396 ; i <= 438 ; i++){
+			for(int i = 0 ; i < EnergyAndCus.length ; i++){
 				start();
 				checkString();
 				pageNum++;
@@ -1387,7 +1387,7 @@ public class EachPageJar extends JFrame {
 		case 19:
 			System.out.print("ทรัพยากร >> เหมืองแร่");
 			All += "ทรัพยากร >> เหมืองแร่";
-			for(int i = 439 ; i <= 440 ; i++){
+			for(int i = 0 ; i < Mineral.length ; i++){
 				start();
 				checkString();
 				pageNum++;
@@ -1403,7 +1403,7 @@ public class EachPageJar extends JFrame {
 		case 20:
 			System.out.print("บริการ >> พาณิชย์");
 			All += "บริการ >> พาณิชย์";
-			for(int i = 441 ; i <= 462 ; i++){
+			for(int i = 0 ; i < Commercial.length ; i++){
 				start();
 				checkString();
 				pageNum++;
@@ -1419,7 +1419,7 @@ public class EachPageJar extends JFrame {
 		case 21:
 			System.out.print("บริการ >> การแพทย์");
 			All += "บริการ >> การแพทย์";
-			for(int i = 463 ; i <= 481 ; i++){
+			for(int i = 0 ; i < Medical.length ; i++){
 				start();
 				checkString();
 				pageNum++;
@@ -1435,7 +1435,7 @@ public class EachPageJar extends JFrame {
 		case 22:
 			System.out.print("บริการ >> สื่อและสิ่งพิมพ์");
 			All += "บริการ >> สื่อและสิ่งพิมพ์";
-			for(int i = 482 ; i <= 510 ; i++){
+			for(int i = 0 ; i < MediaAndPrint.length ; i++){
 				start();
 				checkString();
 				pageNum++;
@@ -1451,7 +1451,7 @@ public class EachPageJar extends JFrame {
 		case 23:
 			System.out.print("บริการ >> บริการเฉพาะกิจ");
 			All += "บริการ >> บริการเฉพาะกิจ";
-			for(int i = 511 ; i <= 513 ; i++){
+			for(int i = 0 ; i < Service.length ; i++){
 				start();
 				checkString();
 				pageNum++;
@@ -1467,7 +1467,7 @@ public class EachPageJar extends JFrame {
 		case 24:
 			System.out.print("บริการ >> การท่องเที่ยวและสันทนาการ");
 			All += "บริการ >> การท่องเที่ยวและสันทนาการ";
-			for(int i = 514 ; i <= 525 ; i++){
+			for(int i = 0 ; i < TravleAndRecreation.length ; i++){
 				start();
 				checkString();
 				pageNum++;
@@ -1483,7 +1483,7 @@ public class EachPageJar extends JFrame {
 		case 25:
 			System.out.print("บริการ >> ขนส่งและโลจิสติกส์");
 			All += "บริการ >> ขนส่งและโลจิสติกส์";
-			for(int i = 526 ; i <= 544 ; i++){
+			for(int i = 0 ; i < Logistic.length ; i++){
 				start();
 				checkString();
 				pageNum++;
@@ -1499,7 +1499,7 @@ public class EachPageJar extends JFrame {
 		case 26:
 			System.out.print("เทคโนโลยี >> ชิ้นส่วนอิเล็กทรอนิกส์");
 			All += "เทคโนโลยี >> ชิ้นส่วนอิเล็กทรอนิกส์" ;
-			for(int i = 545 ; i <= 555 ; i++){
+			for(int i = 0 ; i < Electronic.length ; i++){
 				start();
 				checkString();
 				pageNum++;
@@ -1515,7 +1515,7 @@ public class EachPageJar extends JFrame {
 		case 27:
 			System.out.print("เทคโนโลยี >> เทคโนโลยีสารสนเทศและการสื่อสาร");
 			All += "เทคโนโลยี >> เทคโนโลยีสารสนเทศและการสื่อสาร";
-			for(int i = 556 ; i <= 584 ; i++){
+			for(int i = 0 ; i < TechnologyAndMedia.length ; i++){
 				start();
 				checkString();
 				pageNum++;
