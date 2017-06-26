@@ -724,23 +724,22 @@ public class EachPageJar extends JFrame {
 					else{
 						for(int k = i+1 ; k < i+5 ; k++){
 							System.out.printf("%-21s",names.get(k));
-							System.out.println(names.get(k)+"GAMMMMMMM");
 							cal = 0;
 							
 							if(names.get(k).length() == 10){
-								All += String.format("%-35d",Double.parseDouble(names.get(k)));
-								
+								All += String.format("%-35s",names.get(k));
+								All += 21;
 							}
 							else if (names.get(k).length() > 10){
 								cal = 35;
 								cal -= names.get(k).length() - 10 ;
 								
-								All += String.format("%-"+cal+"d", Double.parseDouble(names.get(k)));
+								All += String.format("%-"+cal+"s", names.get(k));
 							}
 							else if (names.get(k).length() < 10){
 								cal = 35;
 								cal += 10 - names.get(k).length() ;
-								All += String.format("%-"+cal+"s",Double.parseDouble(names.get(k)));
+								All += String.format("%-"+cal+"s",names.get(k));
 							}
 							
 							follow = k;
