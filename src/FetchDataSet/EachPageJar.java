@@ -728,7 +728,7 @@ public class EachPageJar extends JFrame {
 							
 							if(names.get(k).length() == 10){
 								All += String.format("%-35s",names.get(k));
-								All += 21;
+								
 							}
 							else if (names.get(k).length() > 10){
 								cal = 35;

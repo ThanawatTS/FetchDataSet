@@ -1,4 +1,4 @@
-package FetchDataSet;
+package MAI;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -13,6 +13,8 @@ import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
+
+import FetchDataSet.EachPageJar;
 
 public class mai {
 
@@ -37,12 +39,8 @@ public class mai {
 	static String All = "", dat = "-";
 
 	private static void start(){
-
-		if(pageNum == 0){
-			website = "https://marketdata.set.or.th/mkt/stockquotation.do?symbol=ABICO&ssoPageId=1&language=th&country=TH";
-		}
-		
-		else if (pageNum > 0 && pageNum <= AGRO.length){
+	
+		if (pageNum > 0 && pageNum <= AGRO.length){
 
 			for(int i = 0 ; i < AGRO.length ; i++){
 				nameWeb.add(AGRO[i]);
@@ -113,7 +111,7 @@ public class mai {
 			webNum++;
 		}
 		
-		else if (pageNum >= SERVICE.length+RESOURC.length+PROPCON.length+INDUS.length+FINCIAL.length+CONSUMP.length+AGRO.length  && pageNum < TECH.length+SERVICE.length+RESOURC.length+PROPCON.length+INDUS.length+FINCIAL.length+CONSUMP.length+AGRO.length ){
+		else if (pageNum >= SERVICE.length+RESOURC.length+PROPCON.length+INDUS.length+FINCIAL.length+CONSUMP.length+AGRO.length  && pageNum < TECH.length+SERVICE.length+RESOURC.length+PROPCON.length+INDUS.length+FINCIAL.length+CONSUMP.length+AGRO.length+1 ){
 			
 			for(int i = 0 ; i < TECH.length ; i++){
 				nameWeb.add(TECH[i]);
@@ -126,23 +124,29 @@ public class mai {
 		
 
 		if(pageNum == 0){
-			System.out.print("เกษตรและอุตสาหกรรมอาหาร");
+			
 			try {
 				
-				Document doc = Jsoup.connect(website).userAgent("mozilla/17.0").get();
+				Document doc = Jsoup.connect("https://www.set.or.th/set/companyhighlight.do?symbol=ABICO&ssoPageId=5&language=th&country=TH").userAgent("mozilla/17.0").get();
 				Elements temp = doc.select("table.table-info");
-
+				
 				for(Element ele:temp){
-					System.out.print("เกษตรและอุตสาหกรรมอาหาร");
-					System.out.println(" "+ ele.getAllElements().first().text() );
+					
+					//System.out.print("เกษตรและอุตสาหกรรมอาหาร");
+					//System.out.println(" "+ ele.getAllElements().first().text() );
 
 					names = new ArrayList<>(Arrays.asList(ele.getAllElements().first().text().split(" ")));
-
+					System.out.printf("%-45s"+"รายได้รวม"+names.get(5)+"%-10s"+"รายได้รวม"+names.get(7)+"%-10s"+"รายได้รวม"+names.get(9)+"%-10s"+"รายได้รวม"+names.get(11)+"%-10s"+"รายได้รวมไตรมาส1"+"%-10s"+"รายได้รวมไตรมาส2"+"%-10s"+"รายได้รวมไตรมาส3"+"%-10s"+"รายได้รวมไตรมาส4"+"%-10s"+"รายได้รวม"+"งบปี60"+"%-10s"+"กำไรสุทธิ"+names.get(5)+"%-10s"+"กำไรสุทธิ"+names.get(7)+"%-10s"+"กำไรสุทธิ"+names.get(9)+"%-10s"+"กำไรสุทธิ"+names.get(11)+"%-10s"+"กำไรสุทธิไตรมาส1"+"%-10s"+"กำไรสุทธิไตรมาส2"+"%-10s"+"กำไรสุทธิไตรมาส3"+"%-10s"+"กำไรสุทธิไตรมาส4"+"%-10s"+"กำไรสุทธิ"+"งบปี60",Company,blank,blank,blank,blank,blank,blank,blank,blank,blank,blank,blank,blank,blank,blank,blank,blank,blank);
+					
+					
 					System.out.println();
-					System.out.println();
+					System.out.print("เกษตรและอุตสาหกรรมอาหาร");
 					
 
-				}
+				}	
+				All = String.format("%-45s"+"รายได้รวม"+names.get(5)+"%-10s"+"รายได้รวม"+names.get(7)+"%-10s"+"รายได้รวม"+names.get(9)+"%-10s"+"รายได้รวม"+names.get(11)+"%-10s"+"รายได้รวมไตรมาส1"+"%-10s"+"รายได้รวมไตรมาส2"+"%-10s"+"รายได้รวมไตรมาส3"+"%-10s"+"รายได้รวมไตรมาส4"+"%-10s"+"รายได้รวม"+"งบปี 60"+"%-10s"+"กำไรสุทธิ"+names.get(5)+"%-10s"+"กำไรสุทธิ"+names.get(7)+"%-10s"+"กำไรสุทธิ"+names.get(9)+"%-10s"+"กำไรสุทธิ"+names.get(11)+"%-10s"+"กำไรสุทธิไตรมาส1"+"%-10s"+"กำไรสุทธิไตรมาส2"+"%-10s"+"กำไรสุทธิไตรมาส3"+"%-10s"+"กำไรสุทธิไตรมาส4"+"%-10s"+"กำไรสุทธิ"+"งบปี60",Company,blank,blank,blank,blank,blank,blank,blank,blank,blank,blank,blank,blank,blank,blank,blank,blank,blank);
+				All += "\n"+"เกษตรและอุตสาหกรรมอาหาร";
+				
 			} catch (IOException e){
 				e.printStackTrace();
 			}
@@ -190,8 +194,8 @@ public class mai {
 
 		if(pageNum > 0){
 			for(int i = 0 ; i < names.size(); i++){
-				if(pageNum == 6){
-					if (pageNum == 6){
+				if(pageNum == 6 || pageNum == 101){
+					if (pageNum == 6 || pageNum == 101){
 						System.out.print("Didn't have any information yet");
 						All += String.format("Didn't have any information yet");
 					}
@@ -414,7 +418,7 @@ public class mai {
 
 							if(names.get(k).length() == 10){
 								All += String.format("%-35s",names.get(k));
-								All += 21;
+							
 							}
 							else if (names.get(k).length() > 10){
 								cal = 35;
@@ -767,20 +771,30 @@ public class mai {
 	
 	public static void count (){
 		System.out.println(AGRO.length);
+		All += "AGRO:"+ AGRO.length;
 		System.out.println(CONSUMP.length);
+		All += "CONSUMP:" + CONSUMP.length; 
 		System.out.println(FINCIAL.length);
+		All += "FINCIAL:" + FINCIAL.length;
 		System.out.println(INDUS.length);
+		All += "INDUS:" + INDUS.length;
 		System.out.println(PROPCON.length);
+		All += "PROPCON:" + PROPCON.length;
 		System.out.println(RESOURC.length);
+		All += "RESOURC:" + RESOURC.length;
 		System.out.println(SERVICE.length);
+		All += "SERVICE:" + SERVICE.length;
 		System.out.println(TECH.length);
+		All += "TECH:"+TECH.length;
 	}
 	
 	public static void Category (int Co){
 		switch (Co){
 		
 		case 0:
+			
 			for(int i = 0; i <= AGRO.length; i++){
+				
 				start();
 				checkString();
 				pageNum++;
@@ -794,7 +808,8 @@ public class mai {
 			break;
 			
 		case 1:
-			System.out.println("สินค้าอุปโภคบริโภค");
+			System.out.print("สินค้าอุปโภคบริโภค");
+			All += "สินค้าอุปโภคบริโภค";
 			for(int i = 0; i < CONSUMP.length; i++){
 				start();
 				checkString();
@@ -810,7 +825,8 @@ public class mai {
 			break;
 		
 		case 2:
-			System.out.println("ธุรกิจการเงิน");
+			System.out.print("ธุรกิจการเงิน");
+			All += "ธุรกิจการเงิน";
 			for(int i = 0 ; i < FINCIAL.length; i++){
 				start();
 				checkString();
@@ -826,7 +842,8 @@ public class mai {
 			break;
 		
 		case 3:
-			System.out.println("สินค้าอุตสาหกรรม");
+			System.out.print("สินค้าอุตสาหกรรม");
+			All += "สินค้าอุตสาหกรรม";
 			for(int i = 0; i < INDUS.length; i++){
 				start();
 				checkString();
@@ -842,7 +859,8 @@ public class mai {
 			break;
 			
 		case 4:
-			System.out.println("อสังหาริมทรัพย์และก่อสร้าง");
+			System.out.print("อสังหาริมทรัพย์และก่อสร้าง");
+			All += "อสังหาริมทรัพย์และก่อสร้าง";
 			for(int i = 0; i < PROPCON.length; i++){
 				start();
 				checkString();
@@ -858,7 +876,8 @@ public class mai {
 			break;
 
 		case 5:
-			System.out.println("ทรัพยากร");
+			System.out.print("ทรัพยากร");
+			All += "ทรัพยากร";
 			for(int i = 0; i < RESOURC.length; i++){
 				start();
 				checkString();
@@ -874,7 +893,8 @@ public class mai {
 			break;
 			
 		case 6:
-			System.out.println("บริการ");
+			System.out.print("บริการ");
+			All += "บริการ";
 			for(int i = 0; i < SERVICE.length; i++){
 				start();
 				checkString();
@@ -890,7 +910,8 @@ public class mai {
 			break;
 			
 		case 7:
-			System.out.println("เทคโนโลยี");
+			System.out.print("เทคโนโลยี");
+			All += "เทคโนโลยี";
 			for(int i = 0; i < TECH.length; i++){
 				start();
 				checkString();
@@ -925,10 +946,11 @@ public class mai {
 			epj.setVisible(true);
 			epj.setLocationRelativeTo(null);
 			
-			count();
+			
 			try{
 				
 				for(int i = 0 ; i < 8	 ; i++){
+					
 					Category(i);
 					textArea.setText(All);
 					
@@ -938,11 +960,13 @@ public class mai {
 			catch(Exception e){
 				All += "\n \n \n"+"-------------------   ERROR!!! IT WILL STOP FETCHING -------------- \n \n  THANAWAT GAM ^-^  \\(0)(0)/ \n \n \n ----------------------BYE---------------------- \n \n \n";
 				All += e;
+				
 				textArea.setText(All);
 			}
 			
 			
 			textArea.setText(All);
+			
 		}
 	
 	
