@@ -34,7 +34,7 @@ public class mai {
 	static ArrayList<String> nameWeb = new ArrayList<String>();
 	static ArrayList<String> names;
 
-	static int out = 0,pageNum = 0,webNum = 0, cal = 0, follow = 0;
+	static int out = 0,pageNum = 0,webNum = 0, cal = 0, follow = 0,Total = 0;
 	static String website = "", CompanyWeb= "", blank = " ", Company = "หลักทรัพย์";
 	static String All = "", dat = "-";
 
@@ -930,6 +930,26 @@ public class mai {
 		}
 		
 		}
+		public static void countCom(){
+			
+			All += "\n \n \n";
+			All += "AGRO: "+AGRO.length;
+			All += "\n CONSUMP: " + CONSUMP.length;
+			All += "\n FINCIAL: " +FINCIAL.length;
+			All += "\n INDUS: " + INDUS.length;
+			All += "\n PROPCON: "+ PROPCON.length;
+			All += "\n RESOURC: "+ RESOURC.length;
+			All += "\n SERVICE: "+ SERVICE.length;
+			All += "\n TECH: "+ TECH.length;
+			
+			Total += AGRO.length + CONSUMP.length + FINCIAL.length + INDUS.length+ PROPCON.length;
+			Total += RESOURC.length + SERVICE.length + TECH.length;
+			
+			All += "\n ---------------------- \n Total :" + Total;
+			
+			All += "\n \n -------------------------------END-------------------------------";
+			
+		}
 		
 		public static void main (String[] args){
 
@@ -964,7 +984,7 @@ public class mai {
 				textArea.setText(All);
 			}
 			
-			
+			countCom();
 			textArea.setText(All);
 			
 		}

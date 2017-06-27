@@ -1566,6 +1566,7 @@ public class EachPageJar extends JFrame {
 		}
 		
 		count();
+		All += "\n \n -------------------END-----------------------------";
 		textArea.setText(All);
 		
 
