@@ -164,7 +164,7 @@ public class EachPageJar extends JFrame {
 			website = "https://www.set.or.th/set/companyhighlight.do?symbol=CHOTI&ssoPageId=5&language=th&country=TH";	
 		}
 
-		else if (pageNum > 0 && pageNum <= 11){
+		else if (pageNum > 0 && pageNum <= Agriculture.length){
 
 			for(int i = 0 ; i < Agriculture.length ; i++){
 				nameWeb.add(Agriculture[i]);
@@ -175,7 +175,7 @@ public class EachPageJar extends JFrame {
 
 
 		}
-		else if (pageNum > 11 && pageNum <= 50){
+		else if (pageNum > Agriculture.length && pageNum <= Agriculture.length + FoodAndDrink.length){
 
 			for(int i = 0 ; i < FoodAndDrink.length ; i++){
 				nameWeb.add(FoodAndDrink[i]);
@@ -186,7 +186,7 @@ public class EachPageJar extends JFrame {
 
 
 		}
-		else if (pageNum > 50 && pageNum <= 73){
+		else if (pageNum > Agriculture.length + FoodAndDrink.length && pageNum <= Fashion.length + Agriculture.length + FoodAndDrink.length){
 
 			for(int i = 0 ; i < Fashion.length ; i++){
 				nameWeb.add(Fashion[i]);
@@ -197,7 +197,7 @@ public class EachPageJar extends JFrame {
 
 
 		}
-		else if (pageNum > 73 && pageNum <= 84){
+		else if (pageNum > Fashion.length + Agriculture.length + FoodAndDrink.length && pageNum <= Office.length + Fashion.length + Agriculture.length + FoodAndDrink.length){
 
 			for(int i = 0 ; i < Office.length ; i++){
 				nameWeb.add(Office[i]);
@@ -210,7 +210,7 @@ public class EachPageJar extends JFrame {
 
 
 		}
-		else if (pageNum > 84 && pageNum <= 91){
+		else if (pageNum > Office.length + Fashion.length + Agriculture.length + FoodAndDrink.length && pageNum <= MedicalSupplies.length + Office.length + Fashion.length + Agriculture.length + FoodAndDrink.length){
 
 			for(int i = 0 ; i < MedicalSupplies.length ; i++){
 				nameWeb.add(MedicalSupplies[i]);
@@ -221,7 +221,7 @@ public class EachPageJar extends JFrame {
 
 
 		}
-		else if (pageNum > 91 && pageNum <= 102){
+		else if (pageNum > MedicalSupplies.length + Office.length + Fashion.length + Agriculture.length + FoodAndDrink.length && pageNum <= Bank.length + MedicalSupplies.length + Office.length + Fashion.length + Agriculture.length + FoodAndDrink.length){
 
 			for(int i = 0 ; i < Bank.length ; i++){
 				nameWeb.add(Bank[i]);
@@ -232,7 +232,7 @@ public class EachPageJar extends JFrame {
 
 
 		}
-		else if (pageNum > 102 && pageNum <= 134){
+		else if (pageNum > Bank.length + MedicalSupplies.length + Office.length + Fashion.length + Agriculture.length + FoodAndDrink.length && pageNum <= Fund.length + Bank.length + MedicalSupplies.length + Office.length + Fashion.length + Agriculture.length + FoodAndDrink.length){
 
 			for(int i = 0 ; i < Fund.length ; i++){
 				nameWeb.add(Fund[i]);
@@ -243,7 +243,7 @@ public class EachPageJar extends JFrame {
 
 
 		}
-		else if (pageNum > 134 && pageNum <= 150){
+		else if (pageNum > Fund.length + Bank.length + MedicalSupplies.length + Office.length + Fashion.length + Agriculture.length + FoodAndDrink.length && pageNum <= Insurance.length + Fund.length + Bank.length + MedicalSupplies.length + Office.length + Fashion.length + Agriculture.length + FoodAndDrink.length){
 
 			for(int i = 0 ; i < Insurance.length ; i++){
 				nameWeb.add(Insurance[i]);
@@ -254,7 +254,7 @@ public class EachPageJar extends JFrame {
 
 
 		}
-		else if (pageNum > 150 && pageNum <= 168){
+		else if (pageNum > Insurance.length + Fund.length + Bank.length + MedicalSupplies.length + Office.length + Fashion.length + Agriculture.length + FoodAndDrink.length && pageNum <= Insurance.length+Vehi.length + Fund.length + Bank.length + MedicalSupplies.length + Office.length + Fashion.length + Agriculture.length + FoodAndDrink.length){
 
 			for(int i = 0 ; i < Vehi.length ; i++){
 				nameWeb.add(Vehi[i]);
@@ -265,7 +265,7 @@ public class EachPageJar extends JFrame {
 
 
 		}
-		else if (pageNum > 168 && pageNum <= 178){
+		else if (pageNum > Insurance.length+ Vehi.length + Fund.length + Bank.length + MedicalSupplies.length + Office.length + Fashion.length + Agriculture.length + FoodAndDrink.length && pageNum <= Insurance.length + FacAndMach.length + Vehi.length + Fund.length + Bank.length + MedicalSupplies.length + Office.length + Fashion.length + Agriculture.length + FoodAndDrink.length){
 
 			for(int i = 0 ; i < FacAndMach.length ; i++){
 				nameWeb.add(FacAndMach[i]);
@@ -276,7 +276,7 @@ public class EachPageJar extends JFrame {
 
 
 		}
-		else if (pageNum > 178 && pageNum <= 179){
+		else if (pageNum > Insurance.length +FacAndMach.length + Vehi.length + Fund.length + Bank.length + MedicalSupplies.length + Office.length + Fashion.length + Agriculture.length + FoodAndDrink.length && pageNum <= Insurance.length +PaperAndPrint.length + FacAndMach.length + Vehi.length + Fund.length + Bank.length + MedicalSupplies.length + Office.length + Fashion.length + Agriculture.length + FoodAndDrink.length){
 			for(int i = 0 ; i < PaperAndPrint.length ; i++){
 				nameWeb.add(PaperAndPrint[i]);
 			}
@@ -284,7 +284,7 @@ public class EachPageJar extends JFrame {
 			website = "https://www.set.or.th/set/companyhighlight.do?symbol="+Companyweb+"&ssoPageId=5&language=th&country=TH";
 			webNum++;
 		}
-		else if (pageNum > 179 && pageNum <= 194){
+		else if (pageNum > Insurance.length +PaperAndPrint.length + FacAndMach.length + Vehi.length + Fund.length + Bank.length + MedicalSupplies.length + Office.length + Fashion.length + Agriculture.length + FoodAndDrink.length && pageNum <= Insurance.length +PitoAndChemi.length + PaperAndPrint.length + FacAndMach.length + Vehi.length + Fund.length + Bank.length + MedicalSupplies.length + Office.length + Fashion.length + Agriculture.length + FoodAndDrink.length){
 			for(int i = 0 ; i < PitoAndChemi.length ; i++){
 				nameWeb.add(PitoAndChemi[i]);
 			}
@@ -292,7 +292,7 @@ public class EachPageJar extends JFrame {
 			website = "https://www.set.or.th/set/companyhighlight.do?symbol="+Companyweb+"&ssoPageId=5&language=th&country=TH";
 			webNum++;
 		}
-		else if (pageNum > 194 && pageNum <= 211){
+		else if (pageNum > Insurance.length +PitoAndChemi.length + PaperAndPrint.length + FacAndMach.length + Vehi.length + Fund.length + Bank.length + MedicalSupplies.length + Office.length + Fashion.length + Agriculture.length + FoodAndDrink.length && pageNum <= Insurance.length +Container.length + PitoAndChemi.length + PaperAndPrint.length + FacAndMach.length + Vehi.length + Fund.length + Bank.length + MedicalSupplies.length + Office.length + Fashion.length + Agriculture.length + FoodAndDrink.length){
 			for(int i = 0 ; i < Container.length ; i++){
 				nameWeb.add(Container[i]);
 			}
@@ -300,7 +300,7 @@ public class EachPageJar extends JFrame {
 			website = "https://www.set.or.th/set/companyhighlight.do?symbol="+Companyweb+"&ssoPageId=5&language=th&country=TH";
 			webNum++;
 		}
-		else if (pageNum > 211 && pageNum <= 238){
+		else if (pageNum > Insurance.length +Container.length + PitoAndChemi.length + PaperAndPrint.length + FacAndMach.length + Vehi.length + Fund.length + Bank.length + MedicalSupplies.length + Office.length + Fashion.length + Agriculture.length + FoodAndDrink.length && pageNum <= Insurance.length +Steel.length + Container.length + PitoAndChemi.length + PaperAndPrint.length + FacAndMach.length + Vehi.length + Fund.length + Bank.length + MedicalSupplies.length + Office.length + Fashion.length + Agriculture.length + FoodAndDrink.length){
 			for(int i = 0 ; i < Steel.length ; i++){
 				nameWeb.add(Steel[i]);
 			}
@@ -308,7 +308,7 @@ public class EachPageJar extends JFrame {
 			website = "https://www.set.or.th/set/companyhighlight.do?symbol="+Companyweb+"&ssoPageId=5&language=th&country=TH";
 			webNum++;
 		}
-		else if (pageNum > 238 && pageNum <= 257){
+		else if (pageNum > Insurance.length +Steel.length + Container.length + PitoAndChemi.length + PaperAndPrint.length + FacAndMach.length + Vehi.length + Fund.length + Bank.length + MedicalSupplies.length + Office.length + Fashion.length + Agriculture.length + FoodAndDrink.length && pageNum <= Insurance.length +ConstructionMaterial.length + Steel.length + Container.length + PitoAndChemi.length + PaperAndPrint.length + FacAndMach.length + Vehi.length + Fund.length + Bank.length + MedicalSupplies.length + Office.length + Fashion.length + Agriculture.length + FoodAndDrink.length){
 			for(int i = 0 ; i < ConstructionMaterial.length ; i++){
 				nameWeb.add(ConstructionMaterial[i]);
 			}
@@ -316,7 +316,7 @@ public class EachPageJar extends JFrame {
 			website = "https://www.set.or.th/set/companyhighlight.do?symbol="+Companyweb+"&ssoPageId=5&language=th&country=TH";
 			webNum++;
 		}
-		else if (pageNum > 257 && pageNum <= 312){
+		else if (pageNum > Insurance.length +ConstructionMaterial.length + Steel.length + Container.length + PitoAndChemi.length + PaperAndPrint.length + FacAndMach.length + Vehi.length + Fund.length + Bank.length + MedicalSupplies.length + Office.length + Fashion.length + Agriculture.length + FoodAndDrink.length && pageNum <= Insurance.length +Estate.length + ConstructionMaterial.length + Steel.length + Container.length + PitoAndChemi.length + PaperAndPrint.length + FacAndMach.length + Vehi.length + Fund.length + Bank.length + MedicalSupplies.length + Office.length + Fashion.length + Agriculture.length + FoodAndDrink.length){
 			for(int i = 0 ; i < Estate.length ; i++){
 				nameWeb.add(Estate[i]);
 			}
@@ -324,7 +324,7 @@ public class EachPageJar extends JFrame {
 			website = "https://www.set.or.th/set/companyhighlight.do?symbol="+Companyweb+"&ssoPageId=5&language=th&country=TH";
 			webNum++;
 		}
-		else if (pageNum > 312 && pageNum <= 375){
+		else if (pageNum > Insurance.length +Estate.length + ConstructionMaterial.length + Steel.length + Container.length + PitoAndChemi.length + PaperAndPrint.length + FacAndMach.length + Vehi.length + Fund.length + Bank.length + MedicalSupplies.length + Office.length + Fashion.length + Agriculture.length + FoodAndDrink.length && pageNum <= Insurance.length +CoEstate.length + Estate.length + ConstructionMaterial.length + Steel.length + Container.length + PitoAndChemi.length + PaperAndPrint.length + FacAndMach.length + Vehi.length + Fund.length + Bank.length + MedicalSupplies.length + Office.length + Fashion.length + Agriculture.length + FoodAndDrink.length){
 			for(int i = 0 ; i < CoEstate.length ; i++){
 				nameWeb.add(CoEstate[i]);
 			}
@@ -332,7 +332,7 @@ public class EachPageJar extends JFrame {
 			website = "https://www.set.or.th/set/companyhighlight.do?symbol="+Companyweb+"&ssoPageId=5&language=th&country=TH";
 			webNum++;
 		}
-		else if (pageNum > 375 && pageNum <= 395){
+		else if (pageNum > Insurance.length +CoEstate.length + Estate.length + ConstructionMaterial.length + Steel.length + Container.length + PitoAndChemi.length + PaperAndPrint.length + FacAndMach.length + Vehi.length + Fund.length + Bank.length + MedicalSupplies.length + Office.length + Fashion.length + Agriculture.length + FoodAndDrink.length && pageNum <= Insurance.length +Constructors.length + CoEstate.length + Estate.length + ConstructionMaterial.length + Steel.length + Container.length + PitoAndChemi.length + PaperAndPrint.length + FacAndMach.length + Vehi.length + Fund.length + Bank.length + MedicalSupplies.length + Office.length + Fashion.length + Agriculture.length + FoodAndDrink.length){
 			for(int i = 0 ; i < Constructors.length ; i++){
 				nameWeb.add(Constructors[i]);
 			}
@@ -340,7 +340,7 @@ public class EachPageJar extends JFrame {
 			website = "https://www.set.or.th/set/companyhighlight.do?symbol="+Companyweb+"&ssoPageId=5&language=th&country=TH";
 			webNum++;
 		}
-		else if (pageNum > 395 && pageNum <= 438){
+		else if (pageNum > Insurance.length +Constructors.length + CoEstate.length + Estate.length + ConstructionMaterial.length + Steel.length + Container.length + PitoAndChemi.length + PaperAndPrint.length + FacAndMach.length + Vehi.length + Fund.length + Bank.length + MedicalSupplies.length + Office.length + Fashion.length + Agriculture.length + FoodAndDrink.length && pageNum <= Insurance.length +EnergyAndCus.length + Constructors.length + CoEstate.length + Estate.length + ConstructionMaterial.length + Steel.length + Container.length + PitoAndChemi.length + PaperAndPrint.length + FacAndMach.length + Vehi.length + Fund.length + Bank.length + MedicalSupplies.length + Office.length + Fashion.length + Agriculture.length + FoodAndDrink.length){
 			for(int i = 0 ; i < EnergyAndCus.length ; i++){
 				nameWeb.add(EnergyAndCus[i]);
 			}
@@ -348,7 +348,7 @@ public class EachPageJar extends JFrame {
 			website = "https://www.set.or.th/set/companyhighlight.do?symbol="+Companyweb+"&ssoPageId=5&language=th&country=TH";
 			webNum++;
 		}
-		else if (pageNum > 438 && pageNum <= 440){
+		else if (pageNum > Insurance.length +EnergyAndCus.length + Constructors.length + CoEstate.length + Estate.length + ConstructionMaterial.length + Steel.length + Container.length + PitoAndChemi.length + PaperAndPrint.length + FacAndMach.length + Vehi.length + Fund.length + Bank.length + MedicalSupplies.length + Office.length + Fashion.length + Agriculture.length + FoodAndDrink.length && pageNum <=Insurance.length + Mineral.length + EnergyAndCus.length + Constructors.length + CoEstate.length + Estate.length + ConstructionMaterial.length + Steel.length + Container.length + PitoAndChemi.length + PaperAndPrint.length + FacAndMach.length + Vehi.length + Fund.length + Bank.length + MedicalSupplies.length + Office.length + Fashion.length + Agriculture.length + FoodAndDrink.length){
 			for(int i = 0 ; i < Mineral.length ; i++){
 				nameWeb.add(Mineral[i]);
 			}
@@ -356,7 +356,7 @@ public class EachPageJar extends JFrame {
 			website = "https://www.set.or.th/set/companyhighlight.do?symbol="+Companyweb+"&ssoPageId=5&language=th&country=TH";
 			webNum++;
 		}
-		else if (pageNum > 440 && pageNum <= 462){
+		else if (pageNum >Insurance.length + Mineral.length + EnergyAndCus.length + Constructors.length + CoEstate.length + Estate.length + ConstructionMaterial.length + Steel.length + Container.length + PitoAndChemi.length + PaperAndPrint.length + FacAndMach.length + Vehi.length + Fund.length + Bank.length + MedicalSupplies.length + Office.length + Fashion.length + Agriculture.length + FoodAndDrink.length && pageNum <= Insurance.length +Commercial.length + Mineral.length + EnergyAndCus.length + Constructors.length + CoEstate.length + Estate.length + ConstructionMaterial.length + Steel.length + Container.length + PitoAndChemi.length + PaperAndPrint.length + FacAndMach.length + Vehi.length + Fund.length + Bank.length + MedicalSupplies.length + Office.length + Fashion.length + Agriculture.length + FoodAndDrink.length){
 			for(int i = 0 ; i < Commercial.length ; i++){
 				nameWeb.add(Commercial[i]);
 			}
@@ -364,7 +364,7 @@ public class EachPageJar extends JFrame {
 			website = "https://www.set.or.th/set/companyhighlight.do?symbol="+Companyweb+"&ssoPageId=5&language=th&country=TH";
 			webNum++;
 		}
-		else if (pageNum > 462 && pageNum <= 481){
+		else if (pageNum > Insurance.length +Commercial.length + Mineral.length + EnergyAndCus.length + Constructors.length + CoEstate.length + Estate.length + ConstructionMaterial.length + Steel.length + Container.length + PitoAndChemi.length + PaperAndPrint.length + FacAndMach.length + Vehi.length + Fund.length + Bank.length + MedicalSupplies.length + Office.length + Fashion.length + Agriculture.length + FoodAndDrink.length && pageNum <=Insurance.length + Medical.length + Commercial.length + Mineral.length + EnergyAndCus.length + Constructors.length + CoEstate.length + Estate.length + ConstructionMaterial.length + Steel.length + Container.length + PitoAndChemi.length + PaperAndPrint.length + FacAndMach.length + Vehi.length + Fund.length + Bank.length + MedicalSupplies.length + Office.length + Fashion.length + Agriculture.length + FoodAndDrink.length){
 			for(int i = 0 ; i < Medical.length ; i++){
 				nameWeb.add(Medical[i]);
 			}
@@ -373,7 +373,7 @@ public class EachPageJar extends JFrame {
 			webNum++;
 		}
 
-		else if (pageNum > 481 && pageNum <= 510){
+		else if (pageNum > Insurance.length +Medical.length + Commercial.length + Mineral.length + EnergyAndCus.length + Constructors.length + CoEstate.length + Estate.length + ConstructionMaterial.length + Steel.length + Container.length + PitoAndChemi.length + PaperAndPrint.length + FacAndMach.length + Vehi.length + Fund.length + Bank.length + MedicalSupplies.length + Office.length + Fashion.length + Agriculture.length + FoodAndDrink.length && pageNum <= Insurance.length +MediaAndPrint.length + Medical.length + Commercial.length + Mineral.length + EnergyAndCus.length + Constructors.length + CoEstate.length + Estate.length + ConstructionMaterial.length + Steel.length + Container.length + PitoAndChemi.length + PaperAndPrint.length + FacAndMach.length + Vehi.length + Fund.length + Bank.length + MedicalSupplies.length + Office.length + Fashion.length + Agriculture.length + FoodAndDrink.length){
 			for(int i = 0 ; i < MediaAndPrint.length ; i++){
 				nameWeb.add(MediaAndPrint[i]);
 			}
@@ -382,7 +382,7 @@ public class EachPageJar extends JFrame {
 			webNum++;
 		}
 
-		else if (pageNum > 510 && pageNum <= 513){
+		else if (pageNum > Insurance.length +MediaAndPrint.length + Medical.length + Commercial.length + Mineral.length + EnergyAndCus.length + Constructors.length + CoEstate.length + Estate.length + ConstructionMaterial.length + Steel.length + Container.length + PitoAndChemi.length + PaperAndPrint.length + FacAndMach.length + Vehi.length + Fund.length + Bank.length + MedicalSupplies.length + Office.length + Fashion.length + Agriculture.length + FoodAndDrink.length && pageNum <= Insurance.length +Service.length + MediaAndPrint.length + Medical.length + Commercial.length + Mineral.length + EnergyAndCus.length + Constructors.length + CoEstate.length + Estate.length + ConstructionMaterial.length + Steel.length + Container.length + PitoAndChemi.length + PaperAndPrint.length + FacAndMach.length + Vehi.length + Fund.length + Bank.length + MedicalSupplies.length + Office.length + Fashion.length + Agriculture.length + FoodAndDrink.length){
 			for(int i = 0 ; i < Service.length ; i++){
 				nameWeb.add(Service[i]);
 			}
@@ -391,7 +391,7 @@ public class EachPageJar extends JFrame {
 			webNum++;
 		}
 
-		else if (pageNum > 513 && pageNum <= 525){
+		else if (pageNum > Insurance.length +Service.length + MediaAndPrint.length + Medical.length + Commercial.length + Mineral.length + EnergyAndCus.length + Constructors.length + CoEstate.length + Estate.length + ConstructionMaterial.length + Steel.length + Container.length + PitoAndChemi.length + PaperAndPrint.length + FacAndMach.length + Vehi.length + Fund.length + Bank.length + MedicalSupplies.length + Office.length + Fashion.length + Agriculture.length + FoodAndDrink.length && pageNum <=Insurance.length + TravleAndRecreation.length + Service.length + MediaAndPrint.length + Medical.length + Commercial.length + Mineral.length + EnergyAndCus.length + Constructors.length + CoEstate.length + Estate.length + ConstructionMaterial.length + Steel.length + Container.length + PitoAndChemi.length + PaperAndPrint.length + FacAndMach.length + Vehi.length + Fund.length + Bank.length + MedicalSupplies.length + Office.length + Fashion.length + Agriculture.length + FoodAndDrink.length){
 			for(int i = 0 ; i < TravleAndRecreation.length ; i++){
 				nameWeb.add(TravleAndRecreation[i]);
 			}
@@ -400,7 +400,7 @@ public class EachPageJar extends JFrame {
 			webNum++;
 		}
 
-		else if (pageNum > 525 && pageNum <= 544){
+		else if (pageNum > Insurance.length +TravleAndRecreation.length + Service.length + MediaAndPrint.length + Medical.length + Commercial.length + Mineral.length + EnergyAndCus.length + Constructors.length + CoEstate.length + Estate.length + ConstructionMaterial.length + Steel.length + Container.length + PitoAndChemi.length + PaperAndPrint.length + FacAndMach.length + Vehi.length + Fund.length + Bank.length + MedicalSupplies.length + Office.length + Fashion.length + Agriculture.length + FoodAndDrink.length && pageNum <= Insurance.length +Logistic.length + TravleAndRecreation.length + Service.length + MediaAndPrint.length + Medical.length + Commercial.length + Mineral.length + EnergyAndCus.length + Constructors.length + CoEstate.length + Estate.length + ConstructionMaterial.length + Steel.length + Container.length + PitoAndChemi.length + PaperAndPrint.length + FacAndMach.length + Vehi.length + Fund.length + Bank.length + MedicalSupplies.length + Office.length + Fashion.length + Agriculture.length + FoodAndDrink.length){
 			for(int i = 0 ; i < Logistic.length ; i++){
 				nameWeb.add(Logistic[i]);
 			}
@@ -408,7 +408,7 @@ public class EachPageJar extends JFrame {
 			website = "https://www.set.or.th/set/companyhighlight.do?symbol="+Companyweb+"&ssoPageId=5&language=th&country=TH";
 			webNum++;
 		}
-		else if (pageNum > 544 && pageNum <= 555){
+		else if (pageNum > Insurance.length +Logistic.length + TravleAndRecreation.length + Service.length + MediaAndPrint.length + Medical.length + Commercial.length + Mineral.length + EnergyAndCus.length + Constructors.length + CoEstate.length + Estate.length + ConstructionMaterial.length + Steel.length + Container.length + PitoAndChemi.length + PaperAndPrint.length + FacAndMach.length + Vehi.length + Fund.length + Bank.length + MedicalSupplies.length + Office.length + Fashion.length + Agriculture.length + FoodAndDrink.length && pageNum <= Insurance.length +Electronic.length + Logistic.length + TravleAndRecreation.length + Service.length + MediaAndPrint.length + Medical.length + Commercial.length + Mineral.length + EnergyAndCus.length + Constructors.length + CoEstate.length + Estate.length + ConstructionMaterial.length + Steel.length + Container.length + PitoAndChemi.length + PaperAndPrint.length + FacAndMach.length + Vehi.length + Fund.length + Bank.length + MedicalSupplies.length + Office.length + Fashion.length + Agriculture.length + FoodAndDrink.length){
 			for(int i = 0 ; i < Electronic.length ; i++){
 				nameWeb.add(Electronic[i]);
 			}
@@ -416,7 +416,7 @@ public class EachPageJar extends JFrame {
 			website = "https://www.set.or.th/set/companyhighlight.do?symbol="+Companyweb+"&ssoPageId=5&language=th&country=TH";
 			webNum++;
 		}
-		else if (pageNum > 555 && pageNum <= 584){
+		else if (pageNum > Insurance.length +Electronic.length + Logistic.length + TravleAndRecreation.length + Service.length + MediaAndPrint.length + Medical.length + Commercial.length + Mineral.length + EnergyAndCus.length + Constructors.length + CoEstate.length + Estate.length + ConstructionMaterial.length + Steel.length + Container.length + PitoAndChemi.length + PaperAndPrint.length + FacAndMach.length + Vehi.length + Fund.length + Bank.length + MedicalSupplies.length + Office.length + Fashion.length + Agriculture.length + FoodAndDrink.length && pageNum <= Insurance.length +TechnologyAndMedia.length + Electronic.length + Logistic.length + TravleAndRecreation.length + Service.length + MediaAndPrint.length + Medical.length + Commercial.length + Mineral.length + EnergyAndCus.length + Constructors.length + CoEstate.length + Estate.length + ConstructionMaterial.length + Steel.length + Container.length + PitoAndChemi.length + PaperAndPrint.length + FacAndMach.length + Vehi.length + Fund.length + Bank.length + MedicalSupplies.length + Office.length + Fashion.length + Agriculture.length + FoodAndDrink.length){
 			for(int i = 0 ; i < TechnologyAndMedia.length ; i++){
 				nameWeb.add(TechnologyAndMedia[i]);
 			}
